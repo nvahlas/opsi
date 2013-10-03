@@ -168,7 +168,9 @@ header nav ul li {
   float: left;
 }
 /* line 28, /Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/common/main.less */
-header nav ul li.current a {
+header nav ul li.current a, header nav ul li span.currentbranch0 {
+  border-radius: 3px;
+  display: block;
   background: #4d1554!important;
 }
 /* line 34, /Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/common/main.less */
