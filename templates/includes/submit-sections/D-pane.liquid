@@ -1,0 +1,45 @@
+        <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.{{ dIndex }}</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select{{ dIndex }}" name="where_Select{{ dIndex }}" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice{{ dIndex }}_name" name="practice{{ dIndex }}_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice{{ dIndex }}_org" name="practice{{ dIndex }}_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice{{ dIndex }}_desc" name="practice{{ dIndex }}_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice{{ dIndex }}_link" name="practice{{ dIndex }}_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>

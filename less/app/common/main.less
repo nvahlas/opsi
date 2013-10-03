@@ -1,0 +1,92 @@
+header {
+	position: fixed;
+	width: 100%;
+	border-bottom: 3px solid @oecd-grey-light;
+	background: white;
+	z-index: 3333;
+	.container {
+		position: relative;
+	}
+	#brand {
+		margin-left: 5px
+	}
+	nav {
+		background: @oecd-purple url('/assets/img/GUI/opsi_bg.png') no-repeat right center;
+		float: left;
+		overflow: hiddden;
+		width: 100%;
+		border-radius: 3px;
+		margin-bottom: -1.3em;
+		ul {
+			position: relative;
+			margin: 0;
+			padding: 5px;
+			list-style-type: none;
+			li {
+				float: left;
+				&.current {
+					a {
+						background: #4d1554!important;
+					}
+					
+				}
+			}
+			&.browse {
+				float: left;
+			}
+			&.community {
+				float: right;
+			}
+			&.action {
+				position: absolute;
+				top: 5px;
+				right: 0;
+				li {
+					float: right;
+				}
+				a {
+					color: @oecd-grey-light;
+					&:hover {
+						background: none;
+						color: @oecd-purple;
+					}
+				}
+			}
+		}
+		a {
+			display: block;
+			padding: .5em 1em;
+			color: white;
+			border-radius: 5px;
+			&:hover {
+				background: #63296d;
+				text-decoration: none;
+				color: white;
+			}
+
+		}
+	}
+}
+footer {
+	border-top: 3px solid @oecd-grey-light;
+	.container {
+		position: relative;
+		border-top: 5px solid #8f499c;
+		margin-top: -4px;
+		padding: 10px 0;
+		#oecd-footer {
+			position: absolute;
+			right: 0;
+			top: 5px;
+			z-index: 10
+		}
+	}
+}
+
+
+.cNews {
+	p {
+		text-decoration: none;
+		color: black;
+	}
+}

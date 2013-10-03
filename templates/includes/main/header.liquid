@@ -1,0 +1,14 @@
+<header>
+	<div class="container">
+		<div id="brand" class="pull-left span8">
+			<a href="/{{ logUrl }}"><img src="/assets/img/GUI/logo18.png"></a>
+		</div>
+		<form id="custom-search-form" class="form-search form-horizontal pull-right" action="/pages/sitesearch">
+		    <div class="input-append">
+		        <input type="text" class="search-query span4" placeholder="Search the site">
+		        <button type="submit" class="btn"><i class="icon-search"></i></button>
+		    </div>
+		</form>
+		{% include "main/navigation" %}
+	</div>
+</header>

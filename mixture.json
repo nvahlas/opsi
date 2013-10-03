@@ -1,0 +1,21 @@
+{
+  "debug": true,
+  "domain": null,
+  "followLeader": false,
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": "less",
+  "preprocessorScriptOutput": "assets/scripts",
+  "preprocessorStyleOutput": "assets/css",
+  "projectDescription": "Sharing innovations for better public services",
+  "projectName": "opsi",
+  "publishedId": "5796",
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": false
+}

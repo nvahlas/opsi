@@ -1,0 +1,9 @@
+/* [less, less/bootstrap, responsive-1200px-min.less] */
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Less NameError: variable @gridColumnWidth1200 is undefined in \\Users\\ezka\\Documents\\WRK\\ITN\\OPSI\\reborn1\\less\\bootstrap\\responsive-1200px-min.less on line 9, column 17: \A 8   \\\\ Fixed grid \A 9   #grid > .core(@gridColumnWidth1200, @gridGutterWidth1200); \A 10  \A  \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 

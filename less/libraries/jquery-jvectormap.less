@@ -1,0 +1,88 @@
+.jvectormap-label {
+    position: absolute;
+    display: none;
+    .my-label {
+        border: solid 1px #CDCDCD;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: #292929;
+        color: white;
+        font-family: sans-serif, Verdana;
+        font-size: smaller;
+        padding: 3px;
+    }
+}
+
+.jvectormap-zoomin, .jvectormap-zoomout {
+    position: absolute;
+    left: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #292929;
+    padding: 3px;
+    color: white;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    line-height: 10px;
+    text-align: center;
+}
+
+.jvectormap-zoomin {
+    top: 10px;
+}
+
+.jvectormap-zoomout {
+    top: 30px;
+}
+
+#world-wrap {
+    .clearfix();
+    padding: 20px 0;
+    position: relative;
+}
+#map-bar {
+    position: absolute;
+    background: white;
+    padding: 1px 5px;
+    left: 5px;
+    bottom: 25px;
+    line-height: 1;
+    .min {
+        float: left;
+    }
+    .max {
+        float: right;    }
+    .rule {
+        position: relative;
+        float: left;
+        margin: 0 5px;
+        width: 240px;
+        height: 14px;
+        background: @oecd-purple;
+
+        background: #dccedf; /* Old browsers */
+        background: -moz-linear-gradient(left,  #dccedf 0%, #72367d 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#dccedf), color-stop(100%,#72367d)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #dccedf 0%,#72367d 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  #dccedf 0%,#72367d 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #dccedf 0%,#72367d 100%); /* IE10+ */
+        background: linear-gradient(to right,  #dccedf 0%,#72367d 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dccedf', endColorstr='#72367d',GradientType=1 ); /* IE6-9 */
+
+    }
+    #curs {
+        position: absolute;
+        top: -10px;
+        left: -9999px;
+        width: 0px;
+        height: 0px;
+        margin-left: -5px;
+        border-style: solid;
+        border-width: 10px 5px 0 5px;
+        border-color: #333 transparent transparent transparent;
+
+    }
+}

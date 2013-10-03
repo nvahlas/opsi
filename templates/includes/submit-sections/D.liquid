@@ -1,0 +1,51 @@
+<fieldset id="D-Novelty">
+  <!-- Part Name -->
+  <legend>D. Novelty</legend>
+  <input type="hidden" id="practiceSum"  name="practiceSum" value="4" />
+
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">D.1</span> Are you aware of existing practices <br />which are similar to your innovation?</label>
+
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio" name="hasNovelty" value="false">
+              No
+            </label>
+            <label class="radio inline">
+              <input type="radio" name="hasNovelty" value="true">
+              Yes
+            </label>
+          </div>
+          
+        </div>
+
+        {% assign quantity = 12 %}
+        {% for i in (2..quantity) %}
+          {% assign dIndex = i %}
+          {% include "submit-sections/D-pane" %}
+        {% endfor %}
+
+      </div>
+      <div class="span4">
+          <p class="help-block">Answers may include up to 12 responses</p>
+      </div>
+    </div>
+  <!-- Text input-->
+  <div id="newPractice" class="row" style="display: none;">
+    <div class="span8"><p class="sep"></p>
+          <div class="control-group">
+            <div class="controls">
+              <div class="btn-group pull-left">
+                <a href="#" id="practice-add" class="btn btn-mini">Add Practice</a>
+                <a href="#" id="practice-rem" class="btn btn-mini disabled">Remove Practice</a>
+              </div>
+            </div>
+          </div>
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+</fieldset>

@@ -1,0 +1,565 @@
+
+
+    
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <title>OPSI</title>
+        <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        <!-- Styles -->
+        <!--[if lt IE 9]><script src="../assets/scripts/html5shiv.js"></script><![endif]-->
+
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+        <!--<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" media="all"/>-->
+        <link href="../assets/css/app.css" rel="stylesheet" type="text/css" media="all"/>
+        
+	<link href="../assets/css/select2.css" rel="stylesheet" type="text/css" media="all"/>
+
+
+        <script src="../assets/scripts/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <header>
+	<div class="container">
+		<div id="brand" class="pull-left span8">
+			<a href="../index.html"><img src="../assets/img/GUI/logo18.png"></a>
+		</div>
+		<form id="custom-search-form" class="form-search form-horizontal pull-right" action="/pages/sitesearch">
+		    <div class="input-append">
+		        <input type="text" class="search-query span4" placeholder="Search the site">
+		        <button type="submit" class="btn"><i class="icon-search"></i></button>
+		    </div>
+		</form>
+		
+		<nav>
+			<ul class="browse">
+				<li><a href="../index.html">Home</a></li>
+        		<li ><a href="../pages/about.html">About</a></li>
+				<li class="current"><a href="home.html">Innovations</a></li>
+				<li ><a href="../pages/library.html">Library</a></li>
+				<li ><a href="../pages/countries.html">Country Profiles</a></li>
+			
+        		<li ><a href="../pages/submit_info.html">Submit</a></li>
+			
+        		<li ><a href="../pages/collaborate.html">Collaborate</a></li>
+			</ul>
+			<ul class="action">
+			
+				<li><a href="../index.html">Login</a></li>
+			
+			</ul>
+		</nav>
+	</div>
+</header>
+
+            
+            <div id="pageContent">
+                <div class="container">
+                    
+<div id="mapFilter" class="row">
+	<div class="span8">
+		<div class="white-block">
+			<h3>Search Innovations</h3>
+			<div class="row">
+				<div id="csf_wrapper">
+					<form id="custom-search-form" class="form-search form-horizontal pull-right" action="/innovation/search">
+					    <div class="input-append">
+					        <input type="text" class="search-query" style="width: 490px;" placeholder="Please enter what your are looking for…">
+					        <button type="submit" class="btn"><i class="icon-search"></i></button>
+					    </div>
+					</form>
+				</div>
+				<div class="pull-right">
+					<a href="#" id="hide-show-map" class="btn">Hide map</a>
+				</div>
+			</div>
+			<div id="world-wrap">
+		  		<div id="world-map" style="width: 100%; height: 340px;"></div>
+		  		<div id="map-bar">
+		  			<div class="min">1</div>
+		  			<div class="rule"><div id="curs"></div></div>
+		  			<div class="max">7</div>
+		  		</div>
+	  		</div>
+
+		<div id="displayOptions" class="clearfix">
+			<!-- <h6>display options</h6> -->
+			<div class="display-actions">
+				<form>
+					<label>Results per page: </label>
+					<select name="hf">
+						<option value="5">5</option>
+						<option value="10" selected="selected">10</option>
+						<option value="20">20</option>
+						<option value="50">50</option>
+					</select>
+					<label for="displayOrder">Sorted by: </label>
+					<select name="displayOrder" id="displayOrder">
+						<option value="" selected="selected">Relevance</option>
+						<option value="lastmodifieddate">Date (descending)</option>
+						<option value="lastmodifieddate">Date (ascending)</option>
+					</select>
+				</form>
+			</div>
+		</div>
+
+	<div id="search-infos">
+		<!--
+		<p><strong>56</strong> results for &quot;<strong><em>secure ID, online services</em></strong>&quot;</p>
+		-->
+		<p>775 innovations in the database</p>
+		<p id="compare-info">Select up to three innovations to compare<a id="compare-action" href="compare.html" class="btn btn-mini pull-right">Compare innovations</a>
+	</div>
+
+	
+    
+			<div id="innovation-list">
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Next Step Online Community</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Australia</span> | <span class="">Online tools</span> </p>
+					<p class="abstract">The Next Step online community is an invitation only closed community for customers who are transitioning from Parenting Payment to Newstart Allowance.</p>
+					<p class="tag-list"><span>Social Protection</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Establishment of children’s day care centres</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Mexico</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Privately operated children’s day care centres have been established to provide childcare for single parents not covered by social security assistance while they are at work or while they search for new employment opportunities.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+				
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Innovation Title</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Country</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+				
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Innovation Title</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Country</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+				
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Innovation Title</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Country</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Innovation Title</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Country</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Innovation Title</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Country</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+				
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Innovation Title</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Country</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+				
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Innovation Title</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Country</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+				
+				<div class="innovation-card clearfix">
+					<h5 class="title"><a href="page.html">Innovation Title</a></h5>
+					<a class="add-to-compare-list btn btn-mini" href="#" title="Add to compare list">Add to Compare</a>
+					<p class="infos"><span class="">Country</span> | <span class="">innovation Type</span> </p>
+					<p class="abstract">Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+					<p class="tag-list"><span>tag 1</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
+				</div>
+			</div>
+
+
+
+  	</div>
+		<div class="pagination">
+		  <ul>
+		    <li class="disabled"><a href="#">Prev</a></li>
+		    <li class="active"><a href="#">1</a></li>
+		    <li><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li><a href="#">6</a></li>
+		    <li><a href="#">7</a></li>
+		    <li><a href="#">8</a></li>
+		    <li><a href="#">9</a></li>
+		    <li><a href="#">10</a></li>
+		    <li><a href="#">Next</a></li>
+		  </ul>
+		</div>
+	</div>
+
+	<div class="span4 pull-right">
+		<div id="resFilter">
+			<h4 style="">Filter innovations</h4>
+	    	<form action="/innovation/browse">
+	<div class="filter-pane">
+		<h6 for="Countries">Countries</h6>
+		<fieldset>
+            <select id="e1" multiple style="width: 300px;">
+               <option value=""></option>
+				<option value="AU">Australia</option>
+				<option value="AT">Austria</option>
+				<option value="BE">Belgium</option>
+				<option value="BR">Brazil</option>
+				<option value="CA">Canada</option>
+				<option value="CL">Chile</option>
+				<option value="CN">China</option>
+				<option value="CZ">Czech Republic</option>
+				<option value="DK">Denmark</option>
+				<option value="EE">Estonia</option>
+				<option value="FI">Finland</option>
+				<option value="FR">France</option>
+				<option value="DE">Germany</option>
+				<option value="GR">Greece</option>
+				<option value="HU">Hungary</option>
+				<option value="IS">Iceland</option>
+				<option value="IN">India</option>
+				<option value="ID">Indonesia</option>
+				<option value="IE">Ireland</option>
+				<option value="IL">Israël</option>
+				<option value="IT">Italy</option>
+				<option value="JP">Japan</option>
+				<option value="KR">Korea</option>
+				<option value="LU">Luxembourg</option>
+				<option value="MX">Mexico</option>
+				<option value="NL">Netherlands</option>
+				<option value="NZ">New Zealand</option>
+				<option value="NO">Norway</option>
+				<option value="PL">Poland</option>
+				<option value="PT">Portugal</option>
+				<option value="RU">Russia</option>
+				<option value="SK">Slovak Republic</option>
+				<option value="SI">Slovenia</option>
+				<option value="ZA">South Africa</option>
+				<option value="ES">Spain</option>
+				<option value="SE">Sweden</option>
+				<option value="CH">Switzerland</option>
+				<option value="TR">Turkey</option>
+				<option value="GB">United Kingdom</option>
+				<option value="US">United States</option>
+            </select>
+		</fieldset>
+	</div>
+
+	<div class="filter-pane">
+		<div class="colexp"><a class="collapse" href="">Show</a></div>
+		<h6 for="orgType">Level of government</h6>
+		<div class="collapsible">
+
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> National / federal<span class="categoryStat">(21)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Regional<span class="categoryStat">(3)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Local<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+		</div>
+	</div>
+	
+	<div class="filter-pane">
+		<div class="colexp"><a class="collapse" href="">Show</a></div>
+		<h6 for="sector">Sector</h6>
+		<div class="collapsible">
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Central administrative services<span class="categoryStat">(13)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Defence<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Public order and safety (including justice)<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Economic affairs (including agriculture)<span class="categoryStat">(7)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Environmental protection<span class="categoryStat">(2)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Housing and community amenities<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Health<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Recreation, culture and religion<span class="categoryStat">(90)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Education<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Social protection<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+		</div>
+	</div>
+
+	<div class="filter-pane refineGroup">
+		<div class="colexp"><a class="collapse" href="">Show</a></div>
+		<h6 for="Countries">Year of launch</h6>
+		
+		<div class="collapsible">
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> 2013<span class="categoryStat">(13)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> 2012<span class="categoryStat">(7)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> 2011<span class="categoryStat">(10)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> 2010<span class="categoryStat">(21)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> 2009<span class="categoryStat">(3)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> 2008<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+		</div>
+	</div>
+
+	<div class="filter-pane">
+		<div class="colexp"><a class="collapse" href="">Show</a></div>
+		<h6 for="type">Type of innovation</h6>
+		<div class="collapsible">
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> An entirely new or significantly new service or product, or an existing service provided to a new group of users <span class="categoryStat">(46)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> A new process or approach for the design or delivery of existing services or products <span class="categoryStat">(35)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> A new way to organise or manage work within your organisation <span class="categoryStat">(15)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> A new way to communicate with service users <span class="categoryStat">(29)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> A different type of change<span class="categoryStat">(35)</span></a><a class="fNot" href="#not">-</a></div>
+		</div>
+	</div>
+
+	<div class="filter-pane">
+		<div class="colexp"><a class="collapse" href="">Show</a></div>
+		<h6 for="objective">Stage of Innovation</h6>
+		<div class="collapsible">
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Design<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Testing<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Implementation<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Diffusion<span class="categoryStat">(1)</span></a><a class="fNot" href="#not">x</a></div>
+		</div>
+	</div>
+
+	<div class="filter-pane">
+		<div class="colexp"><a class="collapse" href="">Show</a></div>
+		<h6 for="devTime">Partners</h6>
+		<div class="collapsible">
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> None<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Private Sector<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Civil Society<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Academics and Research Bodies<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Other Public Sector<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Other<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+		</div>
+	</div>
+
+	<div class="filter-pane">
+		<div class="colexp"><a class="collapse" href="">Show</a></div>
+		<h6 for="results">Results</h6>
+		<div class="collapsible">
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Improved efficiency<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Improved effectiveness<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Improved service quality<span class="categoryStat"> (12)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> &lfloor; Accessibility<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> &lfloor; Responsiveness<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> &lfloor; Reliability<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> &lfloor; Other<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Improved user satisfaction<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Other<span class="categoryStat"> (3)</span></a><a class="fNot" href="#not">-</a></div>
+		</div>
+	</div>
+
+	<div class="filter-pane tags-group" style="border-bottom: 1px solid #c6c8ca;">
+		<div class="colexp"><a class="collapse" href="">Show</a></div>
+		<h6 for="type">Keywords</h6>
+		<div class="collapsible">
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> access<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> budgeting<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> change<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> childcare<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> citizens<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> civil service<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> civil society<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> co-production<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> consultation<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> decision-making<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> delivery<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> design<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> digital<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> e-government<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> efficiency<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> equality<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> flexibility<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> human resources<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> implementation<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> innovation<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> online<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> open data<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> partnership<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> performance<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> private sector<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> procurement<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> project management<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> public sector<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> rules<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> savings<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> simplicity<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> transparency<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+			<div class="zkFilter"><a href="#add" class="addFilter"><strong>+</strong> Users<span class="categoryStat">&nbsp;(3)</span></a><a class="fNot" href="#not">-</a></div>
+		</div>
+	</div>
+</form>
+		</div>
+	</div>
+
+</div>
+
+                </div>
+            </div>
+
+            
+        <footer>
+            <div class="container">
+                <div class="pull-left">
+                    <a href="mailto:opsi@oecd.org">Contact us</a> | 
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="pull-right">Copyright OECD. All rights reserved.</div>
+                <!-- <img id="oecd-footer" src="../assets/img/GUI/oecd-footer.png"> -->
+            </div>
+        </footer>
+
+        </div>
+        <script src="../assets/scripts/jquery.iosslider.min.js"></script>
+        <script src="http://fuelcdn.com/fuelux/2.3.1/loader.min.js"></script>
+        
+       
+        
+        
+<script src="../assets/scripts/select2.min.js"></script>
+<script src="../assets/scripts/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="../assets/scripts/jquery-jvectormap-world-mill-en.js"></script>
+<script type="text/javascript">
+
+    $(function(){
+
+    	$("#hide-show-map").on("click", function() {
+    		$(this).text(($(this).text() == "Hide map") ? "Show map" : "Hide map");
+    		$("#world-map").slideToggle();
+    		$("#map-bar").fadeToggle();
+
+    	});
+
+
+    	var data = {
+	        "DE": 2,
+	        "US": 7,
+	        "BR": 4,
+	        "CA": 5,
+	        "FR": 15,
+	        "AU": 3,
+	        "BE": 1,
+	        "PS": 5
+        };
+
+		var maxValue = -1
+		for (var prop in data) {
+		    var value = data[prop]
+		    if (value > maxValue) maxValue = value;
+		}
+
+		$('#world-map').vectorMap({
+			backgroundColor: "#A7DBD8",
+			zoomMax: 20,
+			regionStyle: {
+			  initial: {
+			    fill: 'white',
+			    "fill-opacity": .9,
+			    //stroke: 'white',
+			    //"stroke-width": .1,
+			    //"stroke-opacity": 1
+			  },
+			  hover: {
+			    "fill-opacity": 1
+			  },
+			  selected: {
+			    fill: 'yellow'
+			  },
+			  selectedHover: {
+			  }
+			},
+			series: {
+			    regions: [{
+			      values: data,
+			      scale: ['#dccedf','#72367d'],
+			      normalizeFunction: 'polynomial'
+			    }]
+			  },
+			  onRegionOver: function (e, code) {
+			  	if (data[code])
+			  	{
+			  		var perc = (data[code] / maxValue)*100;
+			    	$("#curs").css("left", perc+"%");
+			  	}
+			  },
+			  onRegionOut: function (e, code) {
+			  	$("#curs").css("left", "-9999px");
+			  },
+			  onRegionLabelShow: function(e, el, code){
+			  	if (data[code])
+			  	{
+			    	el.html('<div class="my-label">'+el.html()+'<br />'+data[code]+' innovations</div>');
+			    } else {
+			    	el.html('<div style="display:none">'+el.html()+'</div>');
+			    }
+			  },
+			  onRegionClick: function (e, code) {
+			  	// window.location = '/innovation/search/'; //load new page
+			  	console.log(code);
+			  	//$("#e1").select2("val", code);
+			  	$("#e1").select2("val", $("#e1").select2("val").concat(code));
+			  }
+		});
+
+    	$("#e1").select2();
+    	
+    	var collapsibleDiv 	= $(".collapsible");
+
+    	$(".colexp a.collapse").on("click", function(event){
+    		var index = $("a.collapse").index(this);
+    		$(collapsibleDiv[index]).toggleClass("opened");
+    		($(this).text() == "Show") ? btnText = "Show"  : btnText = "Hide" ;
+    		$(this).text(btnText);
+
+    		if ($(this).text() == "Show")
+    		{
+    			$(this).text("Hide");
+    		} else {
+    			$(this).text("Show");
+    		}
+
+    		return false;
+    	});
+
+    	/*
+    	var cList = $(".add-to-compare-list.selected").length;
+    	console.log(typeof cList,  cList);
+
+    	$(".add-to-compare-list").on("click", function(event){
+    		cList = $(".add-to-compare-list.selected").length;
+
+    		if ( cList < 4 ) $(this).toggleClass('selected');
+    		if ( cList > 0 ) $("compare-action").removeClass('disabled');
+    		if ( cList === 0 ) $("compare-action").addClass('disabled');
+    		console.log(typeof cList,  cList);
+    	});
+*/
+
+
+    });
+
+
+</script>
+
+        <script src="../assets/scripts/app.js"></script>
+    </body>
+</html>

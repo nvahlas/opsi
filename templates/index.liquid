@@ -1,0 +1,91 @@
+
+{% block content %}
+	<div class="row home">
+		<div class="span9 home-pane">
+            {% include "_partials/home_slider" %}
+		</div>
+		<div class="span3 pull-right">
+			<div id="home-Map" class="home-pane">
+				<div class="opsiTile">
+					<h5>&nbsp;</h5>
+					<p>The <strong>Observatory of Public Sector Innovation</strong> brings together actors from across the public sector and beyond, to share their ideas and experiences of how the public sector is innovating to support better outcomes for citizens.</p>
+					<p><a href="/pages/about">&raquo; more about OPSI</a></p>
+				</div>
+	        </div>
+		</div>
+	</div>
+	<div class="row home">
+		<div class="span3">
+			<div class="homeTile">
+				<a href="/innovation/home">
+					<h3>
+						Innovations<span>search by country, <br /> sector, results&hellip;</span>
+					</h3>
+					<div data-icon="b" class="icon"></div>
+					<p>Search for examples of innovation</p>
+				</a>
+			</div>
+		</div>
+		<div class="span3">
+			<div class="homeTile">
+				<a href="/research/home">
+					<h3>
+						Library<span>research on innovation</span>
+					</h3>
+					<div data-icon="e" class="icon"></div>
+					<p>Access research on <br />public sector innovation</p>
+				</a>
+			</div>
+		</div>
+		<div class="span3">
+			<div class="homeTile">
+				{% if logState !=  'logged' %}
+				<a href="/pages/submit_info">
+				{% elseif logState ==  'logged' %}
+				<a href="/innovation/submit?logState=logged">
+				{% endif %}
+					<h3>
+						Submit<span>an innovation</span>
+					</h3>
+					<div data-icon="k" class="icon"></div>
+					<p>Share examples of your innovations</p>
+				</a>
+			</div>
+		</div>
+		<div class="span3">
+			<div class="homeTile">
+				<a href="/community/collaborate">
+					<h3>
+						Collaborate<span>with others</span>
+					</h3>
+					<div data-icon="c" class="icon"></div>
+					<p>Discuss your experiences and develop new ideas with others</p>
+				</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+
+{% block scripts %}
+ <script type="text/javascript">
+	$(function() {
+      	$('.iosSlider').iosSlider({
+			snapToChildren: true,
+			infiniteSlider: true,
+			autoSlide: true,
+			autoSlideTimer: 7000,
+			onSlideChange: slideChange
+		});
+	});
+
+	function slideChange(args) {
+		$('.selectorsBlock .selectors .item').removeClass('selected');
+		$('.selectorsBlock .selectors .item:eq(' + (args.currentSlideNumber-1) + ')').addClass('selected');
+		try {
+			console.log(args);
+		} catch(err) {
+		}
+	}
+</script>
+{% endblock %}

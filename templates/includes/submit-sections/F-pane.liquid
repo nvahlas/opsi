@@ -1,0 +1,28 @@
+        <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.{{ fIndex }}</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect{{ fIndex }}" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner{{ fIndex }}_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner{{ fIndex }}_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>

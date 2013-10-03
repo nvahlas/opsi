@@ -1,0 +1,23 @@
+{% block content %}
+<div class="row">
+	<div class="span12">
+		<div class="white-block">
+			<script type="text/javascript">
+				var searchField = document.getElementById('q');
+				if ( searchField ) {
+				  searchField.value = getTerm();
+				}
+			</script>
+			<div id="cse-search-results" class="cse-search-results"><iframe name="googleSearchFrame" src="http://www.google.com/cse?q=innovation&amp;cx=012432601748511391518:xzeadub0b0a&amp;cof=FORID:11&amp;ie=UTF-8&amp;ad=n9&amp;num=10&amp;rurl=http%3A%2F%2Fwww.oecd.org%2Fgeneral%2Fsearchresults%2F%3Fq%3Dinnovation%26cx%3D012432601748511391518%3Axzeadub0b0a%26cof%3DFORID%3A11%26ie%3DUTF-8" frameborder="0" width="600" height="1200" marginwidth="0" marginheight="0" hspace="0" vspace="0" allowtransparency="true" scrolling="no"></iframe></div>
+			<script type="text/javascript">//<!--
+			  var googleSearchIframeName = "cse-search-results";
+			  var googleSearchFormName = "cse-search-box";
+			  var googleSearchFrameWidth = 500;
+			  var googleSearchDomain = "www.google.com";
+			  var googleSearchPath = "/cse";
+			//--></script> <script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js">//<!--
+			//--></script>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,197 @@
+{% block styles %}
+	{{ "select2.css" | asset_url | stylesheet_tag }}
+{% endblock %}
+
+{% block content %}
+<div id="mapFilter" class="row">
+	<div class="span8" style="position: relative;">
+		<div class="white-block">
+			<h3>Search Innovations</h3>
+			<div class="row">
+				<div id="csf_wrapper">
+					<form id="custom-search-form" class="form-search form-horizontal pull-right" action="/innovation/search">
+					    <div class="input-append">
+					        <input type="text" class="search-query" style="width: 490px;" placeholder="Please enter what your are looking for…">
+					        <button type="submit" class="btn"><i class="icon-search"></i></button>
+					    </div>
+					</form>
+				</div>
+				<div class="pull-right">
+					<a href="#" id="hide-show-map" class="btn">Show map</a>
+				</div>
+			</div>
+			<div id="world-wrap">
+	  			<div id="world-map" style="width: 100%; height: 340px;"></div>
+		  		<div id="map-bar">
+		  			<div class="min">1</div>
+		  			<div class="rule"><div id="curs"></div></div>
+		  			<div class="max">7</div>
+		  		</div>
+	  		</div>
+
+		<div id="displayOptions" class="clearfix">
+			<!-- <h6>display options</h6> -->
+			<div class="display-actions">
+				<form>
+					<label>Results per page: </label>
+					<select name="hf">
+						<option value="5">5</option>
+						<option value="10" selected="selected">10</option>
+						<option value="20">20</option>
+						<option value="50">50</option>
+					</select>
+					<label for="displayOrder">Sorted by: </label>
+					<select name="displayOrder" id="displayOrder">
+						<option value="" selected="selected">Relevance</option>
+						<option value="lastmodifieddate">Date (descending)</option>
+						<option value="lastmodifieddate">Date (ascending)</option>
+					</select>
+				</form>
+			</div>
+		</div>
+
+		<div id="search-infos">
+			<p><strong>56</strong> results for &quot;<strong><em>secure ID, online services</em></strong>&quot;</p>
+			<p id="compare-info">Use the checkboxes to select up to three innovations to compare <a id="compare-action" href="/innovation/compare" class="btn btn-mini pull-right disabled">Compare</a>
+		</div>
+
+			
+            {% include "_partials/innovationList" %}
+	  	</div>
+
+		<div class="pagination">
+		  <ul>
+		    <li class="disabled"><a href="#">Prev</a></li>
+		    <li class="active"><a href="#">1</a></li>
+		    <li><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li><a href="#">6</a></li>
+		    <li><a href="#">7</a></li>
+		    <li><a href="#">8</a></li>
+		    <li><a href="#">9</a></li>
+		    <li><a href="#">10</a></li>
+		    <li><a href="#">Next</a></li>
+		  </ul>
+		</div>
+	</div>
+
+	<div class="span4 pull-right">
+		<div id="resFilter">
+			<h4 style="">Filter innovations</h4>
+	    	{% include "_partials/innovation_filters" %}
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+{{ "select2.min.js" | asset_url | script_tag }}
+<script src="/assets/scripts/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="/assets/scripts/jquery-jvectormap-world-mill-en.js"></script>
+ <script type="text/javascript">
+    $(function() {
+
+    	$("#hide-show-map").on("click", function() {
+    		$(this).text(($(this).text() == "Hide map") ? "Show map" : "Hide map");
+    		$("#world-map").slideToggle();
+    		$("#map-bar").fadeToggle();
+
+    	});
+
+
+    	var data = {
+	        "DE": 2,
+	        "US": 7,
+	        "BR": 4,
+	        "CA": 5,
+	        "FR": 1,
+	        "AU": 3,
+	        "BE": 1
+        };
+
+		var maxValue = -1
+		for (var prop in data) {
+		    var value = data[prop]
+		    if (value > maxValue) maxValue = value;
+		}
+
+		$('#world-map').vectorMap({
+			backgroundColor: "#ededed",
+			series: {
+			    regions: [{
+			      values: data,
+			      scale: ['#dccedf','#72367d'],
+			      normalizeFunction: 'polynomial'
+			    }]
+			  },
+			  onRegionOver: function (e, code) {
+			  	if (data[code])
+			  	{
+			  		var perc = (data[code] / maxValue)*100;
+			    	$("#curs").css("left", perc+"%");
+			  	}
+			  },
+			  onRegionOut: function (e, code) {
+			  	$("#curs").css("left", "-9999px");
+			  },
+			  onRegionLabelShow: function(e, el, code){
+			  	if (data[code])
+			  	{
+			    	el.html('<div class="my-label">'+el.html()+'<br />'+data[code]+' innovations</div>');
+			    } else {
+			    	el.html('<div style="display:none">'+el.html()+'</div>');
+			    }
+			  },
+			  onRegionClick: function (e, code) {
+			  	// window.location = '/innovation/search/'; //load new page
+			  	console.log(code);
+			  	//$("#e1").select2("val", code);
+			  	$("#e1").select2("val", $("#e1").select2("val").concat(code));
+			  }
+		});
+		$("#world-map").css("display", "none");
+		$("#map-bar").css("display", "none");
+
+    	$("#e1").select2();
+    	
+    	var collapsibleDiv 	= $(".collapsible");
+
+    	$(".colexp a.collapse").on("click", function(event){
+    		var index = $("a.collapse").index(this);
+    		$(collapsibleDiv[index]).toggleClass("opened");
+    		($(this).text() == "Show") ? btnText = "Show"  : btnText = "Hide" ;
+    		$(this).text(btnText);
+
+    		if ($(this).text() == "Show")
+    		{
+    			$(this).text("Hide");
+    		} else {
+    			$(this).text("Show");
+    		}
+
+    		return false;
+    	});
+
+    	/*
+    	var cList = $(".add-to-compare-list.selected").length;
+    	console.log(typeof cList,  cList);
+
+    	$(".add-to-compare-list").on("click", function(event){
+    		cList = $(".add-to-compare-list.selected").length;
+
+    		if ( cList < 4 ) $(this).toggleClass('selected');
+    		if ( cList > 0 ) $("compare-action").removeClass('disabled');
+    		if ( cList === 0 ) $("compare-action").addClass('disabled');
+    		console.log(typeof cList,  cList);
+    	});
+*/
+
+
+    });
+
+
+</script>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% assign logState = request.query.logState %}
+{% if logState !=  'logged' %}
+    {% assign logUrl = '' %}
+{% elseif logState ==  'logged' %}
+    {% assign logUrl = '?logState=logged' %}
+{% endif %}
+<!doctype html>
+<html lang="en">
+    <head>
+        {% comment %} Title block allowing child pages to override {% endcomment %}
+        <title>{% block title %}OPSI{% endblock %}</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        <!-- Styles -->
+        <!--[if lt IE 9]>{{ "html5shiv.js" | asset_url | script_tag }}<![endif]-->
+
+        {{ "bootstrap.css" | asset_url | stylesheet_tag }}
+        <!--{{ "responsive.css" | asset_url | stylesheet_tag }}-->
+        {{ "app.css" | asset_url | stylesheet_tag }}
+        {% block styles %}{% endblock %}
+
+        {{ "jquery.min.js" | asset_url | script_tag }}
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            {% include "main/header" %}
+
+            {% comment %} Content block, child page inject content {% endcomment %}
+            <div id="pageContent">
+                <div class="container">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+
+            {% include "main/footer" %}
+
+        </div>
+        {{ "jquery.iosslider.min.js" | asset_url | script_tag }}
+        {{ "http://fuelcdn.com/fuelux/2.3.1/loader.min.js" | asset_url | script_tag }}
+        
+       
+        {% comment %} Script block allowing child pages to inject their own scripts {% endcomment %}
+        {% block scripts %}{% endblock %}
+        {{ "app.js" | asset_url | script_tag }}
+    </body>
+</html>

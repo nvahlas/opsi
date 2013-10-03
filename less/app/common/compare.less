@@ -1,0 +1,115 @@
+.colexp {
+	position: absolute;
+	top: .5em;
+	right: 10px;
+}
+.collapsible {
+	-webkit-transition: height .35s ease;
+	-moz-transition: height .35s ease;
+	-o-transition: height .35s ease;
+	transition: height .35s ease;
+	height: 0;
+	float: left;
+	overflow: hidden;
+	p:first-child {
+		margin-left: 0;
+	}
+}
+.opened {
+	height: auto;
+}
+
+.backtothefuture {
+	display: block;
+	margin-top: -1.5em;
+}
+
+.inAction {
+text-align: right;
+padding: 0 0 10px 0;
+}
+.compTitle {
+	position: relative;
+	background: white;
+	.inAction {
+		padding: 10px;
+		text-align: right;
+	}
+	h2 {
+		margin: 10px 0 0  0;
+		padding: 10px;
+	}
+}
+#compare {
+	table {
+		background: white;
+		border: none;
+		border-collapse: collapse;
+		border-radius: 3px;
+		text-align: left;
+		td ul, td p {
+			padding: 0 10px 0 20px;
+		}
+		span {
+			display: block;
+		}
+		th {
+			padding: 10px 10px 10px 20px;
+			vertical-align: top;
+			width: 16%;
+			color: @oecd-grey;
+			border: none;
+			border-top: 1px solid #f1f1f1;
+			&.innovation-name {
+				border-left: 1px solid #EEEBE3;
+				a {
+					display: block;
+					float: left;
+					&.compare-remove {
+						float: right;
+						padding: 0;
+						i {
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+		td {
+			padding: 10px 0;
+			vertical-align: top;
+			width: 28%;
+			border-color: #f1f1f1 #EEEBE3;
+			border-width: 1px;
+			border-style: solid;
+			&.tag-list {
+				padding: 10px 10px 10px 20px;
+				span {
+					float: left;
+					padding: 2px 5px;
+					margin: 3px 6px 3px 0;
+					font-size: 1em;
+				}
+			}
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+		}
+		li, a.more {
+			display: block;
+			position: relative;
+			margin: 0 0 .5em 16px;
+			padding: 0;
+			i {
+				position: absolute;
+				top: 2px;
+				left: -20px;
+				display: block;
+			}
+		}
+	}
+}
+
+
+

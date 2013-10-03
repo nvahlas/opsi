@@ -1,0 +1,413 @@
+
+    #csf_wrapper {
+    	float: left;
+    	width: 520px;
+    	input {
+    		width: 490px
+    	}
+    }
+    #custom-search-form {
+    	position: relative;
+        margin:0;
+        padding: 0;
+    }
+    header {
+    	#custom-search-form {
+
+        margin-top: 3em;
+    	}
+    }
+ 
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        float: right;
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        //position: relative;
+        //left: -28px;
+    	position: absolute;
+    	top: 0; right: 0;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+
+
+
+#searchForm {
+	position: relative;
+	padding: 0; 
+	padding-right: 55px;
+	margin-top: 10px; 
+	margin-right: 10px;
+	margin-bottom: 5px;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+	input {
+		border-color:  transparent!important;
+		margin: 0!important;
+		outline: none;
+	}
+	button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		span {
+			display: block;
+			position: absolute;
+			left: -9999px;
+		}
+	}
+
+}
+
+#displayOptions {
+	.clearfix();
+	position: relative;
+	background: #F7EEDD;
+	background: #EEEBE3;
+	padding: 10px 0 0 0;
+	border-radius: 3px; 
+	/*
+	float: left;
+	width: 100%;
+	height: 30px;
+	*/
+	h6 {
+		float: left;
+		margin: 0;
+	}
+	.display-actions {
+		float: right;
+		form {
+			margin: 0;
+			float: left;
+			label {
+				float: left;
+				padding: 0 5px;
+				font-size: .8em;
+			}
+			select {
+				width: auto;
+				height: auto;
+				float: left;
+				padding: 2px;
+				margin: 0 10px 0 0; 
+				font-size: .8em;
+				line-height: 1;
+			}
+		}
+	}
+	.icon {
+		float: left;
+		margin: 0 5px;
+	}
+}
+#search-infos {
+	background: #fff;
+	font-size: .9em;
+	p {
+		padding: 5px 10px;
+	}
+	#compare-info {
+		margin: 0;
+		border-top: 1px solid #8f499c;
+		color: #777;
+	}
+
+}
+.filter-pane {
+	position: relative;
+	overflow: hidden;
+	padding: 0 0 0 0;
+	.clearfix;
+	border-top: 1px solid @oecd-grey-light;
+	h6 {
+		margin-top: 10px;
+	}
+	.collapsible.opened {
+		padding-bottom: 10px;
+	}
+}
+
+#innovation-list {
+	background: #fff;
+	.innovation-card {
+		position: relative;
+		border-top: 1px dotted #8f499c;
+		padding: 10px;
+		.add-to-compare-list {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		.title {
+			margin: 10px 0 0 0;
+			padding: 0 20px 0 0; 
+	
+		}
+		P {
+			margin-bottom: .5em;
+		}
+	}
+}
+.add-to-compare-list {
+	&.selected {
+		background: @oecd-grey;
+
+	}
+}
+.tag-list {
+	margin: 5px 0;
+	span {
+		display: block;
+		float: left;
+		background: #eee;
+		border-radius: 3px;
+		padding: 2px 5px;
+		margin: 0 5px 0 0;
+		font-size: .8em;
+		line-height: 1;
+
+	}
+}
+
+#researchList {
+	a.docItem {
+		display: block;
+		color: #333;
+		border-bottom: 1px solid @oecd-grey-light;
+		padding: 10px 0;
+		margin-top: 10px;
+		img {
+			float: left;
+			width: 32px;
+			margin: 5px 10px;
+		}
+		h4 {
+			border-top: none;
+			color: @oecd-blue;
+			padding: 5px 10px 0 50px;
+			margin: 0;
+		}
+		p {
+			padding: 5px 10px 0 50px;
+			margin: 0;
+
+			line-height: 1.2;
+			&.infos {
+				font-size: .9em;
+			}
+		}
+
+		&:hover {
+			text-decoration: none;
+			//background: @oecd-grey-lighter;
+			h4 {
+				text-decoration: underline;
+			}
+		}
+		span {
+			&.resSrc {
+				font-style: italic;
+			}
+		}
+	}
+}
+.zkFilter {
+	position: relative;
+	overflow: hidden;
+	line-height: 1;
+	padding: 1px 0;
+	a.addFilter {
+		display: block;
+		background: white;
+		border: 1px solid white;
+		border-right: none;
+		background: #f4f4f4;
+		border-radius: 3px 0 0 3px;
+		margin-right: 20px;
+		padding: 3px 5px;
+		&:hover {
+			background: @oecd-blue-light;
+			color: white;
+			text-decoration: none;
+		}
+
+	}
+	a.fNot {
+		display: block;
+		position: absolute;
+		top: 1px;
+		right: 0;
+		width: 20px;
+		margin: 0;
+		padding: 3px 0;
+		border: 1px solid white;
+		border-left: none;
+		background: @oecd-grey-lighter;
+		border-radius: 0 3px 3px 0;
+		text-align: center;
+		font-weight: 600;
+		color: @oecd-redi;
+		&:hover {
+			background: @oecd-redi;
+			color: white;
+			text-decoration: none;
+		}
+
+	}
+}
+.tags-group {
+	.zkFilter {
+		float: left;
+		//width: 50%;
+		margin-right: 5px;
+		.addFilter {
+			margin-right: 5px;
+			margin-bottom: 5px;
+			padding: 3px 15px 3px 3px;
+			border-right-width: 1px;
+			border-radius: 3px;
+			.categoryStat {
+				padding: 0!important;
+			}
+		}
+	}
+}
+
+#mapFilter {
+	#tablist {
+		margin-bottom: 0;
+	}
+	.tab-pane {
+		border: 1px solid @oecd-grey-lighter;
+		border-top: none;
+		padding: 10px
+	}
+	label {
+		border-bottom: 1px solid @oecd-grey-lighter;
+		padding-bottom: 5px;
+		em {
+			color: @oecd-grey;
+		}
+	}
+}
+
+
+.pagination {text-align: center;}
+
+#resFilter {
+	font-size: 12px; 
+	h4 {
+		border-top: 1px solid #8f499c;
+		padding-top: 20px;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		.clearfix;
+		&#currentFilters {
+			background: white;
+			padding: 0 10px 10px 10px;
+			margin-bottom: 10px;
+			
+			h6 {
+				margin-bottom: 0;
+				text-indent: 5px;
+				color: @oecd-grey-dark;
+			}
+			.category {
+				background: #f4f4f4;
+				border: 1px solid white;
+				border-radius: 3px;
+				padding: 3px 0 3px 5px;
+			}
+			.removeLink {
+				display: block;
+				float: right;
+				padding: 0;
+				width: 20px;
+			}
+
+		}
+		&#groups {
+			border-bottom:1px solid @oecd-grey-light;
+			h6 {
+				margin-top: 0;
+			}
+			.refineGroup {
+				.clearfix;
+				position: relative;
+				border-top:1px solid @oecd-grey-light;
+				padding: 10px 0;
+				li {
+					border-top:1px solid @oecd-grey-lighter;
+					padding: 3px 0 3px 35px;
+
+				}
+			}
+
+		}
+
+
+		h6 {
+			margin-top: 0;
+		}
+	}
+	&.row {
+		li {
+			border-top: none;
+		}
+	}
+	.categoryStat {
+		font-style: italic;
+		color: @oecd-grey;
+		padding: 0 10px;
+	}
+	.refineLink {
+	}
+	   #custom-search-form {
+	   	margin: 5px 0;
+	   }
+	   #custom-search-form .search-query {
+	   	width: 294px;
+	   }
+	   .collapsible {
+	   	width: 100%;
+	   	}
+}
+.excludeLink {
+	font-size: .7em
+	padding: 0;
+	margin-right: 10px;
+	margin-left: -35px;
+	line-height: 1;
+	background: @oecd-blue-light;
+}
+
+

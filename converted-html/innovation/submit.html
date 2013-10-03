@@ -1,0 +1,2792 @@
+
+
+    
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <title>OPSI</title>
+        <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        <!-- Styles -->
+        <!--[if lt IE 9]><script src="../assets/scripts/html5shiv.js"></script><![endif]-->
+
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+        <!--<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" media="all"/>-->
+        <link href="../assets/css/app.css" rel="stylesheet" type="text/css" media="all"/>
+        
+  <link href="../assets/css/select2.css" rel="stylesheet" type="text/css" media="all"/>
+ 
+
+        <script src="../assets/scripts/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <header>
+	<div class="container">
+		<div id="brand" class="pull-left span8">
+			<a href="../index.html"><img src="../assets/img/GUI/logo18.png"></a>
+		</div>
+		<form id="custom-search-form" class="form-search form-horizontal pull-right" action="/pages/sitesearch">
+		    <div class="input-append">
+		        <input type="text" class="search-query span4" placeholder="Search the site">
+		        <button type="submit" class="btn"><i class="icon-search"></i></button>
+		    </div>
+		</form>
+		
+		<nav>
+			<ul class="browse">
+				<li><a href="../index.html">Home</a></li>
+        		<li ><a href="../pages/about.html">About</a></li>
+				<li ><a href="home.html">Innovations</a></li>
+				<li ><a href="../pages/library.html">Library</a></li>
+				<li ><a href="../pages/countries.html">Country Profiles</a></li>
+			
+        		<li ><a href="../pages/submit_info.html">Submit</a></li>
+			
+        		<li ><a href="../pages/collaborate.html">Collaborate</a></li>
+			</ul>
+			<ul class="action">
+			
+				<li><a href="../index.html">Login</a></li>
+			
+			</ul>
+		</nav>
+	</div>
+</header>
+
+            
+            <div id="pageContent">
+                <div class="container">
+                    
+<form id="innovationSubmit" method="get" action=""  class="form-horizontal">
+<div class="row">
+<div class="span12">
+  
+  <div class="white-block">
+
+    <div class="lng" >
+      <p class="pull-left">select language </p class="pull-left">
+      <div class="btn-group">
+        <button class="btn btn-mini dropdown-toggle pull-left disabled" data-toggle="dropdown">English<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">French</a></li>
+          <li><a href="#">Spanish</a></li>
+          <li><a href="#">&hellip;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Submit an innovation</h3>
+
+    <div id="MyWizard" class="wizard">
+      <ul class="steps">
+        <li data-target="#step1" class="active"><span class="badge badge-info">Start</span><span class="chevron"></span></li>
+        <li data-target="#step2"><span class="badge">A</span><span class="chevron"></span></li>
+        <li data-target="#step3"><span class="badge">B</span><span class="chevron"></span></li>
+        <li data-target="#step4"><span class="badge">C</span><span class="chevron"></span></li>
+        <li data-target="#step5"><span class="badge">D</span><span class="chevron"></span></li>
+        <li data-target="#step6"><span class="badge">E</span><span class="chevron"></span></li>
+        <li data-target="#step7"><span class="badge">F</span><span class="chevron"></span></li>
+        <li data-target="#step8"><span class="badge">G</span><span class="chevron"></span></li>
+        <li data-target="#step9"><span class="badge">H</span><span class="chevron"></span></li>
+        <li data-target="#step10"><span class="badge">Finish</span></li>
+      </ul>
+      <div class="actions">
+        <button type="button" class="btn btn-mini btn-prev"> <i class="icon-arrow-left"></i>Prev</button>
+        <button type="button" class="btn btn-mini btn-next" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="step-content">
+  <div class="step-pane active" id="step1">
+
+    <!-- Part Name -->
+  <legend></legend>
+  <div class="row">
+    <div class="span8" style="padding-top: 15px;">
+      <ul class="formIndications">
+        <li><strong>To share your innovation, please complete this step-by-step form</strong></li>
+        <li>Help notes are provided next to questions or indicated with a question sign <i class="icon-question-sign"></i></li>
+        <li>You can save your work by clicking on the “save button” and go back later to complete it</li>
+        <li>When you have completed a section you can go back and make changes</li>
+        <li>Questions indicated by <i class="icon-map-marker"></i> are required responses but we highly encourage you to take the time to answer those which are optional </li>
+        <li>The OECD will send you a preview of how your innovation will look on the site before it is published on the website.</li>
+        <li style="border: none; padding-bottom: 20px;">
+          <a id="startForm" href="#" type="submit" class="btn btn-large btn-primary pull-right">Start</a>
+          
+        </li>
+      </ul>
+    </div>
+    <div class="span2" style="text-align: center; padding-top: 70px;">
+        <a href="#">
+          <img style="width: 70px;" src="../assets/img/GUI/icons/file_type/doc.png" />
+          <br />
+          download<br />the form
+
+        </a>
+    </div>
+  </div>
+
+  </div>
+   
+  <div class="step-pane" id="step2">
+
+  <fieldset id="authors">
+  <!-- Part Name -->
+  <legend>A Personal Details</legend>
+  <input type="hidden" name="auth2-length" value="">
+  <!-- Text input-->
+  <div id="auth1" class="row auth-pane"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <h6><span class="badge pull-left">A.1</span> Contact informations</h6>
+          <label class="control-label">Your Name<i class="icon-map-marker"></i></label>
+          <div class="controls">
+            <input id="auth1_name" name="auth1_name" type="text" placeholder="max 10 words" class="span5">
+          </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Your Organisation<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="auth1_org" name="auth1_org" type="text" placeholder="max 20 words" class="span5">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Your Email Adress<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="auth1_mail" name="auth1_mail" type="text" placeholder="user@site.sfx" class="span5">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Your Telephone Number</label>
+            <div class="controls">
+              <input id="auth1_tel" name="auth1_tel" type="text" placeholder="max 20 words" class="span5">
+            </div>
+        </div>
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+  <!-- Text input-->
+  <div id="auth2" class="row auth-pane" style="display: none;">
+    <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label><h6><span class="badge pull-left">A.2</span> Contact informations</h6></label>
+          <label class="control-label">Name</label>
+          <div class="controls">
+            <input id="auth2-name" name="textinput" type="text" placeholder="max 10 words" class="span5">
+          </div>
+            <label class="control-label">Organisation</label>
+            <div class="controls">
+              <input id="auth2-org" name="passwordinput" type="text" placeholder="max 20 words" class="span5">
+            </div>
+            <label class="control-label">Email Adress</label>
+            <div class="controls">
+              <input id="auth2-mail" name="passwordinput" type="text" placeholder="user@site.sfx" class="span5">
+            </div>
+            <label class="control-label">Telephone Number</label>
+            <div class="controls">
+              <input id="auth2-phone" name="passwordinput" type="text" placeholder="max 20 words" class="span5">
+            </div>
+          </div>
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+  <!-- Text input-->
+  <div id="auth3" class="row auth-pane" style="display: none;">
+    <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label><h6><span class="badge pull-left">A.3</span> Contact informations</h6></label>
+          <label class="control-label">Name</label>
+          <div class="controls">
+            <input id="auth3-name" name="textinput" type="text" placeholder="max 10 words" class="span5">
+          </div>
+            <label class="control-label">Organisation</label>
+            <div class="controls">
+              <input id="auth3-org" name="passwordinput" type="text" placeholder="max 20 words" class="span5">
+            </div>
+            <label class="control-label">Email Adress</label>
+            <div class="controls">
+              <input id="auth3-mail" name="passwordinput" type="text" placeholder="user@site.sfx" class="span5">
+            </div>
+            <label class="control-label">Telephone Number</label>
+            <div class="controls">
+              <input id="auth3-phone" name="passwordinput" type="text" placeholder="max 20 words" class="span5">
+            </div>
+          </div>
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+  <!-- Text input-->
+  <div class="row">
+    <div class="span8"><p class="sep"></p>
+          <div class="control-group">
+            <div class="controls">
+              <div class="btn-group pull-left">
+                <a href="#" id="auth-add" class="btn btn-mini">Add Contact</a>
+                <a href="#" id="auth-rem" class="btn btn-mini disabled">Remove Contact</a>
+              </div>
+            </div>
+          </div>
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div id="contact_visible" class="control-group">
+        <label class="control-label">Would you like your name and contact details to be visible to all registered members of the platform?<i class="icon-map-marker"></i></label>
+            <div class="controls">
+            <label class="radio inline">
+              <input type="radio" name="contact_visible" value="yes" checked>
+              yes
+            </label>
+            <label class="radio inline">
+              <input type="radio" name="contact_visible" value="no">
+              no
+            </label>
+          </div>
+        </div>
+    </div>
+    <div class="span4">
+          <label class="help-block">Ticking no will mean that your name and contact details remain private and will only be shared with the OECD Secretariat.</em></label>
+    </div>
+  </div>
+  </fieldset>
+
+  </div>
+  <div class="step-pane" id="step3">
+
+  <fieldset>
+  <!-- Part Name -->
+  <legend>B. Organisation</legend>
+
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">B.1</span>Country<i class="icon-map-marker"></i></label>
+          <div class="controls">
+            <select id="org_country" name="org_country" required>
+              <option value="">Select from drop down menu</option>
+              <option value="AU">Australia</option>
+              <option value="AT">Austria</option>
+              <option value="BE">Belgium</option>
+              <option value="BR">Brazil</option>
+              <option value="CA">Canada</option>
+              <option value="CL">Chile</option>
+              <option value="CN">China</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="DK">Denmark</option>
+              <option value="EE">Estonia</option>
+              <option value="FI">Finland</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+              <option value="GR">Greece</option>
+              <option value="HU">Hungary</option>
+              <option value="IS">Iceland</option>
+              <option value="IN">India</option>
+              <option value="ID">Indonesia</option>
+              <option value="IE">Ireland</option>
+              <option value="IL">Israël</option>
+              <option value="IT">Italy</option>
+              <option value="JP">Japan</option>
+              <option value="KR">Korea</option>
+              <option value="LU">Luxembourg</option>
+              <option value="MX">Mexico</option>
+              <option value="NL">Netherlands</option>
+              <option value="NZ">New Zealand</option>
+              <option value="NO">Norway</option>
+              <option value="PL">Poland</option>
+              <option value="PT">Portugal</option>
+              <option value="RU">Russia</option>
+              <option value="SK">Slovak Republic</option>
+              <option value="SI">Slovenia</option>
+              <option value="ZA">South Africa</option>
+              <option value="ES">Spain</option>
+              <option value="SE">Sweden</option>
+              <option value="CH">Switzerland</option>
+              <option value="TR">Turkey</option>
+              <option value="GB">United Kingdom</option>
+              <option value="US">United States</option>
+            </select>
+          </div>
+        </div>
+    </div>
+    <div class="span4">
+
+    </div>
+  </div>
+
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">B.2</span> Level of government<i class="icon-map-marker"></i></label>
+          <div id="org_level" class="controls">
+            <label class="radio">
+              <input type="radio" name="org_level" id="org_level1" value="option1">
+              <strong>Central</strong> government
+              <a data-placement="right" href="#" class="help" data-content="'Central' government refers to the national, central or federal government."><i class="icon-question-sign"></i></a>
+            </label>
+            <label class="radio">
+              <input type="radio" name="org_level" id="org_level2" value="option2">
+              <strong>Regional / State</strong> government
+              <a data-placement="right" href="#" class="help" data-content="‘State/Regional’ government refers to the level immediately below the central government in federal countries. This might be called the region, state, province or Länder."><i class="icon-question-sign"></i></a>
+            </label>
+            <label class="radio">
+              <input type="radio" name="org_level" id="org_level2" value="option2">
+              <strong>Local</strong> government
+              <a data-placement="right" href="#" class="help" data-content="‘Local’ government refers to all sub-national governments below the state/regional level in federal countries, and to all sub-national governments in non-federal countries."><i class="icon-question-sign"></i></a>
+            </label>
+          </div>
+        </div>
+    </div>
+    <div class="span4">
+      <p class="help-block"></p>
+    </div>
+  </div>
+  
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">B.3</span> select Sector<i class="icon-map-marker"></i></label>
+          <div id="org_sector" class="controls">
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 1">
+              <strong>General public services </strong><a data-placement="right" href="#" class="help" data-content="General public services includes: executive and legislative organs and governance, financial and fiscal affairs, external affairs; foreign economic aid; general services; basic research; R&amp;D related to general public services; public debt transactions; transfers between different levels of government of a general nature."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 2">
+              <strong>Defence </strong><a data-placement="right" href="#" class="help" data-content="Defence include: military defence; civil defence; foreign military aid; defence R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 3">
+              <strong>Public order and safety </strong><a data-placement="right" href="#" class="help" data-content="Public order and safety include: police services; fire-protection services; law courts; prisons; public order and safety R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 4">
+              <strong>Economic affairs </strong><a data-placement="right" href="#" class="help" data-content="Economic affairs include: general economic, commercial and labour affairs; agriculture, forestry, fishing and hunting; fuel and energy; mining, manufacturing and construction; transport; communication; other industries; economic affairs R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 5">
+              <strong>Environmental protection </strong><a data-placement="right" href="#" class="help" data-content="Environmental protection include: waste management; waste water management; pollution abatement; Protection of biodiversity and landscape; environmental protection R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 6">
+              <strong>Housing and community amenities </strong><a data-placement="right" href="#" class="help" data-content="Housing and community amenities include: housing development; community development; water supply; street lighting; housing and community amenities R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 7">
+              <strong>Health </strong><a data-placement="right" href="#" class="help" data-content="Healthinclude: medical products, appliances and equipment; outpatient services; hospital services; public health services; health R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 8">
+              <strong>Recreation, culture and religion </strong><a data-placement="right" href="#" class="help" data-content="Recreation, culture and religion includes: recreational and sporting services; cultural services; broadcasting and publishing services; religious and other community services; recreation, culture and religion R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 10">
+              <strong>Education </strong><a data-placement="right" href="#" class="help" data-content="Education includes: pre-primary and primary education; secondary education; post secondary non-tertiary education; tertiary education; education not definable by level; subsidiary services to education; education R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+              <label class="checkbox">
+              <input type="checkbox" name="org_sector" value="Option 11">
+              <strong>Social protection </strong><a data-placement="right" href="#" class="help" data-content="ocial protection includes: sickness and disability; old age; survivors; family and children; unemployment; housing; social protection R&amp;D."><i class="icon-question-sign"></i></a>
+              </label>
+
+          </div>
+        </div>
+
+    </div>
+    <div class="span4">
+      
+      <p class="help-block">The help list is taken from the Classification of the Functions of Government (COFOG) developed by the OECD. <a href="http://dx.doi.org/10.1787/gov_glance-2011-68-en">OECD (2011), &laquo; Classification of the Functions of Government (COFOG) &raquo;, in Government at a Glance 2011, OECD Publishing.</a></p>
+
+    </div>
+  </div>
+
+  
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">B.4</span> Size of organisation<i class="icon-map-marker"></i></label>
+          <div class="controls">
+            <select id="org_size" name="org_size" class="">
+               <option value="">Select from drop down menu</option>
+              <option value="1">Less than 99</option>
+              <option value="2">Between 100 and 249</option>
+              <option value="3">Between 250 and 499</option>
+              <option value="4">Between 500 and 999</option>
+              <option value="5">More than 1000</option>
+            </select>
+          </div>
+        </div>
+
+    </div>
+    <div class="span4">
+
+    </div>
+  </div>
+
+  </fieldset>
+
+  </div>
+  <div class="step-pane" id="step4">
+
+  <fieldset>
+  <!-- Part Name -->
+  <legend>C. Description of the innovation</legend>
+
+  <!-- Text input-->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">C.1</span> Name of the innovation<i class="icon-map-marker"></i></label>
+          <div class="controls">
+            <input id="C1" name="C1" type="text" placeholder="max 40 words" class="span5" required>
+          </div>
+        </div>
+
+     </div>
+    <div class="span4" style="position: relative;">
+          <p class="help-block" style="position: absolute;">The OPSI’s working definition of public sector innovation is the implementation of a new way in which an organisation operates or the services that it provides. It should  result in improvements in at least one of the following areas:<br />
+
+              1) efficiency;<br />
+              2) effectiveness;<br />
+              3) service quality; or<br />
+              4) user satisfaction<br />
+
+(Please note that you may still provide examples of innovations where the results are not yet available, with the opportunity to update these results at a later date).</p>
+    </div>
+  </div>
+  
+  <!-- File Button --> 
+  <div class="row">
+    <div class="span8"><p class="sep"></p>
+      
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">C.2</span> If you wish, please upload an image related to the innovation</label>
+        <div class="controls">
+          <input id="filebutton" id="C2" name="C2" class="input-file" type="file">
+          <span class="help-block">image dimensions: width= 290px, height= 140px</span>
+        </div>
+      </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+
+  <!-- Text input-->
+  
+  <div class="row">
+    <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">C.3</span> If available, please provide a link that provides further information about the innovation</label>
+          <div class="controls">
+            <input id="inno_link" name="inno_link" type="text" placeholder="http://..." class="span5">
+          </div>
+      </div>
+    </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="row">
+    <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">C.4</span> What year was the innovation launched?<i class="icon-map-marker"></i></label>
+          <div class="controls">
+            <input id="inno_year" name="inno_year" type="text"  class="span5" placeholder="Please provide as YYYY" required />
+          </div>
+        </div>
+    </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">C.5</span> Please briefly describe the innovative practice<i class="icon-map-marker"></i></label>
+        <div class="controls">                     
+          <textarea rows="5" id="C5" name="C5" class="span5" placeholder="Max. 150 words" required></textarea>
+        </div>
+      </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block">In your description please also set out what the innovation has changed compared to the situation before</p>
+    </div>
+  </div>
+
+
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+      <!-- Multiple Checkboxes -->
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">C.6</span> Type of innovation<i class="icon-map-marker"></i><br />Please check the box which most closely corresponds to the main type of change that your innovation has implemented</label>
+        <div id="C6" class="controls">
+           <label class="checkbox">
+            <input type="checkbox" id="C6_1" name="C6[]" value="noresults">
+            It is an entirely new or significantly new service or product, <br />or an existing service provided to a new group of users;
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="C6_2" name="C6[]" value="noresults">
+            It is a new process or approach for the design or delivery <br />of existing services or products; 
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="C6_3" name="C6[]" value="noresults">
+            It is a new way to organise or manage work <br />within your organisation; 
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="C6_'" name="C6[]" value="noresults">
+            It is a new way to communicate with service users
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="C6_5" name="C6[]" value="noresults">
+            It is a different type of change from any of the above
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+          <p class="help-block">Answers may include multiple types of change</p>
+          <p class="help-block">E.g. a new security alert system for power stations combining meteorological and land data.
+            <br />E.g. involving users in the design of personal care services by using web 2.0 technologies
+            <br />E.g. the application of lean techniques to operational and policy processes
+            <br />E.g. using a new communication campaign involving users and public servants as testimonials</p>
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">C.7</span> Please indicate the innovation's main beneficiaries<i class="icon-map-marker"></i></label>
+        <div class="controls">                     
+          <textarea rows="5" id="C7" name="C7" class="span5 tiny" placeholder="Max. 50 words" required></textarea>
+        </div>
+      </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block">Please provide an estimated number of beneficiaries where possible</p>
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">C.8</span> Please provide up to 5 key words that capture the key elements of the innovation<i class="icon-map-marker"></i></label>
+          <div class="controls">
+            <input id="C8" style="min-width: 380px;" type="text" name="C8" placeholder="Tags" required />
+          </div>
+        </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block">Enter a tag or select from the list <br />Separate each tagwith a semi-colon</p>
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">C.9</span> Why was the innovation developed?<i class="icon-map-marker"></i></label>
+        <div class="controls">                     
+          <textarea rows="7" id="C9" name="C9" class="span5" placeholder="Max. 100 words" required></textarea>
+        </div>
+      </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block">For example, this can include but is not limited to, the following factors: <br />1) response to a problem (e.g. service gap or failure);  <br />2) response to a change within the organisation (e.g. change of internal rules and procedures);  <br />3) response to an external change (policy change, changes in laws and regulation). </p>
+    </div>
+  </div>
+
+  <!-- Textarea -->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">C.10</span> Please set out the objectives of the innovation<i class="icon-map-marker"></i></label>
+
+        <div class="controls">
+          <div class="bullet-block">
+            <!--
+            <div class="pagination pagination-small" style="background: #ededed; margin: 0;">
+              <ul style="width: 288px;">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="active"><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+            </div>
+          -->
+            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
+          </div>
+          <input id="C10" class="hiddenfrom" name="C10" type="text" value="" required />
+          <div class="btn-group pull-left">
+            <a href="#" class="bullet-add btn btn-mini">Add Bullet point</a>
+            <a href="#" class="bullet-rem btn btn-mini disabled">Remove Bullet point</a>
+          </div>
+        </div>
+
+      </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block">Please provide an estimated number of beneficiaries where possible</p>
+    </div>
+  </div>
+
+  </fieldset>
+
+  </div>
+  <div class="step-pane" id="step5">
+
+  <fieldset id="D-Novelty">
+  <!-- Part Name -->
+  <legend>D. Novelty</legend>
+  <input type="hidden" id="practiceSum"  name="practiceSum" value="4" />
+
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">D.1</span> Are you aware of existing practices <br />which are similar to your innovation?</label>
+
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio" name="hasNovelty" value="false">
+              No
+            </label>
+            <label class="radio inline">
+              <input type="radio" name="hasNovelty" value="true">
+              Yes
+            </label>
+          </div>
+          
+        </div>
+
+        
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.2</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select2" name="where_Select2" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice2_name" name="practice2_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice2_org" name="practice2_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice2_desc" name="practice2_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice2_link" name="practice2_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.3</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select3" name="where_Select3" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice3_name" name="practice3_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice3_org" name="practice3_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice3_desc" name="practice3_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice3_link" name="practice3_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.4</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select4" name="where_Select4" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice4_name" name="practice4_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice4_org" name="practice4_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice4_desc" name="practice4_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice4_link" name="practice4_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.5</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select5" name="where_Select5" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice5_name" name="practice5_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice5_org" name="practice5_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice5_desc" name="practice5_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice5_link" name="practice5_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.6</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select6" name="where_Select6" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice6_name" name="practice6_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice6_org" name="practice6_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice6_desc" name="practice6_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice6_link" name="practice6_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.7</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select7" name="where_Select7" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice7_name" name="practice7_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice7_org" name="practice7_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice7_desc" name="practice7_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice7_link" name="practice7_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.8</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select8" name="where_Select8" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice8_name" name="practice8_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice8_org" name="practice8_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice8_desc" name="practice8_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice8_link" name="practice8_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.9</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select9" name="where_Select9" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice9_name" name="practice9_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice9_org" name="practice9_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice9_desc" name="practice9_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice9_link" name="practice9_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.10</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select10" name="where_Select10" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice10_name" name="practice10_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice10_org" name="practice10_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice10_desc" name="practice10_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice10_link" name="practice10_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.11</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select11" name="where_Select11" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice11_name" name="practice11_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice11_org" name="practice11_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice11_desc" name="practice11_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice11_link" name="practice11_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+          
+                  <div class="novelty-pane" style="display: none;"><p class="sep"></p>
+          <h6><span class="badge pull-left">D.12</span> Practice information</h6>
+
+          <div class="control-group">
+            <label class="control-label">Where did the practice occured<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="where_Select12" name="where_Select12" class="span5" required>
+                 <option>Select from drop down menu</option>
+                <option>in my own organisation</option>
+                <option>in my public administration</option>
+                <option>in other countries’ public administrations</option>
+                <option>in the private sector, civil society or elsewhere</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Practice Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice12_name" name="practice12_name" type="text" placeholder="Max. 15 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Organisation where the practice have occurred<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="practice12_org" name="practice12_org" type="text" placeholder="Max. 20 words" class="span5" required>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Please provide a short description of the practice<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="practice12_desc" name="practice12_desc" class="span5" placeholder="Max. 70 words" required></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">Where they exist, please provide a link to any websites describing existing similar practices</label>
+            <div class="controls">
+              <input id="practice12_link" name="practice12_link" type="text" placeholder="http://..." class="span5" >
+            </div>
+          </div>
+
+        </div>
+        
+
+      </div>
+      <div class="span4">
+          <p class="help-block">Answers may include up to 12 responses</p>
+      </div>
+    </div>
+  <!-- Text input-->
+  <div id="newPractice" class="row" style="display: none;">
+    <div class="span8"><p class="sep"></p>
+          <div class="control-group">
+            <div class="controls">
+              <div class="btn-group pull-left">
+                <a href="#" id="practice-add" class="btn btn-mini">Add Practice</a>
+                <a href="#" id="practice-rem" class="btn btn-mini disabled">Remove Practice</a>
+              </div>
+            </div>
+          </div>
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+</fieldset>
+
+  </div>
+  <div class="step-pane" id="step6">
+
+  <fieldset>
+  <!-- Part Name -->
+  <legend>E. Developing the Innovation</legend>
+  
+  <input id="stageIndex" type="hidden" name="stageIndex" value="0">
+
+  <!-- E.1 -->
+  <div class="row">
+    <p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.1</span> Which stage is your innovation currently in?<i class="icon-map-marker"></i></i></label>
+          <div class="controls">
+            <select id="stageSelect" name="stageSelect" class="span5">
+              <option value="">Select from drop down menu</option>
+              <option value="Design">Design</option>
+              <option value="Testing">Testing</option>
+              <option value="Implementation">Implementation</option>
+              <option value="Diffusion">Diffusion</option>
+            </select>
+          </div>
+        </div>
+        <div id="circle-process" class="myWell">
+            <table>
+              <tr>
+                <td><p class="stage-block help-block"><strong>Design:</strong> Generating the idea for an innovation and turning into a project including his key attributes (budget, staff, tools)</p></td>
+                <td><p class="stage-block help-block" ><strong>Testing:</strong> The development and testing of an innovation e.g. by trialling, prototyping or piloting the innovation on a small scale.</p></td>
+                <td><p class="stage-block help-block" ><strong>Implementation:</strong> The rolling out of the innovation to reach its target beneficiaries.</p></td>
+                <td> <p class="stage-block help-block" ><strong>Diffusion:</strong> Extending the innovation to other services or organisations; this may include the growing or scaling up of an innovation.</p></td>
+              </tr>
+            </table>
+        </div>
+
+    </div>
+    <div class="span4 pull-right" style="position: relative;">
+      <div style="position: absolute; top: 0; right: 0;">    
+      </div>
+    </div>
+  </div>
+
+  <div class="stagePane">
+    <h5 class="span8">Design</h5>
+
+    <!-- E.2 -->
+    <div class="row">
+      <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.2</span> How and by whom was the idea for the innovation generated?<i class="icon-map-marker"></i></label>
+          <div class="controls">                     
+            <textarea rows="5" id="E2" name="E2" class="span5 bullet" placeholder="Max. 100 words" required></textarea>
+          </div>
+        </div>
+       </div>
+      <div class="span4">
+            <p class="help-block">E.g. frontline staff, policy planning staff; prize or awards, consulting with users, adapted from an external source.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="stagePane">
+    <h5 class="span8">Testing</h5>
+
+    <!-- E.3 -->
+    <div class="row">
+      <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.3</span> Please outline any methods used to test the innovation<i class="icon-map-marker"></i></label>
+          <div class="controls">                     
+            <textarea rows="5" id="E3" name="E3" class="span5 bullet" placeholder="Max. 100 words " required></textarea>
+          </div>
+        </div>
+       </div>
+      <div class="span4">
+            <p class="help-block">E.g. frontline staff, policy planning staff; prize or awards, consulting with users, adapted from an external source.</p>
+      </div>
+    </div>
+  </div>
+  <div class="stagePane">
+    <h5 class="span8">Implementation</h5>
+
+    <!-- E.4 -->
+    <div class="row">
+      <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.4</span> What tools were used to develop and implement the innovation?</label>
+          <div class="controls">                     
+            <textarea rows="5" id="E4" name="E4" class="span5" placeholder="Max. 100 words "></textarea>
+          </div>
+        </div>
+
+       </div>
+      <div class="span4">
+            <p class="help-block">E.g. ICTs, management approaches.</p>
+      </div>
+    </div>
+
+    <!-- E.5 -->
+    <div class="row">
+      <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.5</span> Where the information is available please indicate the resources that were used?</label>
+          <div class="controls">                     
+            <textarea rows="5" id="E5" name="E5" class="span5" placeholder="Max. 100 words "></textarea>
+          </div>
+        </div>
+       </div>
+      <div class="span4">
+            <p class="help-block">E.g. staff, budget.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="stagePane">
+    <h5 class="span8">Diffusion</h5>
+
+    <!-- E.6 -->
+    <div class="row">
+      <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.6</span> Please outline the methods used to extend your innovation to other services or organisations<i class="icon-map-marker"></i></label>
+          <div class="controls">                     
+            <textarea rows="5" id="E6" name="E6" class="span5" placeholder="Max. 100 words" required></textarea>
+          </div>
+        </div>
+
+       </div>
+      <div class="span4">
+            <p class="help-block"></p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+    <h5 class="span8">Overall</h5>
+
+    <!-- E.7 -->
+    <div class="row">
+      <div class="span8"><p class="sep"></p>
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.7</span> What challenges were encountered and what solutions were developed?</label>
+          <div class="controls">                     
+            <textarea rows="5" id="E7" name="E7" class="span5" placeholder="Max. 200 words"></textarea>
+          </div>
+        </div>
+       </div>
+      <div class="span4">
+            <p class="help-block"></p>
+      </div>
+    </div>
+
+    <!-- E.8 -->
+    <div class="row"><p class="sep"></p>
+      <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.8</span> Please indicate approximately how much time the innovation took<i class="icon-map-marker"></i></label>
+
+          <div class="controls">
+             <div class="form-inline">
+                <label style="width: 120px;">Total time:</label>
+                <input class="input-mini" type="text" class="input" placeholder="Years" required>
+                <input class="input-mini" type="text" class="input" placeholder="Month" required>
+                <input class="input-mini" type="text" class="input" placeholder="Weeks" required>
+            </div>
+          </div>
+
+        </div>
+
+       </div>
+      <div class="span4">
+            <p class="help-block">in week or month</p>
+      </div>
+    </div>
+
+    <!-- E.9 -->
+    <div class="row"><p class="sep"></p>
+      <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">E.9</span> Where you have the information please also indicate how much time each phase took: </label>
+
+          <div class="controls">
+             <div class="form-inline">
+                <label style="width: 120px;">Design:</label>
+                <input class="input-mini" type="text" class="input" placeholder="Years">
+                <input class="input-mini" type="text" class="input" placeholder="Month">
+                <input class="input-mini" type="text" class="input" placeholder="Weeks">
+            </div>
+          </div>
+
+          <div class="controls">
+             <div class="form-inline">
+                <label style="width: 120px;">Testing:</label>
+                <input class="input-mini" type="text" class="input" placeholder="Years">
+                <input class="input-mini" type="text" class="input" placeholder="Month">
+                <input class="input-mini" type="text" class="input" placeholder="Weeks">
+            </div>
+          </div>
+
+          <div class="controls">
+             <div class="form-inline">
+                <label style="width: 120px;">Implementation:</label>
+                <input class="input-mini" type="text" class="input" placeholder="Years">
+                <input class="input-mini" type="text" class="input" placeholder="Month">
+                <input class="input-mini" type="text" class="input" placeholder="Weeks">
+            </div>
+          </div>
+
+          <div class="controls">
+             <div class="form-inline">
+                <label style="width: 120px;">Diffusion:</label>
+                <input class="input-mini" type="text" class="input" placeholder="Years">
+                <input class="input-mini" type="text" class="input" placeholder="Month">
+                <input class="input-mini" type="text" class="input" placeholder="Weeks">
+            </div>
+          </div>
+
+        </div>
+       </div>
+      <div class="span4">
+            <p class="help-block">in week or month</p>
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+  </div>
+  <div class="step-pane" id="step7">
+
+    <fieldset id="F-Partnership">
+  <!-- Part Name -->
+  <legend>F. Partnerships</legend>
+  <input type="hidden" id="partnerSum"  name="partnerSum" value="4" />
+
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+        <div class="control-group">
+          <label class="control-label"><span class="badge pull-left">F.1</span> Which (if any) actor(s) were partnered with?</label>
+
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio" name="hasPartner" value="true">
+              Yes
+            </label>
+            <label class="radio inline">
+              <input type="radio" name="hasPartner" value="false">
+              No
+            </label>
+          </div>
+        </div>
+        
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.2</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect2" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner2_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner2_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.3</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect3" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner3_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner3_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.4</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect4" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner4_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner4_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.5</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect5" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner5_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner5_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.6</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect6" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner6_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner6_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.7</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect7" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner7_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner7_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.8</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect8" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner8_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner8_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.9</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect9" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner9_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner9_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.10</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect10" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner10_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner10_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.11</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect11" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner11_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner11_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+          
+                  <div class="partnership-pane" style="display: none;"><p class="sep"></p>
+          <div class="control-group">
+            <h6><span class="badge pull-left">F.12</span> Partners' information</h6>
+            <label class="control-label">Partners' Sector<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <select id="sectorSelect12" name="stageSelect" class="span5">
+                 <option>Select from drop down menu</option>
+                <option>Private sector</option>
+                <option>Civil Society</option>
+                <option>Academics and Research Bodies</option>
+                <option>Other Public Sector</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Partners' Name<i class="icon-map-marker"></i></label>
+            <div class="controls">
+              <input id="partner12_name" name="partner_name" type="text" placeholder="Max. 10 words" class="span5" required>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Please describe the nature of the partnership(s) and how it affected the innovation<i class="icon-map-marker"></i></label>
+            <div class="controls">                     
+              <textarea rows="5" id="partner12_desc" name="inno_desc" class="span5" placeholder="Max. 100 words" required></textarea>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="span4">
+        <p class="help-block">Answers may include multiple responses</p>
+    </div>
+  </div>
+  <!-- Text input-->
+  <div id="newPartner" class="row" style="display: none;">
+    <div class="span8"><p class="sep"></p>
+          <div class="control-group">
+            <div class="controls">
+              <div class="btn-group pull-left">
+                <a href="#" id="Partner-add" class="btn btn-mini">Add Partner</a>
+                <a href="#" id="Partner-rem" class="btn btn-mini disabled">Remove Partner</a>
+              </div>
+            </div>
+          </div>
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+
+  </fieldset>
+
+  </div>
+   <div class="step-pane" id="step8">
+   
+  <fieldset id="results">
+	<!-- Part Name -->
+	<legend>G. Results</legend>
+	<div class="row">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<!-- Multiple Checkboxes -->
+			<div id="resultChecks" class="control-group">
+				<label class="control-label"><span class="badge pull-left">G.1</span> What results has the innovation had?<i class="icon-map-marker"></i></label>
+				<div class="controls">
+					<label class="checkbox">
+					<input type="checkbox" id="G1_check1" name="G1_check" value="noresults">Results not available yet</label>
+					<p class="sep">
+					</p>
+					<label class="checkbox">
+					<input type="checkbox" id="G1_check2" name="G1_check" value="efficiency">Improved efficiency <a data-placement="right" href="#" class="help" data-content="An improvement in outputs in relation to inputs. E.g. reducing the cost of providing waste recycling services by €0.5m over 4 years."><i class="icon-question-sign"></i></a></label>
+					<p class="sep">
+					</p>
+					<label class="checkbox">
+					<input type="checkbox" id="G1_check3" name="G1_check" value="effectiveness">Improved effectiveness <a data-placement="right" href="#" class="help" data-content="An improvement in achieving given objectives. E.g. a 10% increase in the exam pass rate among 16-18year olds, where an innovation’s objective is to improve educational attainment"><i class="icon-question-sign"></i></a></label>
+					<p class="sep">
+					</p>
+					<label class="checkbox">
+					<!-- <input style="display: hidden;" type="checkbox" id="G1_check" name="G1_check" value="SQ"> -->
+					Improved service quality <em class="span3 pull-right">(Please indicate the type of service quality improvement)</em></label>
+					<div class="qualiDetails" style="padding-left: 20px">
+						<label class="checkbox">
+						<input type="checkbox" id="G1_check4" name="G1_check" value="Accessibility">Accessibility <a data-placement="right" href="#" class="help" data-content="I.e. An improvement in the ease of access to access to a service. These may be related to cost; geographic distance; number of service providers; complexity and availability of a service (e.g. opening hours)."><i class="icon-question-sign"></i></a></label>
+						<label class="checkbox">
+						<input type="checkbox" id="G1_check5" name="G1_check" value="Responsiveness">Responsiveness <a data-placement="right" href="#" class="help" data-content="I.e. the ability to respond to different user needs or user views"><i class="icon-question-sign"></i></a></label>
+						<label class="checkbox">
+						<input type="checkbox" id="G1_check6" name="G1_check" value="Reliability">Reliability <a data-placement="right" href="#" class="help" data-content="i.e. the accuracy and consistency of a service (such as the number of errors that occur)"><i class="icon-question-sign"></i></a></label>
+						<label class="checkbox">
+						<input type="checkbox" id="G1_check7" name="G1_check" value="otherSQ">other </label>
+					</div>
+					<p class="sep">
+					</p>
+					<label class="checkbox">
+					<input type="checkbox" id="G1_check8" name="G1_check" value="userSatisfaction">Improved user satisfaction <a data-placement="right" href="#" class="help" data-content="An improvement in outputs in relation to inputs. E.g. reducing the cost of providing waste recycling services by €0.5m over 4 years."><i class="icon-question-sign"></i></a></label>
+					<p class="sep">
+					</p>
+					<label class="checkbox">
+					<input type="checkbox" id="G1_check8" name="G1_check" value="Other">Other <a data-placement="right" href="#" class="help" data-content="An improvement in outputs in relation to inputs. E.g. reducing the cost of providing waste recycling services by €0.5m over 4 years."><i class="icon-question-sign"></i></a></label>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				Please check the box indicating the type of results. Please provide evidence of the improvements, including an indication of how they have been measured
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="resultProgress" class="row">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label">Results progress</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_0" name="G1_0" class="span5">Max. 100 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				Please indicate any preliminary results where you have them and indicate when fuller results will be available.
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="efficiency" class="row resultLine">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label">Efficiency</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_1" name="G1_1" class="span5">Max. 100 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				An improvement in outputs in relation to inputs. E.g. reducing the cost of providing waste recycling services by €0.5m over 4 years.
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="effectiveness" class="row resultLine">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label">Effectiveness</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_2" name="G1_2" class="span5">Max. 50 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				An improvement in achieving given objectives. E.g. a 10% increase in the exam pass rate among 16-18year olds, where an innovation’s objective is to improve educational attainment.
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="Accessibility" class="row resultLine">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label"><em>Service quality:</em> Accessibility</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_3" name="G1_3" class="span5">Max. 50 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				An improvement in the ease of access to access to a service. These may be related to cost; geographic distance; number of service providers; complexity and availability of a service (e.g. opening hours).
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="Responsiveness" class="row resultLine">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label"><em>Service quality:</em> Responsiveness</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_4" name="G1_4" class="span5">Max. 50 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				I.e. the ability to respond to different user needs or user views.
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="Reliability" class="row resultLine">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label"><em>Service quality:</em> Reliability</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_5" name="G1_5" class="span5">Max. 50 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				I.e. the accuracy and consistency of a service (such as the number of errors that occur).
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="otherSQ" class="row resultLine">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label"><em>Service quality:</em> Other</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_6" name="G1_6" class="span5">Max. 50 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="userSatisfaction" class="row resultLine">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label">Improved user satisfaction</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_7" name="G1_7" class="span5">Max. 100 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				A recorded improvement in users’ reported satisfaction. Users may refer to either external users (e.g. citizens) or internal users (e.g. staff).
+			</p>
+		</div>
+	</div>
+	<!-- Textarea -->
+	<div id="Other" class="row resultLine">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group">
+				<label class="control-label">Other</label>
+				<div class="controls">
+					<textarea rows="5" id="G1_8" name="G1_8" class="span5">Max. 100 words</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+			</p>
+		</div>
+	</div>
+	<!-- Multiple Radios (inline) -->
+	<div class="row">
+		<p class="sep">
+		</p>
+		<div class="span8">
+			<div class="control-group ">
+				<label class="control-label"><span class="badge pull-left">G.2</span> Has the innovation been evaluated?</label>
+				<div class="controls">
+					<label class="radio inline">
+					<input type="radio" name="hasEval" checked value="false">
+					no </label>
+					<label class="radio inline">
+					<input type="radio" name="hasEval" value="true">
+					yes </label>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<p class="help-block">
+				If yes, please provide details below
+			</p>
+		</div>
+	</div>
+	<div id="evalution-block" style="display: none;">
+		<!-- Textarea -->
+		<div class="row">
+			<p class="sep">
+			</p>
+			<div class="span8">
+				<div class="control-group">
+					<label class="control-label">Please describe the evaluation process used and the resultLines<i class="icon-map-marker"></i></label>
+					<div class="controls">
+						<textarea rows="5" id="textarea" name="textarea" class="span5" placeholder="Max. 200 words" required></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="span4">
+				<p class="help-block">
+					Performance measurements or indicators may be included here
+				</p>
+			</div>
+		</div>
+		<!-- Text input-->
+		<div class="row">
+			<p class="sep">
+			</p>
+			<div class="span8">
+				<div class="control-group">
+					<label class="control-label">If you wish, you may provide a link to further information on the evaluation </label>
+					<div class="controls">
+						<input id="textinput" name="textinput" type="text" placeholder="http://..." class="span5">
+					</div>
+				</div>
+			</div>
+			<div class="span4">
+				<p class="help-block">
+					or email documents to the OECD by clicking here [link to an OECD email address].
+				</p>
+			</div>
+		</div>
+	</div>
+</fieldset>
+
+  </div>
+  <div class="step-pane" id="step9">
+
+   <fieldset>
+  <!-- Part Name -->
+  <legend>H. Lessons Learned</legend>
+
+
+  <!-- Textarea -->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">H.1</span> What lessons from your experience would you like to share with other countries?</label>
+        <div class="controls">                     
+          <textarea rows="5" id="H1" name="H1" class="span5">Max. 200 words</textarea>
+        </div>
+      </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block">Please include what worked well and less well</p>
+    </div>
+  </div>
+
+
+  <!-- Textarea -->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">H.2</span> What conditions do you think are necessary for the success of the innovation?</label>
+        <div class="controls">                     
+          <textarea rows="5" id="H2" name="H2" class="span5">Max. 200 words</textarea>
+        </div>
+      </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block">Conditions may refer to, but are not limited to, supporting infrastructure and services; policy and rules; leadership and guidance; human and financial resources; and personal values and motivation</p>
+    </div>
+  </div>
+
+
+  <!-- Textarea -->
+  <div class="row"><p class="sep"></p>
+    <div class="span8">
+      <div class="control-group">
+        <label class="control-label"><span class="badge pull-left">H.3</span> Is there any other information that you would like to share about your innovation?</label>
+        <div class="controls">                     
+          <textarea rows="5" id="H3" name="H3" class="span5">Max. 200 words</textarea>
+        </div>
+      </div>
+
+     </div>
+    <div class="span4">
+          <p class="help-block"></p>
+    </div>
+  </div>
+
+  </fieldset>
+
+  </div>
+  <div class="step-pane" id="step10">
+
+  <fieldset>
+    <div class="row">
+      <div class="span2 pull-right" style="text-align: center; padding-top: 70px; margin-right: 160px;">
+          <p>download <br />the filled form </p>
+          <a href="#">
+            <img style="width: 40px;" src="../assets/img/GUI/icons/file_type/doc.png" />
+          </a>
+          <a href="#">
+            <img style="width: 40px;" src="../assets/img/GUI/icons/file_type/pdf.png" />
+          </a>
+      </div>
+      <p style="margin-left: 20px; height: 20px;"></p>
+      <div class="span8">
+          <label class="control-label" style="float: left; padding: 10px 30px 10px 10px;">would you like to make <br />your innovation <br />visible to the public</label>
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio" name="public" value="yes">
+              Yes
+            </label>
+            <label class="radio inline">
+              <input type="radio" name="public" value="no" checked="checked">
+              No
+            </label>
+            <p class="help-block">If you choose no, your innovation will only be visible <br />to a restricted community of registered users in government.</p>
+        </div>
+      </div>
+      <h5 class="span8" style="margin-left: 20px!important;">Feedback</h5>
+      <div class="span8"><p class="sep"></p>
+          <label class="control-label" style="float: left; left; padding: 10px 30px 10px 10px;">On a scale of 1 – 10, how simple did you find it was to complete the form</label>
+          <div class="controls">
+          <input  type="hidden" id="I2" name="I2"value="" />
+          <div id="hardness" class="pagination pagination-small pull-left" style="margin: 10px 0 0 0;">
+            <ul style="width: 288px;">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+            </ul>
+          </div>
+            <p class="help-block span5" style="margin-left: 0;">where 1=impossible; 10=very straightforward.</p>
+        </div>
+      </div>
+      <div class="span8"><p class="sep"></p>
+          <label class="control-label" style="float: left; left; padding: 10px 30px 10px 10px;">Were there any questions that you found particularly difficult to answer? If so, please highlight the question and briefly explain why</label>
+          <div class="controls" style="margin-top: 10px;">
+            <textarea rows="5" id="I3" name="I3" class="span5" placeholder="Max. 50 words" required></textarea>
+        </div>
+      </div>
+    </div>
+</fieldset>
+
+  </div>
+
+    <div class="row" style="margin-top: 10px;">
+        <div class="span8">
+          <div class="pull-right" style="padding:5px 25px;">
+              <a href="#cancelModal" role="button" class="btn" data-toggle="modal">Cancel</a>
+              <a id="fSave" href="#" type="submit" class="btn">Save</a>
+              <a id="fPreview" href="#" type="submit" class="btn" style="display: none;">Preview</a>
+              <a id="fSubmit" href="#submitModal" type="submit" data-toggle="modal" class="btn" style="display: none;">Submit</a>
+        </div>
+      </div>
+      <div class="span4" style="background: none;">
+        <div class="actions" style="padding: 10px ">
+          <button id="btnWizardPrev" type="button" class="btn btn-mini btn-prev"> <i class="icon-arrow-left"></i>Prev</button>
+          <button id="btnWizardNext" type="button" class="btn btn-mini btn-next" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+        </div>
+      </div>
+</div>
+</div>
+
+</div>
+</div>
+</form>
+
+
+
+<!-- cancel Modal -->
+<div id="cancelModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body">
+    <h5>Are you sure that you wish to cancel your submission form. This means that you will lose all the information that has been provided which has not yet been saved</h5>
+  </div>
+  <div class="modal-footer">
+    <button id="cancelForm" class="btn btn-primary">Yes, I still want to cancel</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">No, return to the form</button>
+  </div>
+</div>
+
+<!-- submit Modal -->
+<div id="submitModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body">
+    <p>Thank you for submitting your innovation to the Observatory of Public Sector Innovation. You will receive a preview of your innovation before it is published online from the OECD shortly</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary">SUBMIT</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+  </div>
+</div>
+
+                </div>
+            </div>
+
+            
+        <footer>
+            <div class="container">
+                <div class="pull-left">
+                    <a href="mailto:opsi@oecd.org">Contact us</a> | 
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="pull-right">Copyright OECD. All rights reserved.</div>
+                <!-- <img id="oecd-footer" src="../assets/img/GUI/oecd-footer.png"> -->
+            </div>
+        </footer>
+
+        </div>
+        <script src="../assets/scripts/jquery.iosslider.min.js"></script>
+        <script src="http://fuelcdn.com/fuelux/2.3.1/loader.min.js"></script>
+        
+       
+        
+        
+<script src="../assets/scripts/jquery.validate.min.js"></script>
+<script src="../assets/scripts/select2.min.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+
+    $('.help').popover({trigger: 'hover'});
+
+    /***
+    *  A : Add up to 3 contacts
+    *  
+    */
+
+    var authLength    = 1,
+        contactsPanes = $(".auth-pane");
+
+    $("#auth-add").on("click", function() {
+        if (authLength < 3)
+        {
+          $(contactsPanes[authLength]).slideDown()
+          authLength ++;
+        }
+        if (authLength == 3) $(this).addClass("disabled");
+        if (authLength > 1) $("#auth-rem").removeClass("disabled");
+        return false;
+    });
+
+    $("#auth-rem").on("click", function() {
+        if (authLength > 1) 
+        {
+          authLength --;
+          $(contactsPanes[authLength]).slideUp();
+        }
+        if (authLength == 1) $(this).addClass("disabled");
+        if (authLength < 3) $("#auth-add").removeClass("disabled");
+        return false;
+    });
+
+    /***
+    *  C : example of bullet point
+    *  add or remove
+    */
+
+    var areaNum = $(".bullet-block .bLine").length,
+        bullIndex = 2;
+
+    $(".bullet-block a").on("click", function () {
+        var bullMax = $(this).text();
+
+        $(this).parent().addClass("active")
+        .siblings().removeClass("active");
+
+        $(".bullet-block .bLine").each(function( index ) {
+          if (index > (bullMax - 1)) {
+            $(this).val("").css("display", "none");
+          } else {
+            $(this).css("display", "block");
+          }
+        });
+        return false;
+    });
+
+    var bulletList = $(".bLine");
+
+    $(".bulletLine").blur(function() {
+
+    	var concat = "";
+    	bulletList
+	    .each(function(index) {
+	    	if ($(this).val() != '')
+	    	{
+	    		concat = concat+"<li>"+$(this).val()+"</li>";
+	    	}
+	    });
+	    concat = "<ul>"+concat+"</ul>"
+	    $('#C10').val(concat);
+	    console.log("bullet list: ",concat);
+    });
+
+    $('.bullet-add').on("click", function() {
+        if ( bullIndex < 10)
+        {
+          bullIndex ++;
+          $(bulletList[bullIndex]).slideDown();
+          console.log(bullIndex);
+        } 
+        if ( bullIndex === 9) $(this).addClass("disabled");
+        if ( bullIndex > 2) $(".bullet-rem").removeClass("disabled");
+        return false;
+    });
+
+    $('.bullet-rem').on("click", function() {
+        if ( bullIndex > 2)
+        {
+          $(bulletList[bullIndex]).slideUp();
+          bullIndex --;
+          console.log(bullIndex);
+        } 
+        if ( bullIndex === 2) $(this).addClass("disabled");
+        if ( bullIndex < 9) $(".bullet-add").removeClass("disabled");
+        return false;
+    });
+
+
+    
+
+    /***
+    *  D : select novelty presence 
+    *  and add practices
+    */
+
+    var hasNovelty      = $("input[name=hasNovelty]"),
+        checkState      = false,
+        practiceIndex   = 0;
+        practices       = $(".novelty-pane"),
+        addPractice     = $("#practice-add"),
+        remPractice     = $("#practice-rem");
+
+    hasNovelty.change(function() {
+      checkState = $("input[name=hasNovelty]:checked").val();
+      if (checkState == "true") {
+        addPractice.removeClass("disabled");
+        remPractice.addClass("disabled");
+        $(practices[practiceIndex]).slideDown();
+        $("#newPractice").slideDown();
+      } else {
+        $(practices).slideUp();
+        $("#newPractice").slideUp();
+        practiceIndex = 0;
+      }
+    });
+
+    addPractice.on("click", function() {
+        if ( practiceIndex < practices.length)
+        {
+          practiceIndex ++;
+          $(practices[practiceIndex]).slideDown();
+        } 
+        if ( practiceIndex === practices.length - 1) $(this).addClass("disabled");
+        if ( practiceIndex > 0) $("#practice-rem").removeClass("disabled");
+        return false;
+    });
+
+    remPractice.on("click", function() {
+        if ( practiceIndex > 0)
+        {
+          $(practices[practiceIndex]).slideUp();
+          practiceIndex --;
+        } 
+        if ( practiceIndex === 0) $(this).addClass("disabled");
+        if ( practiceIndex < practices.length) $("#practice-add").removeClass("disabled");
+        return false;
+    });
+
+    /***
+    *  E : toggle stage fields display
+    *  with check state
+    */
+
+    function showPanes(stagePanes, stageIndex) {
+      stagePanes.each(function(index) {
+        var showPane = (index+1 > stageIndex) ? "none" : "block";
+        $(this).css("display", showPane );
+      });
+    }
+
+    var stagePanes = $(".stagePane"),
+        stageIndex = parseInt($("#stageIndex").attr("value"));
+
+    showPanes(stagePanes, stageIndex);
+
+    $( "#stageSelect" ).on("change", function (evt) {
+      stageIndex = $(this).prop("selectedIndex");
+      showPanes(stagePanes, stageIndex);
+    });
+
+    /***
+    *  E -tagging solution
+    */
+
+    $("#C8").select2({tags:["Users", "public sector", "innovation", "change", "efficiency", "e-government", "partnership", "co-production", "design", "implementation", "delivery", "performance", "budgeting", "rules", "decision-making", "human resources", "project management", "childcare", "equality", "access", "digital", "citizens", "open data", "transparency", "flexibility", "civil service", "private sector", "civil society", "consultation", "simplicity", "savings", "online", "procurement"], maximumSelectionSize: 5, tokenSeparators: [","]});
+
+
+	$.each($(".select2-container"), function (i, n) {
+        $(n).next().show().fadeTo(0, 0).height("0px").css("left", "auto"); // make the original select visible for validation engine and hidden for us
+        $(n).prepend($(n).next());
+        $(n).delay(500).queue(function () {
+            $(this).removeClass("validate[required]"); //remove the class name from select2 container(div), so that validation engine dose not validate it
+            $(this).dequeue();
+        });
+    });
+
+    /***
+    *  F : select partnership presence 
+    *  and add partners
+    */
+
+    var hasPartner     = $("input[name=hasPartner]"),
+        checkState     = false,
+        partnerIndex   = 0;
+        partners       = $(".partnership-pane"),
+        addPartner     = $("#Partner-add"),
+        remPartner     = $("#Partner-rem");
+
+    hasPartner.change(function() {
+      checkState = $("input[name=hasPartner]:checked").val();
+      if (checkState == "true") {
+        addPartner.removeClass("disabled");
+        remPartner.addClass("disabled");
+        $(partners[partnerIndex]).slideDown();
+        $("#newPartner").slideDown();
+      } else {
+        $(partners).slideUp();
+        $("#newPartner").slideUp();
+        partnerIndex = 0;
+      }
+    });
+
+    addPartner.on("click", function() {
+        if ( partnerIndex < partners.length)
+        {
+          partnerIndex ++;
+          $(partners[partnerIndex]).slideDown();
+        } 
+        if ( partnerIndex === partners.length - 1) $(this).addClass("disabled");
+        if ( partnerIndex > 0) remPartner.removeClass("disabled");
+        return false;
+    });
+
+    remPartner.on("click", function() {
+        if ( partnerIndex > 0)
+        {
+          $(partners[partnerIndex]).slideUp();
+          partnerIndex --;
+        } 
+        if ( partnerIndex === 0) $(this).addClass("disabled");
+        if ( partnerIndex < partners.length) addPartner.removeClass("disabled");
+        return false;
+    });
+
+    /**
+    * G - toggle results fields display
+    * with check state
+    */
+
+    var checkState 		= $("#resultChecks input[type='checkbox']")
+        resultFields	= $(".resultLine");
+
+    function changeCheck(index) {
+    	if (index > 0)
+    	{
+	   		$(resultFields[index+1]).slideDown();
+        $('#resultProgress').slideUp();
+	  		$("#resultChecks input:eq(0)").prop('checked',false);
+	  	} else {
+	  		$("#resultChecks input:gt(0)").prop('checked',false);
+	  		resultFields.slideUp();
+        $('#resultProgress').slideDown();
+	  	}
+    }
+
+    checkState
+    .each(function(index) {
+	  	resultFields.hide();  // hiding all fields at first load
+    	changeCheck(index);
+    })
+    .on("change",function (evt) {
+    	var index = checkState.index($(this));
+    	changeCheck(index);
+    });
+
+
+    var evalState = false
+    $('input[name=hasEval]').change(function() {
+      evalState = ( evalState == false ) ? true : false;
+      $('#evalution-block').slideToggle();
+    });
+
+    /***
+    *  I : hardness
+    *  collection
+    */
+
+    $("#hardness a").on("click", function () {
+
+        $(this).parent().addClass("active")
+        .siblings().removeClass("active");
+
+        $('#I2').val($(this).text());
+
+        return false;
+    });
+
+    /**
+    * form validation 
+    * 
+    */
+
+    $.validator.addMethod("selectNone",  function(value, element) {if (element.value == "") {return false;} else {return true};} );
+
+    var form = $( "#innovationSubmit" );
+    var currentStep = 0;
+    var overideStep = 0;
+
+    jQuery.extend(jQuery.validator.messages, {
+      required: "Please answer this question"
+    });
+
+
+    jQuery.validator.addMethod("checkboxes", function(value, element) {
+	    return $('input[type=checkbox]:checked').length > 0;
+	   }, "please select at least one checkbox");
+
+    var $validator = form.validate({
+	    rules: {
+	      	// Section A
+	        auth1_name: { required: true, minlength: 3 },
+	        auth1_org: { required: true, minlength: 3 },
+	        auth1_mail: { required: true, email: true, minlength: 3 },
+	        auth1_mail: { required: true, email: true, minlength: 3 },
+
+	        // Section B
+	        org_country: { required:true },
+	        org_level: { required:true },
+	        org_sector: { required:true, selectNone:true },
+	        org_size: { required: true, selectNone:true },
+
+	        // Section C
+	        //inno_name: { required: true, minlength: 3 },
+	        //inno_year: { required: true, minlength: 3 }
+	        'C6[]': { required: true },
+	        stageSelect: { required: true, selectNone:true },
+	        G1_check: { required: true, selectNone:true }
+	    },
+	    highlight: function(element) {
+	    	$(element).closest('.control-group').removeClass('success').addClass('error');
+	    },
+	    success: function(element) {
+	    	element.addClass('valid').closest('.control-group').removeClass('error');
+	    },
+	    errorPlacement: function(error, element) {
+	    	if (element.is(":checkbox") || element.is(":radio")) {
+	    		element.parents('.controls').append(error);
+	    	} else 
+	    	{
+	    		$(element.parents('.controls')).append(error);
+            }
+	    }
+    });
+
+
+ /***
+ *
+ *
+ *
+ */
+
+
+    $("select").on("change", function () {
+        $(this).blur();
+    });
+    var overideStep = 0;
+
+    $("#fPreview").css("display", "none");
+    $("#fSubmit").css("display", "none");
+        $("#fSave").css("display", "none");
+
+
+    $('#myWizard').wizard();
+    $('#MyWizard').on('change', function(e, data) {
+      console.log('change');
+      //if(data.step===3 && data.direction==='next') {
+        // return e.preventDefault();
+      //console.log('step' + data.step + ' clicked');
+
+      if(data.step===9 && data.direction==='next') {
+        // return e.preventDefault();
+        $("#fPreview").css("display", "inline-block");
+        $("#fSubmit").css("display", "inline-block");
+      }
+
+      if(data.step=1) {
+        // return e.preventDefault();
+        $("#fSave").css("display", "none");
+      }
+      if(data.step===1 && data.direction==='next') {
+        // return e.preventDefault();
+        $("#fSave").css("display", "inline-block");
+      }
+
+      if(data.step===10 && data.direction==='previous') {
+        // return e.preventDefault();
+        $("#fPreview").css("display", "none");
+        $("#fSubmit").css("display", "none");
+      }
+
+      var $valid = $("#innovationSubmit").valid();
+      if(!$valid) {
+        $validator.focusInvalid();
+        if (data.step != overideStep)
+        {
+          overideStep = data.step;
+          return false;
+        }
+      }
+    });
+    $('#MyWizard').on('changed', function(e, data) {
+       overideStep = 0;
+    });
+    $('#MyWizard').on('finished', function(e, data) {
+      console.log('finished');
+    });
+    $('#btnWizardPrev').on('click', function() {
+      $('#MyWizard').wizard('previous');
+    });
+    $('#btnWizardNext').on('click', function() {
+      $('#MyWizard').wizard('next','finished');
+    });
+    $('#btnWizardStep').on('click', function() {
+      var item = $('#MyWizard').wizard('selectedItem');
+      console.log(item.step);
+    });
+    $('#myWizard').on('stepclick', function(e, data) {
+      console.log('step' + data.step + ' clicked');
+    });
+
+
+    $('#startForm').on('click', function() {
+      $('#MyWizard').wizard('next','finished');
+    });
+
+    $('#cancelForm').click(function(){
+      window.location = '/pages/profile'
+    });
+
+
+
+    $('#myWizard').on('change', function(e, data) {
+      console.log('step' + data.step + ' clicked');
+
+      tinyMCE.triggerSave();
+
+        var $valid = $("#innovationSubmit").valid();
+        if(!$valid) {
+          $validator.invalid();
+          if (data.step != overideStep)
+          {
+            overideStep = data.step;
+            return false;
+          }
+      if(data.step > 8) {
+        $("#fPreview").css("display", "inline-block");
+        $("#fSubmit").css("display", "inline-block");
+      }
+      }
+    });
+
+
+
+  });
+
+</script>
+
+        <script src="../assets/scripts/app.js"></script>
+    </body>
+</html>

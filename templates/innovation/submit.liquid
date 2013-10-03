@@ -1,0 +1,611 @@
+ {% block styles %}
+  {{ "select2.css" | asset_url | stylesheet_tag }}
+ {% endblock %}
+
+{% block content %}
+<form id="innovationSubmit" method="get" action=""  class="form-horizontal">
+<div class="row">
+<div class="span12">
+  
+  <div class="white-block">
+
+    <div class="lng" >
+      <p class="pull-left">select language </p class="pull-left">
+      <div class="btn-group">
+        <button class="btn btn-mini dropdown-toggle pull-left disabled" data-toggle="dropdown">English<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">French</a></li>
+          <li><a href="#">Spanish</a></li>
+          <li><a href="#">&hellip;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Submit an innovation</h3>
+
+    <div id="MyWizard" class="wizard">
+      <ul class="steps">
+        <li data-target="#step1" class="active"><span class="badge badge-info">Start</span><span class="chevron"></span></li>
+        <li data-target="#step2"><span class="badge">A</span><span class="chevron"></span></li>
+        <li data-target="#step3"><span class="badge">B</span><span class="chevron"></span></li>
+        <li data-target="#step4"><span class="badge">C</span><span class="chevron"></span></li>
+        <li data-target="#step5"><span class="badge">D</span><span class="chevron"></span></li>
+        <li data-target="#step6"><span class="badge">E</span><span class="chevron"></span></li>
+        <li data-target="#step7"><span class="badge">F</span><span class="chevron"></span></li>
+        <li data-target="#step8"><span class="badge">G</span><span class="chevron"></span></li>
+        <li data-target="#step9"><span class="badge">H</span><span class="chevron"></span></li>
+        <li data-target="#step10"><span class="badge">Finish</span></li>
+      </ul>
+      <div class="actions">
+        <button type="button" class="btn btn-mini btn-prev"> <i class="icon-arrow-left"></i>Prev</button>
+        <button type="button" class="btn btn-mini btn-next" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="step-content">
+  <div class="step-pane active" id="step1">
+
+  {% include "submit-sections/0" %}
+
+  </div>
+   
+  <div class="step-pane" id="step2">
+
+  {% include "submit-sections/A" %}
+
+  </div>
+  <div class="step-pane" id="step3">
+
+  {% include "submit-sections/B" %}
+
+  </div>
+  <div class="step-pane" id="step4">
+
+  {% include "submit-sections/C" %}
+
+  </div>
+  <div class="step-pane" id="step5">
+
+  {% include "submit-sections/D" %}
+
+  </div>
+  <div class="step-pane" id="step6">
+
+  {% include "submit-sections/E" %}
+
+  </div>
+  <div class="step-pane" id="step7">
+
+  {% include "submit-sections/F" %}
+
+  </div>
+   <div class="step-pane" id="step8">
+   
+  {% include "submit-sections/G" %}
+
+  </div>
+  <div class="step-pane" id="step9">
+
+  {% include "submit-sections/H" %}
+
+  </div>
+  <div class="step-pane" id="step10">
+
+  {% include "submit-sections/Z_finish" %}
+
+  </div>
+
+    <div class="row" style="margin-top: 10px;">
+        <div class="span8">
+          <div class="pull-right" style="padding:5px 25px;">
+              <a href="#cancelModal" role="button" class="btn" data-toggle="modal">Cancel</a>
+              <a id="fSave" href="#" type="submit" class="btn">Save</a>
+              <a id="fPreview" href="#" type="submit" class="btn" style="display: none;">Preview</a>
+              <a id="fSubmit" href="#submitModal" type="submit" data-toggle="modal" class="btn" style="display: none;">Submit</a>
+        </div>
+      </div>
+      <div class="span4" style="background: none;">
+        <div class="actions" style="padding: 10px ">
+          <button id="btnWizardPrev" type="button" class="btn btn-mini btn-prev"> <i class="icon-arrow-left"></i>Prev</button>
+          <button id="btnWizardNext" type="button" class="btn btn-mini btn-next" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+        </div>
+      </div>
+</div>
+</div>
+
+</div>
+</div>
+</form>
+
+
+
+<!-- cancel Modal -->
+<div id="cancelModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body">
+    <h5>Are you sure that you wish to cancel your submission form. This means that you will lose all the information that has been provided which has not yet been saved</h5>
+  </div>
+  <div class="modal-footer">
+    <button id="cancelForm" class="btn btn-primary">Yes, I still want to cancel</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">No, return to the form</button>
+  </div>
+</div>
+
+<!-- submit Modal -->
+<div id="submitModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-body">
+    <p>Thank you for submitting your innovation to the Observatory of Public Sector Innovation. You will receive a preview of your innovation before it is published online from the OECD shortly</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary">SUBMIT</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ "jquery.validate.min.js" | asset_url | script_tag }}
+{{ "select2.min.js" | asset_url | script_tag }}
+
+<script type="text/javascript">
+  $(function() {
+
+    $('.help').popover({trigger: 'hover'});
+
+    /***
+    *  A : Add up to 3 contacts
+    *  
+    */
+
+    var authLength    = 1,
+        contactsPanes = $(".auth-pane");
+
+    $("#auth-add").on("click", function() {
+        if (authLength < 3)
+        {
+          $(contactsPanes[authLength]).slideDown()
+          authLength ++;
+        }
+        if (authLength == 3) $(this).addClass("disabled");
+        if (authLength > 1) $("#auth-rem").removeClass("disabled");
+        return false;
+    });
+
+    $("#auth-rem").on("click", function() {
+        if (authLength > 1) 
+        {
+          authLength --;
+          $(contactsPanes[authLength]).slideUp();
+        }
+        if (authLength == 1) $(this).addClass("disabled");
+        if (authLength < 3) $("#auth-add").removeClass("disabled");
+        return false;
+    });
+
+    /***
+    *  C : example of bullet point
+    *  add or remove
+    */
+
+    var areaNum = $(".bullet-block .bLine").length,
+        bullIndex = 2;
+
+    $(".bullet-block a").on("click", function () {
+        var bullMax = $(this).text();
+
+        $(this).parent().addClass("active")
+        .siblings().removeClass("active");
+
+        $(".bullet-block .bLine").each(function( index ) {
+          if (index > (bullMax - 1)) {
+            $(this).val("").css("display", "none");
+          } else {
+            $(this).css("display", "block");
+          }
+        });
+        return false;
+    });
+
+    var bulletList = $(".bLine");
+
+    $(".bulletLine").blur(function() {
+
+    	var concat = "";
+    	bulletList
+	    .each(function(index) {
+	    	if ($(this).val() != '')
+	    	{
+	    		concat = concat+"<li>"+$(this).val()+"</li>";
+	    	}
+	    });
+	    concat = "<ul>"+concat+"</ul>"
+	    $('#C10').val(concat);
+	    console.log("bullet list: ",concat);
+    });
+
+    $('.bullet-add').on("click", function() {
+        if ( bullIndex < 10)
+        {
+          bullIndex ++;
+          $(bulletList[bullIndex]).slideDown();
+          console.log(bullIndex);
+        } 
+        if ( bullIndex === 9) $(this).addClass("disabled");
+        if ( bullIndex > 2) $(".bullet-rem").removeClass("disabled");
+        return false;
+    });
+
+    $('.bullet-rem').on("click", function() {
+        if ( bullIndex > 2)
+        {
+          $(bulletList[bullIndex]).slideUp();
+          bullIndex --;
+          console.log(bullIndex);
+        } 
+        if ( bullIndex === 2) $(this).addClass("disabled");
+        if ( bullIndex < 9) $(".bullet-add").removeClass("disabled");
+        return false;
+    });
+
+
+    
+
+    /***
+    *  D : select novelty presence 
+    *  and add practices
+    */
+
+    var hasNovelty      = $("input[name=hasNovelty]"),
+        checkState      = false,
+        practiceIndex   = 0;
+        practices       = $(".novelty-pane"),
+        addPractice     = $("#practice-add"),
+        remPractice     = $("#practice-rem");
+
+    hasNovelty.change(function() {
+      checkState = $("input[name=hasNovelty]:checked").val();
+      if (checkState == "true") {
+        addPractice.removeClass("disabled");
+        remPractice.addClass("disabled");
+        $(practices[practiceIndex]).slideDown();
+        $("#newPractice").slideDown();
+      } else {
+        $(practices).slideUp();
+        $("#newPractice").slideUp();
+        practiceIndex = 0;
+      }
+    });
+
+    addPractice.on("click", function() {
+        if ( practiceIndex < practices.length)
+        {
+          practiceIndex ++;
+          $(practices[practiceIndex]).slideDown();
+        } 
+        if ( practiceIndex === practices.length - 1) $(this).addClass("disabled");
+        if ( practiceIndex > 0) $("#practice-rem").removeClass("disabled");
+        return false;
+    });
+
+    remPractice.on("click", function() {
+        if ( practiceIndex > 0)
+        {
+          $(practices[practiceIndex]).slideUp();
+          practiceIndex --;
+        } 
+        if ( practiceIndex === 0) $(this).addClass("disabled");
+        if ( practiceIndex < practices.length) $("#practice-add").removeClass("disabled");
+        return false;
+    });
+
+    /***
+    *  E : toggle stage fields display
+    *  with check state
+    */
+
+    function showPanes(stagePanes, stageIndex) {
+      stagePanes.each(function(index) {
+        var showPane = (index+1 > stageIndex) ? "none" : "block";
+        $(this).css("display", showPane );
+      });
+    }
+
+    var stagePanes = $(".stagePane"),
+        stageIndex = parseInt($("#stageIndex").attr("value"));
+
+    showPanes(stagePanes, stageIndex);
+
+    $( "#stageSelect" ).on("change", function (evt) {
+      stageIndex = $(this).prop("selectedIndex");
+      showPanes(stagePanes, stageIndex);
+    });
+
+    /***
+    *  E -tagging solution
+    */
+
+    $("#C8").select2({tags:["Users", "public sector", "innovation", "change", "efficiency", "e-government", "partnership", "co-production", "design", "implementation", "delivery", "performance", "budgeting", "rules", "decision-making", "human resources", "project management", "childcare", "equality", "access", "digital", "citizens", "open data", "transparency", "flexibility", "civil service", "private sector", "civil society", "consultation", "simplicity", "savings", "online", "procurement"], maximumSelectionSize: 5, tokenSeparators: [","]});
+
+
+	$.each($(".select2-container"), function (i, n) {
+        $(n).next().show().fadeTo(0, 0).height("0px").css("left", "auto"); // make the original select visible for validation engine and hidden for us
+        $(n).prepend($(n).next());
+        $(n).delay(500).queue(function () {
+            $(this).removeClass("validate[required]"); //remove the class name from select2 container(div), so that validation engine dose not validate it
+            $(this).dequeue();
+        });
+    });
+
+    /***
+    *  F : select partnership presence 
+    *  and add partners
+    */
+
+    var hasPartner     = $("input[name=hasPartner]"),
+        checkState     = false,
+        partnerIndex   = 0;
+        partners       = $(".partnership-pane"),
+        addPartner     = $("#Partner-add"),
+        remPartner     = $("#Partner-rem");
+
+    hasPartner.change(function() {
+      checkState = $("input[name=hasPartner]:checked").val();
+      if (checkState == "true") {
+        addPartner.removeClass("disabled");
+        remPartner.addClass("disabled");
+        $(partners[partnerIndex]).slideDown();
+        $("#newPartner").slideDown();
+      } else {
+        $(partners).slideUp();
+        $("#newPartner").slideUp();
+        partnerIndex = 0;
+      }
+    });
+
+    addPartner.on("click", function() {
+        if ( partnerIndex < partners.length)
+        {
+          partnerIndex ++;
+          $(partners[partnerIndex]).slideDown();
+        } 
+        if ( partnerIndex === partners.length - 1) $(this).addClass("disabled");
+        if ( partnerIndex > 0) remPartner.removeClass("disabled");
+        return false;
+    });
+
+    remPartner.on("click", function() {
+        if ( partnerIndex > 0)
+        {
+          $(partners[partnerIndex]).slideUp();
+          partnerIndex --;
+        } 
+        if ( partnerIndex === 0) $(this).addClass("disabled");
+        if ( partnerIndex < partners.length) addPartner.removeClass("disabled");
+        return false;
+    });
+
+    /**
+    * G - toggle results fields display
+    * with check state
+    */
+
+    var checkState 		= $("#resultChecks input[type='checkbox']")
+        resultFields	= $(".resultLine");
+
+    function changeCheck(index) {
+    	if (index > 0)
+    	{
+	   		$(resultFields[index+1]).slideDown();
+        $('#resultProgress').slideUp();
+	  		$("#resultChecks input:eq(0)").prop('checked',false);
+	  	} else {
+	  		$("#resultChecks input:gt(0)").prop('checked',false);
+	  		resultFields.slideUp();
+        $('#resultProgress').slideDown();
+	  	}
+    }
+
+    checkState
+    .each(function(index) {
+	  	resultFields.hide();  // hiding all fields at first load
+    	changeCheck(index);
+    })
+    .on("change",function (evt) {
+    	var index = checkState.index($(this));
+    	changeCheck(index);
+    });
+
+
+    var evalState = false
+    $('input[name=hasEval]').change(function() {
+      evalState = ( evalState == false ) ? true : false;
+      $('#evalution-block').slideToggle();
+    });
+
+    /***
+    *  I : hardness
+    *  collection
+    */
+
+    $("#hardness a").on("click", function () {
+
+        $(this).parent().addClass("active")
+        .siblings().removeClass("active");
+
+        $('#I2').val($(this).text());
+
+        return false;
+    });
+
+    /**
+    * form validation 
+    * 
+    */
+
+    $.validator.addMethod("selectNone",  function(value, element) {if (element.value == "") {return false;} else {return true};} );
+
+    var form = $( "#innovationSubmit" );
+    var currentStep = 0;
+    var overideStep = 0;
+
+    jQuery.extend(jQuery.validator.messages, {
+      required: "Please answer this question"
+    });
+
+
+    jQuery.validator.addMethod("checkboxes", function(value, element) {
+	    return $('input[type=checkbox]:checked').length > 0;
+	   }, "please select at least one checkbox");
+
+    var $validator = form.validate({
+	    rules: {
+	      	// Section A
+	        auth1_name: { required: true, minlength: 3 },
+	        auth1_org: { required: true, minlength: 3 },
+	        auth1_mail: { required: true, email: true, minlength: 3 },
+	        auth1_mail: { required: true, email: true, minlength: 3 },
+
+	        // Section B
+	        org_country: { required:true },
+	        org_level: { required:true },
+	        org_sector: { required:true, selectNone:true },
+	        org_size: { required: true, selectNone:true },
+
+	        // Section C
+	        //inno_name: { required: true, minlength: 3 },
+	        //inno_year: { required: true, minlength: 3 }
+	        'C6[]': { required: true },
+	        stageSelect: { required: true, selectNone:true },
+	        G1_check: { required: true, selectNone:true }
+	    },
+	    highlight: function(element) {
+	    	$(element).closest('.control-group').removeClass('success').addClass('error');
+	    },
+	    success: function(element) {
+	    	element.addClass('valid').closest('.control-group').removeClass('error');
+	    },
+	    errorPlacement: function(error, element) {
+	    	if (element.is(":checkbox") || element.is(":radio")) {
+	    		element.parents('.controls').append(error);
+	    	} else 
+	    	{
+	    		$(element.parents('.controls')).append(error);
+            }
+	    }
+    });
+
+
+ /***
+ *
+ *
+ *
+ */
+
+
+    $("select").on("change", function () {
+        $(this).blur();
+    });
+    var overideStep = 0;
+
+    $("#fPreview").css("display", "none");
+    $("#fSubmit").css("display", "none");
+        $("#fSave").css("display", "none");
+
+
+    $('#myWizard').wizard();
+    $('#MyWizard').on('change', function(e, data) {
+      console.log('change');
+      //if(data.step===3 && data.direction==='next') {
+        // return e.preventDefault();
+      //console.log('step' + data.step + ' clicked');
+
+      if(data.step===9 && data.direction==='next') {
+        // return e.preventDefault();
+        $("#fPreview").css("display", "inline-block");
+        $("#fSubmit").css("display", "inline-block");
+      }
+
+      if(data.step=1) {
+        // return e.preventDefault();
+        $("#fSave").css("display", "none");
+      }
+      if(data.step===1 && data.direction==='next') {
+        // return e.preventDefault();
+        $("#fSave").css("display", "inline-block");
+      }
+
+      if(data.step===10 && data.direction==='previous') {
+        // return e.preventDefault();
+        $("#fPreview").css("display", "none");
+        $("#fSubmit").css("display", "none");
+      }
+
+      var $valid = $("#innovationSubmit").valid();
+      if(!$valid) {
+        $validator.focusInvalid();
+        if (data.step != overideStep)
+        {
+          overideStep = data.step;
+          return false;
+        }
+      }
+    });
+    $('#MyWizard').on('changed', function(e, data) {
+       overideStep = 0;
+    });
+    $('#MyWizard').on('finished', function(e, data) {
+      console.log('finished');
+    });
+    $('#btnWizardPrev').on('click', function() {
+      $('#MyWizard').wizard('previous');
+    });
+    $('#btnWizardNext').on('click', function() {
+      $('#MyWizard').wizard('next','finished');
+    });
+    $('#btnWizardStep').on('click', function() {
+      var item = $('#MyWizard').wizard('selectedItem');
+      console.log(item.step);
+    });
+    $('#myWizard').on('stepclick', function(e, data) {
+      console.log('step' + data.step + ' clicked');
+    });
+
+
+    $('#startForm').on('click', function() {
+      $('#MyWizard').wizard('next','finished');
+    });
+
+    $('#cancelForm').click(function(){
+      window.location = '/pages/profile'
+    });
+
+
+
+    $('#myWizard').on('change', function(e, data) {
+      console.log('step' + data.step + ' clicked');
+
+      tinyMCE.triggerSave();
+
+        var $valid = $("#innovationSubmit").valid();
+        if(!$valid) {
+          $validator.invalid();
+          if (data.step != overideStep)
+          {
+            overideStep = data.step;
+            return false;
+          }
+      if(data.step > 8) {
+        $("#fPreview").css("display", "inline-block");
+        $("#fSubmit").css("display", "inline-block");
+      }
+      }
+    });
+
+
+
+  });
+
+</script>
+{% endblock %}
