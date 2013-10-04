@@ -1,41 +1,11 @@
-/* [less, less, app.less] */
-/* line 7, /Users/ezka/Documents/WRK/opsi/less/app.less */
-.clearfix {
-  *zoom: 1;
-}
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
-.clearfix:after {
-  clear: both;
-}
-/* {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
-*/
-@charset "UTF-8";
-@font-face {
-  font-family: "";
-  src: url('../fonts/opsi-draft1.eot');
-  src: url('../fonts/opsi-draft1.eot?#iefix') format("embedded-opentype"), url('../fonts/opsi-draft1.ttf') format("truetype"), url('../fonts/opsi-draft1.svg#opsi-draft1') format("svg"), url('../fonts/opsi-draft1.woff') format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-/* line 15, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+@charset "UTF-8"; .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}@font-face{font-family:"";src:url("<t4 type='media' id='251406' formatter='path
 #fontTest {
-  font-family: "opsi-draft1";
+  font-family: opsi-draft1;
   font-size: 45px;
 }
-/* line 20, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 [data-icon]:before {
-  font-family: "opsi-draft1";
+  font-family: opsi-draft1;
   content: attr(data-icon);
   font-style: normal;
   font-weight: normal;
@@ -48,10 +18,10 @@ box-sizing: border-box;
   line-height: 1em;
   -webkit-font-smoothing: antialiased;
 }
-/* line 35, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
-[class^="icon-"]:before,
+
+[class^=icon-]:before,
 [class*=" icon-"]:before {
-  font-family: "opsi-draft1";
+  font-family: opsi-draft1;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -63,75 +33,75 @@ box-sizing: border-box;
   line-height: 1em;
   -webkit-font-smoothing: antialiased;
 }
-/* line 50, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon {
-  font-family: "opsi-draft1";
+  font-family: opsi-draft1;
 }
-/* line 54, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-network:before {
   content: "a";
 }
-/* line 58, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-globe:before {
   content: "b";
 }
-/* line 62, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-chat:before {
   content: "c";
 }
-/* line 66, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-popup:before {
   content: "d";
 }
-/* line 70, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-docs:before {
   content: "e";
 }
-/* line 74, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-right-open:before {
   content: "f";
 }
-/* line 78, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-right-bold:before {
   content: "g";
 }
-/* line 82, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-target:before {
   content: "h";
 }
-/* line 86, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-gallary:before {
   content: "i";
 }
-/* line 90, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-globe-1:before {
   content: "j";
 }
-/* line 94, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-light-bulb:before {
   content: "k";
 }
-/* line 98, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-lamp:before {
   content: "l";
 }
-/* line 102, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-content-41:before {
   content: "m";
 }
-/* line 106, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-content-44:before {
   content: "n";
 }
-/* line 110, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-lightbulb-shine:before {
   content: "o";
 }
-/* line 114, /Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less */
+
 .icon-right-circled:before {
   content: "p";
 }
-/* line 1, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header {
   position: fixed;
   width: 100%;
@@ -139,102 +109,102 @@ header {
   background: white;
   z-index: 3333;
 }
-/* line 7, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header .container {
   position: relative;
 }
-/* line 10, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header #brand {
   margin-left: 5px;
 }
-/* line 13, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav {
-  background: #72367d url('/assets/img/GUI/opsi_bg.png') no-repeat right center;
+  background: #72367d url(/assets/img/GUI/opsi_bg.png) no-repeat right center;
   float: left;
   overflow: hiddden;
   width: 100%;
   border-radius: 3px;
   margin-bottom: -1.3em;
 }
-/* line 20, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul {
   position: relative;
   margin: 0;
   padding: 5px;
   list-style-type: none;
 }
-/* line 25, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul li {
   float: left;
 }
-/* line 28, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul li.current a {
   background: #4d1554!important;
 }
-/* line 34, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul.browse {
   float: left;
 }
-/* line 37, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul.community {
   float: right;
 }
-/* line 40, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul.action {
   position: absolute;
   top: 5px;
   right: 0;
 }
-/* line 44, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul.action li {
   float: right;
 }
-/* line 47, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul.action a {
   color: #c6c8ca;
 }
-/* line 49, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav ul.action a:hover {
   background: none;
   color: #72367d;
 }
-/* line 56, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav a {
   display: block;
   padding: .5em 1em;
   color: white;
   border-radius: 5px;
 }
-/* line 61, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 header nav a:hover {
   background: #63296d;
   text-decoration: none;
   color: white;
 }
-/* line 70, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 footer {
   border-top: 3px solid #c6c8ca;
 }
-/* line 72, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 footer .container {
   position: relative;
   border-top: 5px solid #8f499c;
   margin-top: -4px;
   padding: 10px 0;
 }
-/* line 77, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 footer .container #oecd-footer {
   position: absolute;
   right: 0;
   top: 5px;
   z-index: 10;
 }
-/* line 88, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
+
 .cNews p {
   text-decoration: none;
   color: black;
 }
-/* line 1, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #pageContent {
   padding-top: 155px;
   padding-bottom: 35px;
@@ -248,33 +218,33 @@ footer .container #oecd-footer {
   background: #EBE2D2;
   background: #EEEBE3;
 }
-/* line 16, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .padded nav {
   margin-top: 10px;
 }
-/* line 19, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .padded #pageContent {
   padding-top: 170px;
 }
-/* line 24, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .saved_innovations {
   border-top: 1px solid #c6c8ca;
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 28, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .saved_innovations td {
   border-bottom: 1px solid #c6c8ca;
 }
-/* line 31, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .saved_innovations td.inno {
   width: 80%;
 }
-/* line 34, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .saved_innovations td.state {
   width: 20%;
 }
-/* line 38, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .white-block,
 .tab-pane {
   *zoom: 1;
@@ -282,7 +252,7 @@ footer .container #oecd-footer {
   border-radius: 3px;
   padding: 10px;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 .white-block:before,
 .tab-pane:before,
 .white-block:after,
@@ -291,12 +261,12 @@ footer .container #oecd-footer {
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 .white-block:after,
 .tab-pane:after {
   clear: both;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .white-block:before,
 .tab-pane:before,
 .white-block:after,
@@ -305,23 +275,23 @@ footer .container #oecd-footer {
   content: "";
   line-height: 0;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .white-block:after,
 .tab-pane:after {
   clear: both;
 }
-/* line 44, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #process {
   margin: 20px 10px 0 10px;
   border-top: 1px solid #c6c8ca;
   border-bottom: 1px solid #72367d;
 }
-/* line 48, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #process caption {
   border-top: 1px solid #72367d;
   padding: 10px 0;
 }
-/* line 52, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #process td {
   vertical-align: top;
   width: 20%;
@@ -329,17 +299,17 @@ footer .container #oecd-footer {
   text-align: center;
   line-height: 1.2;
 }
-/* line 60, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #process img {
   padding: 25px 0;
 }
-/* line 63, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #process .procNum {
   color: #72367d;
   font-weight: 600;
   font-size: 1.2em;
 }
-/* line 69, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .notes {
   margin: 0 10px 10px 10px;
   padding: 5px;
@@ -347,13 +317,13 @@ footer .container #oecd-footer {
   color: #aaa;
   text-align: center;
 }
-/* line 76, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .inspiList {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 80, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .inspiList li {
   float: left;
   width: 30%;
@@ -361,11 +331,11 @@ footer .container #oecd-footer {
   border: 1px solid #c6c8ca;
   border-radius: 3px;
 }
-/* line 86, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .inspiList li:first-child {
   margin-left: 0;
 }
-/* line 89, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .inspiList li h5 {
   margin: 0;
   padding: 5px;
@@ -373,26 +343,26 @@ footer .container #oecd-footer {
   text-align: center;
   color: white;
 }
-/* line 96, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .inspiList li p {
   padding: 5px;
   height: 150px;
 }
-/* line 102, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .opsiContact {
   float: left;
   padding: 10px 0;
 }
-/* line 107, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #innovation-page .white-block {
   margin-left: 20px;
   padding: 0;
 }
-/* line 109, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #innovation-page .white-block div:first-child {
   margin-left: 0;
 }
-/* line 113, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #innovation-page .white-block h2,
 #innovation-page .white-block h3,
 #innovation-page .white-block h4,
@@ -400,67 +370,60 @@ footer .container #oecd-footer {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 118, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #innovation-page #tablist {
   margin-bottom: 0;
   clear: both;
 }
-/* line 123, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #innovation-page .tab-pane h4 {
   border-top: 1px solid #c6c8ca;
 }
-/* line 129, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 .innoVignette {
   max-height: 150px;
   padding: .5em;
   float: left;
 }
-/* line 134, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+
 #map-wrapper #map {
   position: relative;
   height: 350px;
 }
-/* [less, less/libraries, select2.less] */
-/*
-Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
-*/
-/* line 4, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 6, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
+
+
 .select2-container {
   margin: 0;
   position: relative;
   display: inline-block;
-  /* inline-block for ie7 */
+  
 
   zoom: 1;
   *display: inline;
   vertical-align: middle;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container,
 .select2-drop,
 .select2-search,
 .select2-search input {
-  /*
-    Force border-box so that % widths fit the parent
-    container without overlap because of margin/padding.
-
-    More Info : http://www.quirksmode.org/css/box.html
-  */
+  
 
   -webkit-box-sizing: border-box;
-  /* webkit */
+  
 
   -moz-box-sizing: border-box;
-  /* firefox */
+  
 
   box-sizing: border-box;
-  /* css3 */
+  
 
 }
-/* line 29, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 39, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container .select2-choice {
   display: block;
   height: 26px;
@@ -489,8 +452,8 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
   background-image: linear-gradient(top, #ffffff 0%, #eeeeee 50%);
 }
-/* line 63, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 68, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container.select2-drop-above .select2-choice {
   border-bottom-color: #aaa;
   border-radius: 0 0 4px 4px;
@@ -502,13 +465,13 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
   background-image: linear-gradient(top, #eeeeee 0%, #ffffff 90%);
 }
-/* line 77, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 80, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container.select2-allowclear .select2-choice .select2-chosen {
   margin-right: 42px;
 }
-/* line 81, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 84, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container .select2-choice > .select2-chosen {
   margin-right: 26px;
   display: block;
@@ -516,8 +479,8 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 91, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 92, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container .select2-choice abbr {
   display: none;
   width: 12px;
@@ -528,23 +491,19 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   font-size: 1px;
   text-decoration: none;
   border: 0;
-  background: url('../img/GUI/select2.png') right top no-repeat;
-  cursor: pointer;
-  outline: 0;
-}
-/* line 108, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 107, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  background: url("<t4 type='media' id='251426' formatter='path
+
 .select2-container.select2-allowclear .select2-choice abbr {
   display: inline-block;
 }
-/* line 112, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 111, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container .select2-choice abbr:hover {
   background-position: right -11px;
   cursor: pointer;
 }
-/* line 117, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 116, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-drop-mask {
   border: 0;
   margin: 0;
@@ -557,14 +516,14 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   height: auto;
   width: auto;
   z-index: 9998;
-  /* styles required for IE to work */
+  
 
   background-color: #fff;
   opacity: 0;
   filter: alpha(opacity=0);
 }
-/* line 136, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 135, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-drop {
   width: 100%;
   margin-top: -1px;
@@ -579,19 +538,19 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
 }
-/* line 154, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 150, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-drop-auto-width {
   border-top: 1px solid #aaa;
   width: auto;
 }
-/* line 159, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 155, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-drop-auto-width .select2-search {
   padding-top: 4px;
 }
-/* line 163, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 159, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-drop.select2-drop-above {
   margin-top: 1px;
   border-top: 1px solid #aaa;
@@ -600,19 +559,19 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.15);
 }
-/* line 174, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 168, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-drop-active {
   border: 1px solid #5897fb;
   border-top: none;
 }
-/* line 179, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 173, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-drop.select2-drop-above.select2-drop-active {
   border-top: 1px solid #5897fb;
 }
-/* line 183, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 177, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container .select2-choice .select2-arrow {
   display: inline-block;
   width: 18px;
@@ -632,16 +591,14 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0);
   background-image: linear-gradient(top, #cccccc 0%, #eeeeee 60%);
 }
-/* line 206, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 197, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container .select2-choice .select2-arrow b {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../img/GUI/select2.png') no-repeat 0 1px;
-}
-/* line 213, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 204, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  background: url("<t4 type='media' id='251426' formatter='path
+
 .select2-search {
   display: inline-block;
   width: 100%;
@@ -653,8 +610,8 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   z-index: 10000;
   white-space: nowrap;
 }
-/* line 227, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 216, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-search input {
   width: 100%;
   height: auto !important;
@@ -668,32 +625,16 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #ffffff url('../img/GUI/select2.png') no-repeat 100% -22px;
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -o-linear-gradient(bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
-}
-/* line 253, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 238, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  background: #ffffff url("<t4 type='media' id='251426' formatter='path
+
 .select2-drop.select2-drop-above .select2-search input {
   margin-top: 4px;
 }
-/* line 257, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 242, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-search input.select2-active {
-  background: #ffffff url('../img/GUI/select2-spinner.gif') no-repeat 100%;
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -o-linear-gradient(bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
-}
-/* line 267, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 252, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  background: #ffffff url("<t4 type='media' id='251426' formatter='path
+
 .select2-container-active .select2-choice,
 .select2-container-active .select2-choices {
   border: 1px solid #5897fb;
@@ -701,8 +642,8 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-/* line 276, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 260, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-dropdown-open .select2-choice {
   border-bottom-color: transparent;
   -webkit-box-shadow: 0 1px 0 #fff inset;
@@ -718,8 +659,8 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
   background-image: linear-gradient(top, #ffffff 0%, #eeeeee 50%);
 }
-/* line 294, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 276, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
   border: 1px solid #5897fb;
@@ -732,21 +673,21 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
   background-image: linear-gradient(bottom, #ffffff 0%, #eeeeee 50%);
 }
-/* line 308, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 289, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-dropdown-open .select2-choice .select2-arrow {
   background: transparent;
   border-left: none;
   filter: none;
 }
-/* line 313, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 295, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-dropdown-open .select2-choice .select2-arrow b {
   background-position: -18px 1px;
 }
-/* results */
-/* line 318, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 300, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
+
 .select2-results {
   max-height: 200px;
   padding: 0 0 0 4px;
@@ -756,61 +697,61 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   overflow-y: auto;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-/* line 328, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 310, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results ul.select2-result-sub {
   margin: 0;
   padding-left: 0;
 }
-/* line 333, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 315, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results ul.select2-result-sub > li .select2-result-label {
   padding-left: 20px;
 }
-/* line 334, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 319, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results ul.select2-result-sub ul.select2-result-sub > li .select2-result-label {
   padding-left: 40px;
 }
-/* line 335, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 323, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label {
   padding-left: 60px;
 }
-/* line 336, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 327, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label {
   padding-left: 80px;
 }
-/* line 337, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 331, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label {
   padding-left: 100px;
 }
-/* line 338, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 335, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label {
   padding-left: 110px;
 }
-/* line 339, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 339, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub ul.select2-result-sub > li .select2-result-label {
   padding-left: 120px;
 }
-/* line 341, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 343, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results li {
   list-style: none;
   display: list-item;
   background-image: none;
 }
-/* line 347, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 349, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results li.select2-result-with-children > .select2-result-label {
   font-weight: bold;
 }
-/* line 351, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 353, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results .select2-result-label {
   padding: 3px 7px 4px;
   margin: 0;
@@ -823,95 +764,91 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   -ms-user-select: none;
   user-select: none;
 }
-/* line 366, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 366, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results .select2-highlighted {
   background: #3875d7;
   color: #fff;
 }
-/* line 371, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 371, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results li em {
   background: #feffde;
   font-style: normal;
 }
-/* line 376, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 376, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results .select2-highlighted em {
   background: transparent;
 }
-/* line 380, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 380, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results .select2-highlighted ul {
   background: #fff;
   color: #000;
 }
-/* line 386, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 385, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results .select2-no-results,
 .select2-results .select2-searching,
 .select2-results .select2-selection-limit {
   background: #f4f4f4;
   display: list-item;
 }
-/*
-disabled look for disabled choices in the results dropdown
-*/
-/* line 396, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 395, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
+
 .select2-results .select2-disabled.select2-highlighted {
   color: #666;
   background: #f4f4f4;
   display: list-item;
   cursor: default;
 }
-/* line 402, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 402, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results .select2-disabled {
   background: #f4f4f4;
   display: list-item;
   cursor: default;
 }
-/* line 408, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 408, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-results .select2-selected {
   display: none;
 }
-/* line 412, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 412, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-more-results.select2-active {
-  background: #f4f4f4 url('../img/GUI/select2-spinner.gif') no-repeat 100%;
-}
-/* line 416, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 416, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  background: #f4f4f4 url("<t4 type='media' id='251426' formatter='path
+
 .select2-more-results {
   background: #f4f4f4;
   display: list-item;
 }
-/* disabled styles */
-/* line 423, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 422, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
+
 .select2-container.select2-container-disabled .select2-choice {
   background-color: #f4f4f4;
   background-image: none;
   border: 1px solid #ddd;
   cursor: default;
 }
-/* line 430, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 429, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container.select2-container-disabled .select2-choice .select2-arrow {
   background-color: #f4f4f4;
   background-image: none;
   border-left: 0;
 }
-/* line 436, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 435, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container.select2-container-disabled .select2-choice abbr {
   display: none;
 }
-/* multiselect */
-/* line 443, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 440, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
+
 .select2-container-multi .select2-choices {
   height: auto !important;
   height: 1%;
@@ -922,70 +859,13 @@ disabled look for disabled choices in the results dropdown
   cursor: text;
   overflow: hidden;
   background-color: #fff;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
-  background-image: -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-  background-image: -moz-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-  background-image: -o-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-  background-image: -ms-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-  background-image: linear-gradient(top, #eeeeee 1%, #ffffff 15%);
-}
-/* line 463, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 458, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-.select2-locked {
-  padding: 3px 5px 3px 5px !important;
-}
-/* line 467, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 462, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-.select2-container-multi .select2-choices {
-  min-height: 26px;
-}
-/* line 471, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 466, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-.select2-container-multi.select2-container-active .select2-choices {
-  border: 1px solid #5897fb;
-  outline: none;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-/* line 478, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 473, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-.select2-container-multi .select2-choices li {
-  float: left;
-  list-style: none;
-}
-/* line 482, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 478, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-.select2-container-multi .select2-choices .select2-search-field {
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-}
-/* line 488, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 484, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-.select2-container-multi .select2-choices .select2-search-field input {
-  padding: 5px;
-  margin: 1px 0;
-  font-family: sans-serif;
-  font-size: 100%;
-  color: #666;
-  outline: 0;
-  border: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: transparent !important;
-}
-/* line 502, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 497, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-.select2-container-multi .select2-choices .select2-search-field input.select2-active {
-  background: #ffffff url('../img/GUI/select2-spinner.gif') no-repeat 100% !important;
-}
-/* line 506, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 501, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee),color-stop(15%,#fff));background-image:-webkit-linear-gradient(top,#eee 1%,#fff 15%);background-image:-moz-linear-gradient(top,#eee 1%,#fff 15%);background-image:-o-linear-gradient(top,#eee 1%,#fff 15%);background-image:-ms-linear-gradient(top,#eee 1%,#fff 15%);background-image:linear-gradient(top,#eee 1%,#fff 15%)}.select2-locked{padding:3px 5px!important}.select2-container-multi .select2-choices{min-height:26px}.select2-container-multi.select2-container-active .select2-choices{border:1px solid #5897fb;outline:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.3);box-shadow:0 0 5px rgba(0,0,0,.3)}.select2-container-multi .select2-choices li{float:left;list-style:none}.select2-container-multi .select2-choices .select2-search-field{margin:0;padding:0;white-space:nowrap}.select2-container-multi .select2-choices .select2-search-field input{padding:5px;margin:1px 0;font-family:sans-serif;font-size:100%;color:#666;outline:0;border:0;-webkit-box-shadow:none;box-shadow:none;background:transparent!important}.select2-container-multi .select2-choices .select2-search-field input.select2-active{background:#fff url("<t4 type='media' id='251426' formatter='path
+
 .select2-default {
   color: #999 !important;
 }
-/* line 510, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 505, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container-multi .select2-choices .select2-search-choice {
   padding: 3px 5px 3px 18px;
   margin: 3px 0 3px 5px;
@@ -1013,18 +893,18 @@ disabled look for disabled choices in the results dropdown
   background-image: -ms-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
   background-image: linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
 }
-/* line 543, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 533, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container-multi .select2-choices .select2-search-choice .select2-chosen {
   cursor: default;
 }
-/* line 546, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 537, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container-multi .select2-choices .select2-search-choice-focus {
   background: #d4d4d4;
 }
-/* line 550, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 541, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-search-choice-close {
   display: block;
   width: 12px;
@@ -1034,55 +914,53 @@ disabled look for disabled choices in the results dropdown
   top: 4px;
   font-size: 1px;
   outline: none;
-  background: url('../img/GUI/select2.png') right top no-repeat;
-}
-/* line 563, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 553, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  background: url("<t4 type='media' id='251426' formatter='path
+
 .select2-container-multi .select2-search-choice-close {
   left: 3px;
 }
-/* line 567, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 557, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover {
   background-position: right -11px;
 }
-/* line 570, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 561, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close {
   background-position: right -11px;
 }
-/* disabled styles */
-/* line 575, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 566, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
+
 .select2-container-multi.select2-container-disabled .select2-choices {
   background-color: #f4f4f4;
   background-image: none;
   border: 1px solid #ddd;
   cursor: default;
 }
-/* line 582, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 573, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
   padding: 3px 5px 3px 5px;
   border: 1px solid #ddd;
   background-image: none;
   background-color: #f4f4f4;
 }
-/* line 589, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 580, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close {
   display: none;
   background: none;
 }
-/* end multiselect */
-/* line 595, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 586, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
+
 .select2-result-selectable .select2-match,
 .select2-result-unselectable .select2-match {
   text-decoration: underline;
 }
-/* line 600, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 591, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-offscreen,
 .select2-offscreen:focus {
   clip: rect(0 0 0 0) !important;
@@ -1097,13 +975,13 @@ disabled look for disabled choices in the results dropdown
   left: 0px !important;
   top: 0px !important;
 }
-/* line 614, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 606, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-display-none {
   display: none;
 }
-/* line 618, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-/* line 610, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+
+
 .select2-measure-scrollbar {
   position: absolute;
   top: -10000px;
@@ -1112,50 +990,50 @@ disabled look for disabled choices in the results dropdown
   height: 100px;
   overflow: scroll;
 }
-/* Retina-ize icons */
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-  /* line 629, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-  /* line 621, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  
+  
   .select2-search input,
   .select2-search-choice-close,
   .select2-container .select2-choice abbr,
   .select2-container .select2-choice .select2-arrow b {
-    background-image: url('select2x2.png') !important;
+    background-image: url(select2x2.png) !important;
     background-repeat: no-repeat !important;
     background-size: 60px 40px !important;
   }
-  /* line 634, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
-  /* line 630, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
+  
+  
   .select2-search input {
     background-position: 100% -21px !important;
   }
 }
-/* line 2, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #csf_wrapper {
   float: left;
   width: 520px;
 }
-/* line 5, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #csf_wrapper input {
   width: 490px;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #custom-search-form {
   position: relative;
   margin: 0;
   padding: 0;
 }
-/* line 15, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 header #custom-search-form {
   margin-top: 3em;
 }
-/* line 21, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #custom-search-form .search-query {
   padding-right: 3px;
   padding-right: 4px \9;
   padding-left: 3px;
   padding-left: 4px \9;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  
 
   margin-bottom: 0;
   -webkit-border-radius: 3px;
@@ -1163,29 +1041,29 @@ header #custom-search-form {
   border-radius: 3px;
   float: right;
 }
-/* line 35, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #custom-search-form button {
   border: 0;
   background: none;
-  /** belows styles are working good */
+  
 
   padding: 2px 5px;
   margin-top: 2px;
   position: absolute;
   top: 0;
   right: 0;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  
 
   margin-bottom: 0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 52, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .search-query:focus + button {
   z-index: 3;
 }
-/* line 59, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #searchForm {
   position: relative;
   padding: 0;
@@ -1197,25 +1075,25 @@ header #custom-search-form {
   border: 1px solid #CCCCCC;
   border-radius: 5px;
 }
-/* line 69, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #searchForm input {
   border-color: transparent!important;
   margin: 0!important;
   outline: none;
 }
-/* line 74, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #searchForm button {
   position: absolute;
   top: 0;
   right: 0;
 }
-/* line 78, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #searchForm button span {
   display: block;
   position: absolute;
   left: -9999px;
 }
-/* line 87, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #displayOptions {
   *zoom: 1;
   position: relative;
@@ -1223,56 +1101,52 @@ header #custom-search-form {
   background: #EEEBE3;
   padding: 10px 0 0 0;
   border-radius: 3px;
-  /*
-	float: left;
-	width: 100%;
-	height: 30px;
-	*/
+  
 
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 #displayOptions:before,
 #displayOptions:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 #displayOptions:after {
   clear: both;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 #displayOptions:before,
 #displayOptions:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 #displayOptions:after {
   clear: both;
 }
-/* line 99, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #displayOptions h6 {
   float: left;
   margin: 0;
 }
-/* line 103, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #displayOptions .display-actions {
   float: right;
 }
-/* line 105, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #displayOptions .display-actions form {
   margin: 0;
   float: left;
 }
-/* line 108, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #displayOptions .display-actions form label {
   float: left;
   padding: 0 5px;
   font-size: .8em;
 }
-/* line 113, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #displayOptions .display-actions form select {
   width: auto;
   height: auto;
@@ -1282,27 +1156,27 @@ header #custom-search-form {
   font-size: .8em;
   line-height: 1;
 }
-/* line 124, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #displayOptions .icon {
   float: left;
   margin: 0 5px;
 }
-/* line 129, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #search-infos {
   background: #fff;
   font-size: .9em;
 }
-/* line 132, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #search-infos p {
   padding: 5px 10px;
 }
-/* line 135, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #search-infos #compare-info {
   margin: 0;
   border-top: 1px solid #8f499c;
   color: #777;
 }
-/* line 142, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .filter-pane {
   position: relative;
   overflow: hidden;
@@ -1310,70 +1184,70 @@ header #custom-search-form {
   *zoom: 1;
   border-top: 1px solid #c6c8ca;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 .filter-pane:before,
 .filter-pane:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 .filter-pane:after {
   clear: both;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .filter-pane:before,
 .filter-pane:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .filter-pane:after {
   clear: both;
 }
-/* line 148, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .filter-pane h6 {
   margin-top: 10px;
 }
-/* line 151, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .filter-pane .collapsible.opened {
   padding-bottom: 10px;
 }
-/* line 156, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #innovation-list {
   background: #fff;
 }
-/* line 158, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #innovation-list .innovation-card {
   position: relative;
   border-top: 1px dotted #8f499c;
   padding: 10px;
 }
-/* line 162, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #innovation-list .innovation-card .add-to-compare-list {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-/* line 167, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #innovation-list .innovation-card .title {
   margin: 10px 0 0 0;
   padding: 0 20px 0 0;
 }
-/* line 172, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #innovation-list .innovation-card P {
   margin-bottom: .5em;
 }
-/* line 178, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .add-to-compare-list.selected {
   background: #939598;
 }
-/* line 183, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .tag-list {
   margin: 5px 0;
 }
-/* line 185, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .tag-list span {
   display: block;
   float: left;
@@ -1384,7 +1258,7 @@ header #custom-search-form {
   font-size: .8em;
   line-height: 1;
 }
-/* line 199, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #researchList a.docItem {
   display: block;
   color: #333;
@@ -1392,49 +1266,49 @@ header #custom-search-form {
   padding: 10px 0;
   margin-top: 10px;
 }
-/* line 205, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #researchList a.docItem img {
   float: left;
   width: 32px;
   margin: 5px 10px;
 }
-/* line 210, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #researchList a.docItem h4 {
   border-top: none;
   color: #04629a;
   padding: 5px 10px 0 50px;
   margin: 0;
 }
-/* line 216, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #researchList a.docItem p {
   padding: 5px 10px 0 50px;
   margin: 0;
   line-height: 1.2;
 }
-/* line 221, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #researchList a.docItem p.infos {
   font-size: .9em;
 }
-/* line 226, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #researchList a.docItem:hover {
   text-decoration: none;
 }
-/* line 229, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #researchList a.docItem:hover h4 {
   text-decoration: underline;
 }
-/* line 234, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #researchList a.docItem span.resSrc {
   font-style: italic;
 }
-/* line 240, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .zkFilter {
   position: relative;
   overflow: hidden;
   line-height: 1;
   padding: 1px 0;
 }
-/* line 245, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .zkFilter a.addFilter {
   display: block;
   background: white;
@@ -1445,13 +1319,13 @@ header #custom-search-form {
   margin-right: 20px;
   padding: 3px 5px;
 }
-/* line 254, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .zkFilter a.addFilter:hover {
   background: #037bc1;
   color: white;
   text-decoration: none;
 }
-/* line 261, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .zkFilter a.fNot {
   display: block;
   position: absolute;
@@ -1468,18 +1342,18 @@ header #custom-search-form {
   font-weight: 600;
   color: #ba131a;
 }
-/* line 276, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .zkFilter a.fNot:hover {
   background: #ba131a;
   color: white;
   text-decoration: none;
 }
-/* line 285, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .tags-group .zkFilter {
   float: left;
   margin-right: 5px;
 }
-/* line 289, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .tags-group .zkFilter .addFilter {
   margin-right: 5px;
   margin-bottom: 5px;
@@ -1487,166 +1361,166 @@ header #custom-search-form {
   border-right-width: 1px;
   border-radius: 3px;
 }
-/* line 295, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .tags-group .zkFilter .addFilter .categoryStat {
   padding: 0!important;
 }
-/* line 303, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #mapFilter #tablist {
   margin-bottom: 0;
 }
-/* line 306, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #mapFilter .tab-pane {
   border: 1px solid #ededed;
   border-top: none;
   padding: 10px;
 }
-/* line 311, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #mapFilter label {
   border-bottom: 1px solid #ededed;
   padding-bottom: 5px;
 }
-/* line 314, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #mapFilter label em {
   color: #939598;
 }
-/* line 321, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .pagination {
   text-align: center;
 }
-/* line 323, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter {
   font-size: 12px;
 }
-/* line 325, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter h4 {
   border-top: 1px solid #8f499c;
   padding-top: 20px;
 }
-/* line 329, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   *zoom: 1;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 #resFilter ul:before,
 #resFilter ul:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 #resFilter ul:after {
   clear: both;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 #resFilter ul:before,
 #resFilter ul:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 #resFilter ul:after {
   clear: both;
 }
-/* line 334, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul#currentFilters {
   background: white;
   padding: 0 10px 10px 10px;
   margin-bottom: 10px;
 }
-/* line 339, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul#currentFilters h6 {
   margin-bottom: 0;
   text-indent: 5px;
   color: #6d6f71;
 }
-/* line 344, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul#currentFilters .category {
   background: #f4f4f4;
   border: 1px solid white;
   border-radius: 3px;
   padding: 3px 0 3px 5px;
 }
-/* line 350, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul#currentFilters .removeLink {
   display: block;
   float: right;
   padding: 0;
   width: 20px;
 }
-/* line 358, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul#groups {
   border-bottom: 1px solid #c6c8ca;
 }
-/* line 360, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul#groups h6 {
   margin-top: 0;
 }
-/* line 363, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul#groups .refineGroup {
   *zoom: 1;
   position: relative;
   border-top: 1px solid #c6c8ca;
   padding: 10px 0;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 #resFilter ul#groups .refineGroup:before,
 #resFilter ul#groups .refineGroup:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 #resFilter ul#groups .refineGroup:after {
   clear: both;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 #resFilter ul#groups .refineGroup:before,
 #resFilter ul#groups .refineGroup:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 #resFilter ul#groups .refineGroup:after {
   clear: both;
 }
-/* line 368, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul#groups .refineGroup li {
   border-top: 1px solid #ededed;
   padding: 3px 0 3px 35px;
 }
-/* line 378, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter ul h6 {
   margin-top: 0;
 }
-/* line 383, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter.row li {
   border-top: none;
 }
-/* line 387, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter .categoryStat {
   font-style: italic;
   color: #939598;
   padding: 0 10px;
 }
-/* line 394, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter #custom-search-form {
   margin: 5px 0;
 }
-/* line 397, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter #custom-search-form .search-query {
   width: 294px;
 }
-/* line 400, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 #resFilter .collapsible {
   width: 100%;
 }
-/* line 404, /Users/ezka/Documents/WRK/opsi/less/app/common/searchElements.less */
+
 .excludeLink {
   font-size: .7em
 	padding: 0;
@@ -1655,43 +1529,43 @@ header #custom-search-form {
   line-height: 1;
   background: #037bc1;
 }
-/* line 2, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 h4 {
   padding-top: 20px;
 }
-/* line 6, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .home-pane {
   background: white;
   border-radius: 0 0 5px 5px;
   overflow: hidden;
   height: 300px;
 }
-/* line 12, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .home-pane h4 {
   padding-left: 10px;
   margin-top: 0;
 }
-/* line 16, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .home-pane p {
   padding: 10px 10px 0 20px;
 }
-/* line 20, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .opsiTile {
   padding: 10px 10px;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .opsiTile h4 {
   background: ;
   padding: 0 0 5px 0;
   margin: 0;
 }
-/* line 27, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .opsiTile p {
   font-size: 1em;
   padding: 0 10px;
   text-align: justify;
 }
-/* line 34, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile {
   position: relative;
   overflow: hidden;
@@ -1702,90 +1576,90 @@ h4 {
   border-radius: 3px;
   text-align: center;
 }
-/* line 43, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile h3 {
   position: relative;
   line-height: 1.2;
 }
-/* line 46, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile h3 span {
   display: block;
   font-size: .6em;
   font-weight: 400;
   min-height: 2em;
 }
-/* line 53, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile p {
   position: fixed;
   top: 100%;
   padding: 10px ;
   line-height: 1.2;
 }
-/* line 59, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile .icon {
   font-size: 50px;
   color: #f09f70;
 }
-/* line 63, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile a {
   display: block;
   height: 100%;
   color: #72367d;
   text-decoration: none;
 }
-/* line 68, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile a:hover {
   text-decoration: none;
 }
-/* line 71, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile a .icon {
   padding-top: 10px;
 }
-/* line 75, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile:hover {
   background: #72367d;
   color: white;
 }
-/* line 78, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile:hover h3 {
   display: none;
 }
-/* line 81, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile:hover p {
   position: static;
   color: white;
 }
-/* line 85, /Users/ezka/Documents/WRK/opsi/less/app/home/common.less */
+
 .homeTile:hover .icon {
   color: #ffeed9;
 }
-/* line 2, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper {
   position: relative;
   background: white;
 }
-/* line 5, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper h3 {
   position: relative;
   line-height: 1.2;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .selectorsBlock {
   position: absolute;
   top: -35px;
   right: 0;
 }
-/* line 13, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .selectorsBlock .item {
   float: left;
   padding: 5px 10px;
   color: #ddd;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .selectorsBlock .item.selected {
   color: #777;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .iosSlider {
   position: relative;
   background: #37013c;
@@ -1793,12 +1667,12 @@ h4 {
   width: 100%;
   height: 250px;
 }
-/* line 28, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .iosSlider .slider {
   width: 100%;
   height: 100%;
 }
-/* line 31, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .iosSlider .slider .item {
   display: block;
   text-decoration: none!important;
@@ -1806,7 +1680,7 @@ h4 {
   overflow: hidden;
   *zoom: expression(this.runtimeStyle.zoom=1,this.innerHTML = "<b></b><i></i>"+this.innerHTML);
 }
-/* line 37, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .iosSlider .slider .item:before,
 .wrapper .iosSlider .slider .item b {
   content: "";
@@ -1824,7 +1698,7 @@ h4 {
   filter: alpha(opacity=75);
   z-index: 55;
 }
-/* line 55, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .iosSlider .slider .item:after,
 .wrapper .iosSlider .slider .item i {
   content: "";
@@ -1842,7 +1716,7 @@ h4 {
   filter: alpha(opacity=75);
   z-index: 45;
 }
-/* line 72, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .iosSlider .slider .item h3,
 .wrapper .iosSlider .slider .item p {
   z-index: 55;
@@ -1854,12 +1728,12 @@ h4 {
   padding-left: 45%;
   padding-right: 5%;
 }
-/* line 83, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .iosSlider .slider .item p {
   padding-top: .5em;
   color: #ededed;
 }
-/* line 88, /Users/ezka/Documents/WRK/opsi/less/app/home/slider.less */
+
 .wrapper .iosSlider .slider .item img {
   position: absolute;
   vertical-align: top;
@@ -1867,12 +1741,12 @@ h4 {
   width: auto;
   max-width: none;
 }
-/* line 1, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 .jvectormap-label {
   position: absolute;
   display: none;
 }
-/* line 4, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 .jvectormap-label .my-label {
   border: solid 1px #CDCDCD;
   -webkit-border-radius: 3px;
@@ -1884,7 +1758,7 @@ h4 {
   font-size: smaller;
   padding: 3px;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 .jvectormap-zoomin,
 .jvectormap-zoomout {
   position: absolute;
@@ -1901,43 +1775,43 @@ h4 {
   line-height: 10px;
   text-align: center;
 }
-/* line 33, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 .jvectormap-zoomin {
   top: 10px;
 }
-/* line 37, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 .jvectormap-zoomout {
   top: 30px;
 }
-/* line 41, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 #world-wrap {
   *zoom: 1;
   padding: 20px 0;
   position: relative;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 #world-wrap:before,
 #world-wrap:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 #world-wrap:after {
   clear: both;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 #world-wrap:before,
 #world-wrap:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 #world-wrap:after {
   clear: both;
 }
-/* line 46, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 #map-bar {
   position: absolute;
   background: white;
@@ -1946,15 +1820,15 @@ h4 {
   bottom: 25px;
   line-height: 1;
 }
-/* line 53, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 #map-bar .min {
   float: left;
 }
-/* line 56, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 #map-bar .max {
   float: right;
 }
-/* line 58, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 #map-bar .rule {
   position: relative;
   float: left;
@@ -1963,31 +1837,31 @@ h4 {
   height: 14px;
   background: #72367d;
   background: #dccedf;
-  /* Old browsers */
+  
 
   background: -moz-linear-gradient(left, #dccedf 0%, #72367d 100%);
-  /* FF3.6+ */
+  
 
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #dccedf), color-stop(100%, #72367d));
-  /* Chrome,Safari4+ */
+  
 
   background: -webkit-linear-gradient(left, #dccedf 0%, #72367d 100%);
-  /* Chrome10+,Safari5.1+ */
+  
 
   background: -o-linear-gradient(left, #dccedf 0%, #72367d 100%);
-  /* Opera 11.10+ */
+  
 
   background: -ms-linear-gradient(left, #dccedf 0%, #72367d 100%);
-  /* IE10+ */
+  
 
   background: linear-gradient(to right, #dccedf 0%, #72367d 100%);
-  /* W3C */
+  
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dccedf', endColorstr='#72367d', GradientType=1);
-  /* IE6-9 */
+  
 
 }
-/* line 76, /Users/ezka/Documents/WRK/opsi/less/libraries/jquery-jvectormap.less */
+
 #map-bar #curs {
   position: absolute;
   top: -10px;
@@ -1999,82 +1873,82 @@ h4 {
   border-width: 10px 5px 0 5px;
   border-color: #333 transparent transparent transparent;
 }
-/* line 2, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 .countryList .countryblock {
   margin: 0 0 20px 40px;
   list-style-type: none;
   border-bottom: 1px solid #ededed;
 }
-/* line 6, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 .countryList .countryblock li {
   border-top: 1px solid #ededed;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 .countryList .countryblock a {
   display: block;
   padding: 5px 0;
 }
-/* line 12, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 .countryList .countryblock a[href="#"] {
   color: #939598;
   text-decoration: none!important;
   cursor: default;
 }
-/* line 23, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 .cFlag {
   float: left;
   padding: 5px;
   margin: 5px;
   background: #ededed;
 }
-/* line 30, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 .cFocus h4 {
   border-top: 1px solid #8f499c;
   padding-top: 20px;
 }
-/* line 35, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 .cMore {
   padding-top: 20px;
 }
-/* line 39, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 #innovation-list h5 {
   padding: 35px 10px 5px 10px;
   margin: 0;
 }
-/* line 45, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 #otherDocs h5 {
   border-top: 1px solid #8f499c;
   padding-top: 20px;
 }
-/* line 49, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 #otherDocs a.item {
   display: block;
   float: left;
   text-align: center!important;
   padding: 0 10px 0 0;
 }
-/* line 56, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 #cContact {
   border-top: 1px solid #8f499c;
   padding-top: 10px;
 }
-/* line 59, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 #cContact p {
   float: left;
   margin: 0 10px 10px 0;
 }
-/* line 64, /Users/ezka/Documents/WRK/opsi/less/app/countries.less */
+
 #cContact a em {
   color: #777;
   text-decoration: none;
 }
-/* line 1, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .colexp {
   position: absolute;
   top: .5em;
   right: 10px;
 }
-/* line 6, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .collapsible {
   -webkit-transition: height .35s ease;
   -moz-transition: height .35s ease;
@@ -2084,40 +1958,40 @@ h4 {
   float: left;
   overflow: hidden;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .collapsible p:first-child {
   margin-left: 0;
 }
-/* line 18, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .opened {
   height: auto;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .backtothefuture {
   display: block;
   margin-top: -1.5em;
 }
-/* line 27, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .inAction {
   text-align: right;
   padding: 0 0 10px 0;
 }
-/* line 31, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .compTitle {
   position: relative;
   background: white;
 }
-/* line 34, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .compTitle .inAction {
   padding: 10px;
   text-align: right;
 }
-/* line 38, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 .compTitle h2 {
   margin: 10px 0 0  0;
   padding: 10px;
 }
-/* line 44, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table {
   background: white;
   border: none;
@@ -2125,16 +1999,16 @@ h4 {
   border-radius: 3px;
   text-align: left;
 }
-/* line 50, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table td ul,
 #compare table td p {
   padding: 0 10px 0 20px;
 }
-/* line 53, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table span {
   display: block;
 }
-/* line 56, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table th {
   padding: 10px 10px 10px 20px;
   vertical-align: top;
@@ -2143,25 +2017,25 @@ h4 {
   border: none;
   border-top: 1px solid #f1f1f1;
 }
-/* line 63, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table th.innovation-name {
   border-left: 1px solid #EEEBE3;
 }
-/* line 65, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table th.innovation-name a {
   display: block;
   float: left;
 }
-/* line 68, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table th.innovation-name a.compare-remove {
   float: right;
   padding: 0;
 }
-/* line 71, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table th.innovation-name a.compare-remove i {
   padding: 0;
 }
-/* line 78, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table td {
   padding: 10px 0;
   vertical-align: top;
@@ -2170,23 +2044,23 @@ h4 {
   border-width: 1px;
   border-style: solid;
 }
-/* line 85, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table td.tag-list {
   padding: 10px 10px 10px 20px;
 }
-/* line 87, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table td.tag-list span {
   float: left;
   padding: 2px 5px;
   margin: 3px 6px 3px 0;
   font-size: 1em;
 }
-/* line 95, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table ul {
   list-style-type: none;
   margin: 0;
 }
-/* line 99, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table li,
 #compare table a.more {
   display: block;
@@ -2194,7 +2068,7 @@ h4 {
   margin: 0 0 .5em 16px;
   padding: 0;
 }
-/* line 104, /Users/ezka/Documents/WRK/opsi/less/app/common/compare.less */
+
 #compare table li i,
 #compare table a.more i {
   position: absolute;
@@ -2202,22 +2076,22 @@ h4 {
   left: -20px;
   display: block;
 }
-/* line 12, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .clearfix {
   *zoom: 1;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .clearfix:before,
 .clearfix:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .clearfix:after {
   clear: both;
 }
-/* line 106, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -2225,7 +2099,7 @@ h4 {
   background-color: transparent;
   border: 0;
 }
-/* line 154, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .input-block-level {
   display: block;
   width: 100%;
@@ -2234,7 +2108,7 @@ h4 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 6, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard {
   *zoom: 1;
   position: relative;
@@ -2247,37 +2121,37 @@ h4 {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
   background-color: #f9f9f9;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 .wizard:before,
 .wizard:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+
 .wizard:after {
   clear: both;
 }
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .wizard:before,
 .wizard:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+
 .wizard:after {
   clear: both;
 }
-/* line 16, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul {
   list-style: none outside none;
   padding: 0;
   margin: 0;
-  /* set z-index on steps for chevron overlap */
+  
 
 }
-/* line 21, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li {
   float: left;
   margin: 0;
@@ -2290,7 +2164,7 @@ h4 {
   font-size: 16px;
   cursor: default;
 }
-/* line 33, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li .chevron {
   border: 24px solid transparent;
   border-left: 14px solid #939598;
@@ -2300,7 +2174,7 @@ h4 {
   right: -14px;
   top: 0;
 }
-/* line 43, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li .chevron:before {
   border: 24px solid transparent;
   border-left: 14px solid #ededed;
@@ -2311,80 +2185,80 @@ h4 {
   right: 1px;
   top: -24px;
 }
-/* line 54, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li.complete {
   background: #f3f4f5;
   color: #468847;
 }
-/* line 58, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li.complete:hover {
   background: #e7eff8;
   cursor: pointer;
 }
-/* line 62, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li.complete:hover .chevron:before {
   border-left: 14px solid #e7eff8;
 }
-/* line 67, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li.complete .chevron:before {
   border-left: 14px solid #f3f4f5;
 }
-/* line 71, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li.active {
   background: #f1f6fc;
   color: #3a87ad;
 }
-/* line 75, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li.active .chevron:before {
   border-left: 14px solid #f1f6fc;
 }
-/* line 79, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li .badge {
   margin-right: 8px;
 }
-/* line 85, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(1) {
   border-radius: 4px 0 0 4px;
   padding-left: 20px;
   z-index: 10;
 }
-/* line 90, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(2) {
   z-index: 9;
 }
-/* line 93, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(3) {
   z-index: 8;
 }
-/* line 96, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(4) {
   z-index: 7;
 }
-/* line 99, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(5) {
   z-index: 6;
 }
-/* line 102, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(6) {
   z-index: 5;
 }
-/* line 105, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(7) {
   z-index: 4;
 }
-/* line 108, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(8) {
   z-index: 3;
 }
-/* line 111, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(9) {
   z-index: 2;
 }
-/* line 114, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard ul li:nth-child(10) {
   z-index: 1;
 }
-/* line 119, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard .actions {
   margin-top: 20px;
   right: 150px;
@@ -2395,29 +2269,29 @@ h4 {
   padding-right: 15px;
   vertical-align: middle;
 }
-/* line 129, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard .actions a {
   line-height: 45px;
   font-size: 12px;
   margin-right: 8px;
 }
-/* line 136, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard .actions .btn-prev i {
   margin-right: 5px;
 }
-/* line 142, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .wizard .actions .btn-next i {
   margin-left: 5px;
 }
-/* line 150, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .step-content .step-pane {
   display: none;
 }
-/* line 154, /Users/ezka/Documents/WRK/opsi/less/libraries/wizard.less */
+
 .step-content .active {
   display: block;
 }
-/* line 1, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 .btn-primary {
   background-color: #72367d!important;
   background-image: -moz-linear-gradient(top, #8f499c, #72367d);
@@ -2431,91 +2305,91 @@ h4 {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-/* line 15, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .lng {
   float: right;
   padding-top: 20px;
 }
-/* line 18, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .lng p {
   margin-right: 5px;
   color: #c6c8ca;
 }
-/* line 24, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit legend {
   margin-bottom: -1px;
   padding: .5em 0;
   border-bottom: none;
 }
-/* line 29, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit h5 {
   margin: 0!important;
   padding: 5px 0;
   border-top: 1px solid #c6c8ca;
   text-indent: 20px;
 }
-/* line 35, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit p.sep {
   border-top: 1px dotted #c6c8ca;
   margin: 0 0 0 20px;
   height: 0;
 }
-/* line 40, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .help-block {
   padding-top: .5em;
   padding-bottom: .1em;
   font-size: 12px;
 }
-/* line 45, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit span.help-block {
   margin-top: 0;
   padding: 0 3px;
 }
-/* line 49, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .span8 {
   background: white;
 }
-/* line 52, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .hiddenfrom {
   width: 0;
   height: 0;
   border: none;
   filter: alpha(opacity=0);
-  /* Netscape */
+  
 
   -moz-opacity: 0;
-  /* Safari 1.x */
+  
 
   -khtml-opacity: 0;
-  /* Good browsers */
+  
 
   opacity: 0;
 }
-/* line 68, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit label.error {
   color: #72367d;
-  /* color to match Bootstraps error class */
+  
 
   font-size: 0.8em;
 }
-/* line 72, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .formIndications {
   list-style-type: none;
   margin: 0;
   padding: 0 0 20px 0;
   float: left;
 }
-/* line 77, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .formIndications li {
   margin: 0 20px 0 70px;
   padding: 15px 0;
   border-bottom: 1px solid #c6c8ca;
 }
-/* line 78, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .formIndications li:first-child {
   border-top: 1px solid #c6c8ca;
 }
-/* line 87, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit fieldset .badge {
   margin: 0 5px 0 0;
   padding-left: 5px;
@@ -2524,7 +2398,7 @@ h4 {
   color: #fff;
   border-radius: 0 3px 3px 0;
 }
-/* line 95, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit fieldset input[type=file] {
   border: 1px solid #ededed;
   border-radius: 5px;
@@ -2533,66 +2407,66 @@ h4 {
   line-height: 1;
   color: #c6c8ca;
 }
-/* line 105, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .novelty-pane.disabled {
   display: none;
 }
-/* line 109, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit #addPractice {
   display: none;
 }
-/* line 113, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .novelty-block.disabled {
   color: #c6c8ca !important;
 }
-/* line 116, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .novelty-block .addPractice {
   margin: 0 0 10px 0;
 }
-/* line 119, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .novelty-block .novelty-field {
   margin: 10px 0;
 }
-/* line 124, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .partnership-block.disabled {
   color: #c6c8ca !important;
 }
-/* line 127, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .partnership-block .addPractice {
   margin: 0 0 10px 0;
 }
-/* line 130, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .partnership-block .partnership-field {
   margin: 10px 0;
 }
-/* line 134, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .control-label {
   position: relative;
 }
-/* line 136, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .control-label .icon-map-marker {
   position: absolute;
   top: 7px;
   right: -1.2em;
 }
-/* line 142, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .control-group {
   margin-bottom: 0;
   padding: 10px 0;
 }
-/* line 146, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .control-group.error .badge,
 #innovationSubmit .control-group.warning .badge {
   background: #72367d;
 }
-/* line 150, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .control-group em {
   display: block;
   font-size: .9em;
   color: #6d6f71;
   padding-right: 10px;
 }
-/* line 157, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .bullet-block {
   border: 1px solid #c6c8ca;
   border-radius: 3px;
@@ -2600,12 +2474,12 @@ h4 {
   margin-bottom: 10px;
   width: 380px;
 }
-/* line 163, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .bullet-block ul {
   margin: 0;
   padding: 2px 0 0;
 }
-/* line 167, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .bullet-block textarea {
   margin: 0 2px 0 10px;
   width: 350px;
@@ -2617,11 +2491,11 @@ h4 {
   box-shadow: none;
   border-radius: 0;
 }
-/* line 178, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .bullet-block .bLine {
   position: relative;
 }
-/* line 180, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 #innovationSubmit .bullet-block .bLine:before {
   position: absolute;
   top: 0;
@@ -2631,7 +2505,7 @@ h4 {
   font-size: 2em;
   line-height: 1;
 }
-/* line 195, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
+
 .myWell {
   min-height: 20px;
   padding: 0;
@@ -2641,53 +2515,4 @@ h4 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-/* line 209, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
-#circle-process {
-  *zoom: 1;
-}
-/* line 210, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
-#circle-process table {
-  border-collapse: separate;
-  border-spacing: 10px;
-  *border-collapse: expression('separate', cellSpacing='10px');
-}
-/* line 214, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
-#circle-process table td {
-  vertical-align: top;
-  width: 20%;
-  padding: 1px 5px 5px 10px;
-  border: 1px solid #ddd;
-  background: white;
-  border-radius: 5px;
-}
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
-#circle-process:before,
-#circle-process:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
-#circle-process:after {
-  clear: both;
-}
-/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
-#circle-process:before,
-#circle-process:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
-#circle-process:after {
-  clear: both;
-}
-/* line 224, /Users/ezka/Documents/WRK/opsi/less/app/innovation/submit.less */
-#circle-process .help-block {
-  height: 100%;
-  line-height: 1.3;
-}
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}#circle-process{*zoom:1}#circle-process table{border-collapse:separate;border-spacing:10px;*border-collapse:expression('separate', cellSpacing='10px')}#circle-process table td{vertical-align:top;width:20%;padding:1px 5px 5px 10px;border:1px solid #ddd;background:#fff;border-radius:5px}#circle-process:before,#circle-process:after{display:table;content:"";line-height:0}#circle-process:after{clear:both}#circle-process:before,#circle-process:after{display:table;content:"";line-height:0}#circle-process:after{clear:both}#circle-process .help-block{height:100%;line-height:1.3}
