@@ -1,11 +1,10 @@
-
 		<nav>
 			<ul class="browse">
 				<li><a href="/{{ logUrl }}">Home</a></li>
         		<li {% if mixture.url contains "about" %}class="current"{% endif %}><a href="/pages/about{{ logUrl }}">About</a></li>
 				<li {% if mixture.url contains "innovation/home" %}class="current"{% endif %}><a href="/innovation/home{{ logUrl }}">Innovations</a></li>
 				<li {% if mixture.url contains "library" %}class="current"{% endif %}><a href="/pages/library{{ logUrl }}">Library</a></li>
-				<li {% if mixture.url contains "countries" %}class="current"{% endif %}><a href="/pages/countries{{ logUrl }}">Country Profiles</a></li>
+				<li {% if mixture.url contains "countries" or mixture.url contains "country" %}class="current"{% endif %}><a href="/pages/countries{{ logUrl }}">Country Profiles</a></li>
 			{% if logState ==  'logged' %}
         		<li {% if mixture.url contains "submit" %}class="current"{% endif %}><a href="/innovation/submit{{ logUrl }}">Submit</a></li>
 			{% else %}

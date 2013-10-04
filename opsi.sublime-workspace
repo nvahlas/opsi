@@ -1,0 +1,1511 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border-co",
+				"border-collapse"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border-c",
+				"border-collapse"
+			],
+			[
+				"bor",
+				"border-style"
+			],
+			[
+				"max",
+				"maxValue"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			],
+			[
+				"bord",
+				"border-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"borde",
+				"border-right"
+			],
+			[
+				"m",
+				"margin-right"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"rem",
+				"removeClass	.removeClass"
+			],
+			[
+				"toggle",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"t",
+				"text-decoration"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"stage",
+				"stageIndex"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"sp",
+				"span6"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"P",
+				"p	padding"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"a",
+				"alt	Attr"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "mixture.json",
+			"settings":
+			{
+				"buffer_size": 593,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/app.less",
+			"settings":
+			{
+				"buffer_size": 819,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/app.css",
+			"settings":
+			{
+				"buffer_size": 85397,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/layouts/layout.liquid",
+			"settings":
+			{
+				"buffer_size": 1750,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/includes/_partials/innovation_filters.liquid",
+			"settings":
+			{
+				"buffer_size": 16855,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/includes/_partials/library_filters.liquid",
+			"settings":
+			{
+				"buffer_size": 7689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/innovation/search.liquid",
+			"settings":
+			{
+				"buffer_size": 5645,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/innovation/home.liquid",
+			"settings":
+			{
+				"buffer_size": 5895,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/select2.css",
+			"settings":
+			{
+				"buffer_size": 30238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 64 files for \"url\\(.*?\\)\" (regex)\n\n/Users/ezka/Documents/WRK/opsi/less/app/common/fonts.less:\n    3  @font-face {\n    4    font-family: \"opsi-draft1\";\n    5:   src:url(\"../fonts/opsi-draft1.eot\");\n    6:   src:url(\"../fonts/opsi-draft1.eot?#iefix\") format(\"embedded-opentype\"),\n    7:     url(\"../fonts/opsi-draft1.ttf\") format(\"truetype\"),\n    8:     url(\"../fonts/opsi-draft1.svg#opsi-draft1\") format(\"svg\"),\n    9:     url(\"../fonts/opsi-draft1.woff\") format(\"woff\");\n   10    font-weight: normal;\n   11    font-style: normal;\n\n/Users/ezka/Documents/WRK/opsi/less/app/common/main.less:\n   12  	}\n   13  	nav {\n   14: 		background: @oecd-purple url('/assets/img/GUI/opsi_bg.png') no-repeat right center;\n   15  		float: left;\n   16  		overflow: hiddden;\n\n/Users/ezka/Documents/WRK/opsi/less/bootstrap/sprites.less:\n   23    line-height: 14px;\n   24    vertical-align: text-top;\n   25:   background-image: url(\"@{iconSpritePath}\");\n   26    background-position: 14px 14px;\n   27    background-repeat: no-repeat;\n   ..\n   47  .dropdown-submenu:hover > a > [class*=\" icon-\"],\n   48  .dropdown-submenu:focus > a > [class*=\" icon-\"] {\n   49:   background-image: url(\"@{iconWhiteSpritePath}\");\n   50  }\n   51  \n\n/Users/ezka/Documents/WRK/opsi/less/bootstrap/tests/css-tests.css:\n   21    margin-bottom: 20px;\n   22    padding: 0 20px 20px;\n   23:   background: url(../../docs/assets/img/grid-baseline-20px.png);\n   24  }\n   25  .type-test h1,\n\n/Users/ezka/Documents/WRK/opsi/less/bootstrap/tests/css-tests.min.css:\n    1  /*!\n    2   * Bootstrap CSS Tests\n    3:  */body{background-image:none}.subhead{margin-bottom:36px}.type-test{margin-bottom:20px;padding:0 20px 20px;background:url(../../docs/assets/img/grid-baseline-20px.png)}.type-test h1,.type-test h2,.type-test h3,.type-test h4,.type-test h5,.type-test h6{background-color:rgba(255,0,0,.2)}.col1{background-color:rgba(255,0,0,.1)}.col2{background-color:rgba(0,255,0,.1)}.col3{background-color:rgba(0,0,255,.1)}#rowInputs .row>[class*=span],#fluidRowInputs .row-fluid>[class*=span]{background-color:rgba(255,0,0,.1)}.fluid-grid{margin-bottom:45px}.fluid-grid .row{height:40px;padding-top:10px;margin-top:10px;color:#ddd;text-align:center}.fluid-grid .span1{background-color:#999}[class^=gradient-]{width:100%;height:400px;margin:20px 0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}.gradient-horizontal{background-color:#333;background-image:-moz-linear-gradient(left,#555,#333);background-image:-webkit-gradient(linear,0 0,100% 0,from(#555),to(#333));background-image:-webkit-linear-gradient(left,#555,#333);background-image:-o-linear-gradient(left,#555,#333);background-image:linear-gradient(to right,#555,#333);background-repeat:repeat-x;filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff333333', GradientType=1)}.gradient-vertical{background-color:#474747;background-image:-moz-linear-gradient(top,#555,#333);background-image:-webkit-gradient(linear,0 0,0 100%,from(#555),to(#333));background-image:-webkit-linear-gradient(top,#555,#333);background-image:-o-linear-gradient(top,#555,#333);background-image:linear-gradient(to bottom,#555,#333);background-repeat:repeat-x;filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff333333', GradientType=0)}.gradient-directional{background-color:#333;background-image:-moz-linear-gradient(45deg,#555,#333);background-image:-webkit-linear-gradient(45deg,#555,#333);background-image:-o-linear-gradient(45deg,#555,#333);background-image:linear-gradient(45deg,#555,#333);background-repeat:repeat-x}.gradient-vertical-three{background-color:#8940a5;background-image:-webkit-gradient(linear,0 0,0 100%,from(#00b3ee),color-stop(50%,#7a43b6),to(#c3325f));background-image:-webkit-linear-gradient(#00b3ee,#7a43b6 50%,#c3325f);background-image:-moz-linear-gradient(top,#00b3ee,#7a43b6 50%,#c3325f);background-image:-o-linear-gradient(#00b3ee,#7a43b6 50%,#c3325f);background-image:linear-gradient(#00b3ee,#7a43b6 50%,#c3325f);background-repeat:no-repeat;filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff00b3ee', endColorstr='#ffc3325f', GradientType=0)}.gradient-radial{background-color:#333;background-image:-webkit-gradient(radial,center center,0,center center,460,from(#555),to(#333));background-image:-webkit-radial-gradient(circle,#555,#333);background-image:-moz-radial-gradient(circle,#555,#333);background-image:-o-radial-gradient(circle,#555,#333);background-repeat:no-repeat}.gradient-striped{background-color:#555;background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,.15)),color-stop(0.75,rgba(255,255,255,.15)),color-stop(0.75,transparent),to(transparent));background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)}.gradient-horizontal-three{background-color:#00b3ee;background-image:-webkit-gradient(left,linear,0 0,0 100%,from(#00b3ee),color-stop(50%,#7a43b6),to(#c3325f));background-image:-webkit-linear-gradient(left,#00b3ee,#7a43b6 50%,#c3325f);background-image:-moz-linear-gradient(left,#00b3ee,#7a43b6 50%,#c3325f);background-image:-o-linear-gradient(left,#00b3ee,#7a43b6 50%,#c3325f);background-image:linear-gradient(to right,#00b3ee,#7a43b6 50%,#c3325f);background-repeat:no-repeat;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b3ee', endColorstr='#c3325f', GradientType=0)}\n\n/Users/ezka/Documents/WRK/opsi/less/libraries/select2.less:\n  100    text-decoration: none;\n  101    border: 0;\n  102:   background: url('select2.png') right top no-repeat;\n  103    cursor: pointer;\n  104    outline: 0;\n  ...\n  199    width: 100%;\n  200    height: 100%;\n  201:   background: url('select2.png') no-repeat 0 1px;\n  202  }\n  203  /* line 213, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  ...\n  227    -webkit-box-shadow: none;\n  228    box-shadow: none;\n  229:   background: #ffffff url('select2.png') no-repeat 100% -22px;\n  230:   background: url('select2.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));\n  231:   background: url('select2.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);\n  232:   background: url('select2.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);\n  233:   background: url('select2.png') no-repeat 100% -22px, -o-linear-gradient(bottom, #ffffff 85%, #eeeeee 99%);\n  234:   background: url('select2.png') no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);\n  235:   background: url('select2.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);\n  236  }\n  237  /* line 253, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  ...\n  241  /* line 257, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  242  .select2-search input.select2-active {\n  243:   background: #ffffff url('select2-spinner.gif') no-repeat 100%;\n  244:   background: url('select2-spinner.gif') no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));\n  245:   background: url('select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);\n  246:   background: url('select2-spinner.gif') no-repeat 100%, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);\n  247:   background: url('select2-spinner.gif') no-repeat 100%, -o-linear-gradient(bottom, #ffffff 85%, #eeeeee 99%);\n  248:   background: url('select2-spinner.gif') no-repeat 100%, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);\n  249:   background: url('select2-spinner.gif') no-repeat 100%, linear-gradient(top, #ffffff 85%, #eeeeee 99%);\n  250  }\n  251  /* line 267, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  ...\n  411  /* line 412, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  412  .select2-more-results.select2-active {\n  413:   background: #f4f4f4 url('select2-spinner.gif') no-repeat 100%;\n  414  }\n  415  /* line 416, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  ...\n  496  /* line 502, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  497  .select2-container-multi .select2-choices .select2-search-field input.select2-active {\n  498:   background: #ffffff url('select2-spinner.gif') no-repeat 100% !important;\n  499  }\n  500  /* line 506, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  ...\n  548    font-size: 1px;\n  549    outline: none;\n  550:   background: url('select2.png') right top no-repeat;\n  551  }\n  552  /* line 563, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */\n  ...\n  623    .select2-container .select2-choice abbr,\n  624    .select2-container .select2-choice .select2-arrow b {\n  625:     background-image: url('select2x2.png') !important;\n  626      background-repeat: no-repeat !important;\n  627      background-size: 60px 40px !important;\n\n30 matches across 6 files\n",
+			"settings":
+			{
+				"buffer_size": 9784,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "less/app/_filesPath_mixture.less",
+			"settings":
+			{
+				"buffer_size": 417,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/bootstrap.t4.less",
+			"settings":
+			{
+				"buffer_size": 1976,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/bootstrap.t4.css",
+			"settings":
+			{
+				"buffer_size": 197472,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/app/common/fonts.less",
+			"settings":
+			{
+				"buffer_size": 1837,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ezka/Documents/WRK/opsi/.gitignore",
+		"/Users/ezka/Documents/WRK/opsi/templates/innovation/home.liquid",
+		"/Users/ezka/Documents/WRK/opsi/less/bootstrap/responsive.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup_fc/assets/css/select2.css",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup_fc/mixture.json",
+		"/Users/ezka/Desktop/eip.html",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/wizard.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/siteSearch.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/main/header.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/layouts/layout.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/main/navigation.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/submit.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/community/home.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/pageContent.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/common/main.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/profile.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/home.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/_partials/innovationList.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/compare.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/common/searchElements.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/search.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/page.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/bootstrap/variables.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/bootstrap/forms.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/F-pane.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/submit-clean.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/forms/filters.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/D-pane.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/D.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/C.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/common/compare.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/research/home.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/community/collaborate.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/_partials/research_filters.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/compare-alt.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/mixture.json",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/countries.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/jquery-jvectormap.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/0.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/A.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/B.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/F.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/E.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/G.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/assets/css/tinyContent.css",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/Innovations.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/countries/home.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/community/submit1.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/opsi.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/innovation/submit.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/home/common.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/submit-alt.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/index.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/base.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/main/footer.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/research.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/countries/country.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections/H.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/main/navigation_logged.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/home/slider.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/search.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/research_logged.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/submit.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/submit_logged.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/collaborate.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/slider.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/bootstrap.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/home/search_logged.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/submit-parts/A.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/innovation/_partials/searchResult.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/_logged/home.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/main.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/community/contact.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/assets/css/app.css",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/navigation.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/common/variables.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/assets/scripts/app.js",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/header.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/footer.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app/variables.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/Styles/partials/fonts.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/index.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/_fontTest.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/includes/_partials/searchform.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/Styles/partials/search.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/Styles/app.less",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/includes/placeholders/sResult.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/research.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/community.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/includes/home/slider.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/layouts/layout.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/layouts/layout-logged.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/includes/navigation-logged.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/About.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/innovations/browse.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/_logged/home.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/country.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/includes/header.liquid",
+		"/Users/ezka/Documents/WRK/ITN/OPSI/mockup BS2/templates/includes/header-logged.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/testCarrousel.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/_home/slider.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/Styles/_partials/Home/iosSlider.less",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/_home/indepth.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/Styles/grid.less",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/knowledge/Missions.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/Styles/_partials/buttons.less",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/about/teams/centres.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/aboutNav.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/about/structure/media.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/about/objectives.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/about/structure/directorsoffice.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/about/structure/publicaffairs.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/about/structure/publishing.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/about/whatwedo.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/mainNav.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/about/structure.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/Styles/app.less",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/_home/bookpart.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/Styles/_partials/knowledgeCentre/tiles.less",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/layouts/layout.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/_home/slider2.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/assets/css/app.css",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/products/list.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/_home/tweets.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/Styles/_partials/products.less",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/_home/socialmedias.liquid",
+		"/Users/ezka/Documents/WRK/PAC/Intranet2013/Mockup/templates/includes/_home/measuringOurImpact.liquid"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/ezka/Documents/WRK/opsi/less",
+			"/Users/ezka/Documents/WRK/opsi/templates",
+			"/Users/ezka/Documents/WRK/opsi/templates`",
+			"/Users/ezka/Documents/WRK/opsi/less",
+			"/Users/ezka/Documents/WRK/opsi/templates",
+			"/Users/ezka/Documents/WRK/ITN/OPSI/mockup_fc/templates",
+			"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections",
+			"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections,/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less",
+			"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections,/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/less/app",
+			"/Users/ezka/Documents/WRK/ITN/OPSI/reborn1/templates/includes/submit-sections",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" = '",
+			"= '",
+			"\"",
+			"gly",
+			")",
+			"url(",
+			"url\\(.*?\\)",
+			"url(",
+			"style=\"",
+			"url(",
+			"style=\"",
+			".js\"",
+			"url(",
+			"style=\"",
+			"styles=",
+			"url",
+			"practice",
+			"practices",
+			"practiceIndex",
+			"C7",
+			"selext",
+			"label",
+			"<label class=\"radio inline\"><input type=\"radio\" name=\"public\" value=\"yes\">",
+			" required",
+			"mir",
+			"help-block",
+			"background: white; border-radius: 5px;",
+			"console.log",
+			"Contact",
+			"bullet-add",
+			"auth",
+			" style=\"display: none;\"",
+			"textarea",
+			"<textarea rows=\"2\" class=\"bulletLine\" name=\"bulletLine\" placeholder=\"Max. 20 words\" style=\"display: none;\"></textarea>",
+			"<textarea rows=\"2\" class=\"bulletLine\" name=\"bulletLine\" placeholder=\"Max. 20 words\"></textarea>",
+			"<i class=\"icon-circle-arrow-right\"></i>",
+			":hover",
+			"hover",
+			"primary",
+			"0088cc",
+			"0044cc",
+			"saved",
+			"})\n",
+			"is_default",
+			"checkState",
+			"overideStep",
+			"dfqsfq",
+			"name=\"bulletLine\"",
+			"bullet-line",
+			"ame=\"textarea\"",
+			"name=\"textarea\"",
+			"textarea",
+			".5",
+			"name=\"G1_check\"",
+			"org_level",
+			"name=\"checkboxes\"",
+			"icon-ok",
+			"icon-adjust",
+			"id=\"inno_obectives\"",
+			"textarea",
+			"inno_tags",
+			"innovation_name",
+			"inno_file",
+			"inno_desc",
+			"checkboxes",
+			"page#",
+			"/innovation/page#",
+			"/innovation/page",
+			">Add to compare<",
+			"h4",
+			"level_Radios",
+			"em",
+			"btn-mini",
+			"h3",
+			"h4",
+			"world-map",
+			"ee5f5b",
+			"b94a48",
+			"select:focus",
+			".control-group.error select:focus",
+			"error",
+			"select:focus",
+			"100px",
+			"consol",
+			"\n    	if (index > 0)\n    	{\n    		var showField = ($(this).prop('checked') == false) ? \"none\" : \"block\";\n	   		$(\"#\"+$(this).attr(\"value\")).css(\"display\", showField);\n	  		$(\"#resultChecks input:eq(0)\").prop('checked',false);\n	  	} else {\n	  		$(\"#resultChecks input:eq(0)\").prop('checked',false);\n	  		$(\".resultLine\").hide();\n	  	}",
+			"#resultLine",
+			"textarea",
+			"G1",
+			"textarea",
+			"effectiveness",
+			"efficiency",
+			"textarea",
+			"&nbsp;",
+			"_design",
+			"_implement",
+			"E5_implement",
+			"_diffusion",
+			"textarea",
+			"testing",
+			"placeholder=\"in week or month\"",
+			"inno",
+			"_name",
+			"auth1",
+			"\n        ",
+			"\n          ",
+			"<i class=\"icon-map-marker\">",
+			" *",
+			"placeholder=\"Max. 20 words\"",
+			"Max. 50",
+			"Max. 100",
+			"inset 0 1px 1px rgba(0, 0, 0, 0.075)",
+			"button",
+			"< href=\"#\">",
+			"</button>",
+			"button",
+			"<button class=\"btn\">",
+			"optionsRadios",
+			"fieldsLeft",
+			"#practice",
+			"remPractice",
+			"addPractice",
+			"practices",
+			"practiceIndex",
+			"hasPartner",
+			"practice",
+			"Practice",
+			"practice",
+			"Novelty"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"icon-ok-sign",
+			"icon-ok",
+			">Add to Compare<",
+			"",
+			"<i class=\"icon-map-marker\">",
+			"Add to compare",
+			"<a class=\"more\" href=\"/innovation/page\"><i class=\"icon-chevron-right\"></i>Read more</a>",
+			"<p>",
+			"><a href=\"/innovation/page\"><i class=\"icon-chevron-right\"></i>Read more</a>",
+			"",
+			"Read more",
+			"\\1<span>\\2</span>\\3",
+			"<th class=\"compare-row\">",
+			"add to compare",
+			"\\1\\2\\5\\3\\4\\6",
+			"\\1\\2\\5\\3\\5\\6",
+			"\"",
+			"<a class=\"fNot\" href=\"#not\">-</a>\n",
+			"\\1\\3 - \\4 by \\2\n",
+			"\n					<span class=\"date\">25 nov 2013</span>\\r					<span class=\"author\">Author name</span>",
+			"file_type_icons_flat_-12.png",
+			"file_type_icons_flat_-23.png",
+			"file_type_icons_flat_-22.png",
+			"( from Source of publication )",
+			"",
+			"class=\"span3 collapsible\"",
+			"\"span3 collapsible",
+			"<h5 class=\"span8\">",
+			"rows=\"5\" ",
+			"<textarea row=\"5\" ",
+			"\\1<span>\\2</span><div class=\"colexp\"><a href=\"\">collapse</a> / <a  href=\"\">expand</a></div>\\3",
+			"\\1<span>\\2</span><div class=\"colexp\"><a href=\"#\">collapse</a> / <a  href=\"#\">expand</a></div>\\3",
+			"\\1<span>\\2</span>\\3",
+			"",
+			"class=\"span3\"",
+			"href=\"/innovation/page{{ logUrl }}\"",
+			"  <div class=\"row\"><p class=\"sep\"></p>\n    <div class=\"span8\">",
+			"class=\"span5\"",
+			"    </div>\n    <div class=\"span4\">",
+			"  <div class=\"row\">\n    <div class=\"span8\">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "mixture.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "less/app.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/css/app.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6222.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/layouts/layout.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								753,
+								753
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/HTML Liquid.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/includes/_partials/innovation_filters.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								162
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/HTML Liquid.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2473.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/includes/_partials/library_filters.liquid",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/HTML Liquid.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/innovation/search.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3063,
+								3063
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/HTML Liquid.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 393.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/innovation/home.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/HTML Liquid.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "assets/css/select2.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17011,
+								17015
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7740.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9784,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										174,
+										205
+									],
+									[
+										220,
+										258
+									],
+									[
+										299,
+										330
+									],
+									[
+										362,
+										405
+									],
+									[
+										432,
+										464
+									],
+									[
+										657,
+										691
+									],
+									[
+										917,
+										941
+									],
+									[
+										1169,
+										1198
+									],
+									[
+										1367,
+										1416
+									],
+									[
+										1688,
+										1737
+									],
+									[
+										6274,
+										6292
+									],
+									[
+										6433,
+										6451
+									],
+									[
+										6657,
+										6675
+									],
+									[
+										6719,
+										6737
+									],
+									[
+										6884,
+										6902
+									],
+									[
+										7012,
+										7030
+									],
+									[
+										7137,
+										7155
+									],
+									[
+										7253,
+										7271
+									],
+									[
+										7367,
+										7385
+									],
+									[
+										7710,
+										7736
+									],
+									[
+										7774,
+										7800
+									],
+									[
+										7941,
+										7967
+									],
+									[
+										8071,
+										8097
+									],
+									[
+										8198,
+										8224
+									],
+									[
+										8316,
+										8342
+									],
+									[
+										8432,
+										8458
+									],
+									[
+										8777,
+										8803
+									],
+									[
+										9122,
+										9148
+									],
+									[
+										9343,
+										9361
+									],
+									[
+										9622,
+										9642
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								174,
+								205
+							],
+							[
+								220,
+								258
+							],
+							[
+								299,
+								330
+							],
+							[
+								362,
+								405
+							],
+							[
+								432,
+								464
+							],
+							[
+								657,
+								691
+							],
+							[
+								917,
+								941
+							],
+							[
+								1169,
+								1198
+							],
+							[
+								1367,
+								1416
+							],
+							[
+								1688,
+								1737
+							],
+							[
+								6274,
+								6292
+							],
+							[
+								6433,
+								6451
+							],
+							[
+								6657,
+								6675
+							],
+							[
+								6719,
+								6737
+							],
+							[
+								6884,
+								6902
+							],
+							[
+								7012,
+								7030
+							],
+							[
+								7137,
+								7155
+							],
+							[
+								7253,
+								7271
+							],
+							[
+								7367,
+								7385
+							],
+							[
+								7710,
+								7736
+							],
+							[
+								7774,
+								7800
+							],
+							[
+								7941,
+								7967
+							],
+							[
+								8071,
+								8097
+							],
+							[
+								8198,
+								8224
+							],
+							[
+								8316,
+								8342
+							],
+							[
+								8432,
+								8458
+							],
+							[
+								8777,
+								8803
+							],
+							[
+								9122,
+								9148
+							],
+							[
+								9343,
+								9361
+							],
+							[
+								9622,
+								9642
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "less/app/_filesPath_mixture.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "less/bootstrap.t4.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "assets/css/bootstrap.t4.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 197472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 34435.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "less/app/common/fonts.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "opsi.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 193.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

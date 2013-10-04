@@ -15,7 +15,7 @@
         <!--[if lt IE 9]>{{ "html5shiv.js" | asset_url | script_tag }}<![endif]-->
 
         {{ "bootstrap.css" | asset_url | stylesheet_tag }}
-        <!--{{ "responsive.css" | asset_url | stylesheet_tag }}-->
+        {{ "responsive.css" | asset_url | stylesheet_tag }}
         {{ "app.css" | asset_url | stylesheet_tag }}
         {% block styles %}{% endblock %}
 

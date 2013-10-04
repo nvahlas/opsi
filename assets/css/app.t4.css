@@ -1,16 +1,16 @@
-/* [less, less, app.less] */
-/* line 7, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* [less, less, app.t4.less] */
+/* line 7, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .clearfix {
   *zoom: 1;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .clearfix:before,
 .clearfix:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .clearfix:after {
   clear: both;
 }
@@ -23,8 +23,8 @@ box-sizing: border-box;
 @charset "UTF-8";
 @font-face {
   font-family: "";
-  src: url('../fonts/opsi-draft1.eot');
-  src: url('../fonts/opsi-draft1.eot?#iefix') format("embedded-opentype"), url('../fonts/opsi-draft1.ttf') format("truetype"), url('../fonts/opsi-draft1.svg#opsi-draft1') format("svg"), url('../fonts/opsi-draft1.woff') format("woff");
+  src: url("<t4 type='media' id='251406' formatter='path/*'/>");
+  src: url("<t4 type='media' id='251406' formatter='path/*'/>") format("embedded-opentype"), url("<t4 type='media' id='251409' formatter='path/*'/>") format("truetype"), url("<t4 type='media' id='251408' formatter='path/*'/>") format("svg"), url("<t4 type='media' id='251410' formatter='path/*'/>") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -282,7 +282,7 @@ footer .container #oecd-footer {
   border-radius: 3px;
   padding: 10px;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .white-block:before,
 .tab-pane:before,
 .white-block:after,
@@ -291,7 +291,7 @@ footer .container #oecd-footer {
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .white-block:after,
 .tab-pane:after {
   clear: both;
@@ -528,7 +528,7 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   font-size: 1px;
   text-decoration: none;
   border: 0;
-  background: url('../img/GUI/select2.png') right top no-repeat;
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") right top no-repeat;
   cursor: pointer;
   outline: 0;
 }
@@ -638,7 +638,7 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../img/GUI/select2.png') no-repeat 0 1px;
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 0 1px;
 }
 /* line 213, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 204, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
@@ -668,13 +668,13 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #ffffff url('../img/GUI/select2.png') no-repeat 100% -22px;
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -o-linear-gradient(bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  background: #ffffff url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100% -22px;
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100% -22px, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100% -22px, -o-linear-gradient(bottom, #ffffff 85%, #eeeeee 99%);
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
 }
 /* line 253, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 238, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
@@ -684,13 +684,13 @@ Version: 3.4.2 Timestamp: Mon Aug 12 15:04:12 PDT 2013
 /* line 257, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 242, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 .select2-search input.select2-active {
-  background: #ffffff url('../img/GUI/select2-spinner.gif') no-repeat 100%;
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -o-linear-gradient(bottom, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
-  background: url('../img/GUI/select2-spinner.gif') no-repeat 100%, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  background: #ffffff url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100%;
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100%, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100%, -moz-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100%, -o-linear-gradient(bottom, #ffffff 85%, #eeeeee 99%);
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100%, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100%, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
 }
 /* line 267, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 252, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
@@ -880,7 +880,7 @@ disabled look for disabled choices in the results dropdown
 /* line 412, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 412, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 .select2-more-results.select2-active {
-  background: #f4f4f4 url('../img/GUI/select2-spinner.gif') no-repeat 100%;
+  background: #f4f4f4 url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100%;
 }
 /* line 416, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 416, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
@@ -977,7 +977,7 @@ disabled look for disabled choices in the results dropdown
 /* line 502, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 497, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 .select2-container-multi .select2-choices .select2-search-field input.select2-active {
-  background: #ffffff url('../img/GUI/select2-spinner.gif') no-repeat 100% !important;
+  background: #ffffff url("<t4 type='media' id='251426' formatter='path/*'/>") no-repeat 100% !important;
 }
 /* line 506, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 501, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
@@ -1034,7 +1034,7 @@ disabled look for disabled choices in the results dropdown
   top: 4px;
   font-size: 1px;
   outline: none;
-  background: url('../img/GUI/select2.png') right top no-repeat;
+  background: url("<t4 type='media' id='251426' formatter='path/*'/>") right top no-repeat;
 }
 /* line 563, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
 /* line 553, /Users/ezka/Documents/WRK/opsi/less/libraries/select2.less */
@@ -1230,14 +1230,14 @@ header #custom-search-form {
 	*/
 
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #displayOptions:before,
 #displayOptions:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #displayOptions:after {
   clear: both;
 }
@@ -1310,14 +1310,14 @@ header #custom-search-form {
   *zoom: 1;
   border-top: 1px solid #c6c8ca;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .filter-pane:before,
 .filter-pane:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .filter-pane:after {
   clear: both;
 }
@@ -1530,14 +1530,14 @@ header #custom-search-form {
   margin: 0;
   *zoom: 1;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #resFilter ul:before,
 #resFilter ul:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #resFilter ul:after {
   clear: both;
 }
@@ -1593,14 +1593,14 @@ header #custom-search-form {
   border-top: 1px solid #c6c8ca;
   padding: 10px 0;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #resFilter ul#groups .refineGroup:before,
 #resFilter ul#groups .refineGroup:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #resFilter ul#groups .refineGroup:after {
   clear: both;
 }
@@ -1915,14 +1915,14 @@ h4 {
   padding: 20px 0;
   position: relative;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #world-wrap:before,
 #world-wrap:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #world-wrap:after {
   clear: both;
 }
@@ -2247,14 +2247,14 @@ h4 {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
   background-color: #f9f9f9;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .wizard:before,
 .wizard:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 .wizard:after {
   clear: both;
 }
@@ -2664,14 +2664,14 @@ h4 {
   background: white;
   border-radius: 5px;
 }
-/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #circle-process:before,
 #circle-process:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.less */
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
 #circle-process:after {
   clear: both;
 }

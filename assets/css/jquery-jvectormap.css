@@ -1,9 +1,0 @@
-/* [less, less/libraries, jquery-jvectormap.less] */
-body:before { 
-                            white-space: pre; 
-                            font-family: monospace; 
-                            content: 'Less NameError: .clearfix is undefined in \\Users\\ezka\\Documents\\WRK\\ITN\\OPSI\\reborn1\\less\\libraries\\jquery-jvectormap.less on line 42, column 5: \A 41 #world-wrap { \A 42     .clearfix(); \A 43     padding: 20px 0; \A  \A '; } 
-                            
-                            body * { 
-                            display: none; 
-                            } 
