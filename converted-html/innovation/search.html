@@ -13,11 +13,9 @@
         <!--[if lt IE 9]><script src="../assets/scripts/html5shiv.js"></script><![endif]-->
 
         <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-        <!--<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" media="all"/>-->
+        <link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="../assets/css/app.css" rel="stylesheet" type="text/css" media="all"/>
         
-	<link href="../assets/css/select2.css" rel="stylesheet" type="text/css" media="all"/>
-
 
         <script src="../assets/scripts/jquery.min.js"></script>
     </head>
@@ -35,8 +33,7 @@
 		        <button type="submit" class="btn"><i class="icon-search"></i></button>
 		    </div>
 		</form>
-		
-		<nav>
+				<nav>
 			<ul class="browse">
 				<li><a href="../index.html">Home</a></li>
         		<li ><a href="../pages/about.html">About</a></li>
@@ -67,7 +64,7 @@
 			<h3>Search Innovations</h3>
 			<div class="row">
 				<div id="csf_wrapper">
-					<form id="custom-search-form" class="form-search form-horizontal pull-right" action="/innovation/search">
+					<form id="custom-search-form" class="form-search form-horizontal pull-right" action="/innovation/search" method="get">
 					    <div class="input-append">
 					        <input type="text" class="search-query" style="width: 490px;" placeholder="Please enter what your are looking for…">
 					        <button type="submit" class="btn"><i class="icon-search"></i></button>
@@ -222,7 +219,7 @@
 	<div class="filter-pane">
 		<h6 for="Countries">Countries</h6>
 		<fieldset>
-            <select id="e1" multiple style="width: 300px;">
+            <select id="e1" multiple class="span4">
                <option value=""></option>
 				<option value="AU">Australia</option>
 				<option value="AT">Austria</option>
