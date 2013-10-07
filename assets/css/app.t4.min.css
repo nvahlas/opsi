@@ -376,10 +376,43 @@ footer .container #oecd-footer {
   border-top: 1px solid #c6c8ca;
 }
 
+.innoHeader {
+  margin-bottom: 10px;
+}
+
 .innoVignette {
   max-height: 150px;
   padding: .5em;
   float: left;
+}
+
+.backLink {
+  display: block;
+  *zoom: 1;
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.backLink:before,
+.backLink:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.backLink:after {
+  clear: both;
+}
+
+.backLink:before,
+.backLink:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.backLink:after {
+  clear: both;
 }
 
 #map-wrapper #map {
