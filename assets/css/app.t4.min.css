@@ -138,7 +138,8 @@ header nav ul li {
   float: left;
 }
 
-header nav ul li.current a {
+header nav ul li.current a,
+header nav ul li.current span.currentbranch0 {
   background: #4d1554!important;
 }
 
@@ -198,11 +199,6 @@ footer .container #oecd-footer {
   right: 0;
   top: 5px;
   z-index: 10;
-}
-
-.cNews p {
-  text-decoration: none;
-  color: black;
 }
 
 #pageContent {
@@ -1101,8 +1097,6 @@ header #custom-search-form {
   background: #EEEBE3;
   padding: 10px 0 0 0;
   border-radius: 3px;
-  
-
 }
 
 #displayOptions:before,
@@ -1895,7 +1889,7 @@ h4 {
   cursor: default;
 }
 
-.cFlag {
+#cMain .cFlag {
   float: left;
   padding: 5px;
   margin: 5px;
@@ -1907,23 +1901,98 @@ h4 {
   padding-top: 20px;
 }
 
+.cFocus .cNews {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.cFocus .cNews img {
+  float: left;
+  padding-right: 10px;
+}
+
+.cFocus .cNews p {
+  color: black;
+  margin-left: 120px;
+}
+
+.cFocus .cNews:hover {
+  text-decoration: none;
+}
+
+.cFocus .cNews:hover h5 {
+  text-decoration: underline;
+}
+
 .cMore {
   padding-top: 20px;
 }
 
-#innovation-list h5 {
-  padding: 35px 10px 5px 10px;
+#cSide h4 {
+  padding: 25px 0 5px 0;
+  margin: 0;
+  border-bottom: 1px dotted #8f499c;
+}
+
+#cSide .cInno a.item {
+  display: block;
+  text-decoration: none;
+}
+
+#cSide .cInno a.item h5.title {
+  padding: 15px 5px 0 0;
   margin: 0;
 }
 
-#otherDocs h5 {
+#cSide .cInno a.item p {
+  color: black;
+}
+
+#cSide .cInno a.item p.type {
+  font-size: .9em;
+  line-height: 1.2;
+}
+
+#cSide .cInno a.item:hover {
+  text-decoration: none;
+}
+
+#cSide .cInno a.item:hover h5 {
+  text-decoration: underline;
+}
+
+#otherDocs {
+  padding: 10px 0 20px 0;
   border-top: 1px solid #8f499c;
-  padding-top: 20px;
+  *zoom: 1;
+}
+
+#otherDocs:before,
+#otherDocs:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+#otherDocs:after {
+  clear: both;
+}
+
+#otherDocs:before,
+#otherDocs:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+#otherDocs:after {
+  clear: both;
 }
 
 #otherDocs a.item {
   display: block;
   float: left;
+  width: 30%;
   text-align: center!important;
   padding: 0 10px 0 0;
 }

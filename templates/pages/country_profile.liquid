@@ -1,22 +1,27 @@
 {% block content %}
 <div class="row">
-	<div class="span8">
-		<div id="cMain" class="white-block">
-			<div class="row">
-				<div  class="span5">
-					<h2><img class="cFlag" src="/assets/img/visuals/country/France.png">France</h2>
-				</div>
-			</div>
+	<div id="cMain" class="span8">
+		<div class="white-block">
+			<h2><img class="cFlag" src="/assets/img/visuals/country/France.png">France</h2>
 			<p>Innovation in the public sector is key to the modernisation of the French state. Innovation at all levels is essential to respond to the expectations of users and citizens, and constrained public finances.</p>
 			<p>The French administration, through the Secr&eacute;tariat g&eacute;n&eacute;ral pour la modernisation de l'action publique (SGMAP) supports public sector bodies and their employees to realise their potential for innovation by developing a network of actors engaged in innovation and supporting innovative approaches as they emerge.</p>
 
 			<div class="cFocus" >
 				<h4>Focus on&hellip;</h4>
+				<!-- duplicable news -->
 				<a class="cNews" href="#">
 					<h5>Regional Government Awards</h5>
-					<img src="/assets/img/visuals/country/photo-people.png" style="float: left; padding-right: 10px;">
+					<img src="/assets/img/visuals/country/photo-people.png">
 					<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				</a>
+				<!-- end -->
+				<!-- duplicable news -->
+				<a class="cNews" href="#">
+					<h5>Regional Government Awards</h5>
+					<img src="/assets/img/visuals/country/photo-people.png">
+					<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				</a>
+				<!-- end -->
 			</div>
 			<div class="cMore">
 				<p>For further information visit:
@@ -25,17 +30,17 @@
 		</div>
 		
 	</div>
-	<div class="span4">
-		<div id="innovation-list">
-			<h5 style="p">Highlighted innovation</h5>
-			<div class="innovation-card clearfix">
-				<h5 class="title"><a href="/innovation/page">Innovation and Competitivity</a></h5>
-				<p class="infos"><span class="">Online tools</span> </p>
+	<div id="cSide" class="span4 pull-left">
+		<div class="cInno white-block">
+			<h4>Highlighted innovation</h4>
+			<a href="/innovation/page" class="item">
+				<h5 class="title">Innovation and Competitivity</h5>
+				<p class="type">a new way to organise or manage work within your organisation</p>
 				<p class="abstract">The Next Step online community is an invitation only closed community for customers who are transitioning from Parenting Payment to Newstart Allowance.</p>
 				<p class="tag-list"><span>Social Protection</span><span>tag 2</span><span>tag 3</span><span>tag 4</span><span>tag 5</span></p>
-			</div>
+			</a>
 		</div>
-				<p class="clearfix" style="margin-top: 10px;"><a href="/innovation/search">&raquo; See all French innovations</a></p>
+		<p class="cMore"><a href="/innovation/search">&raquo; See all French innovations</a></p>
 		<div id="otherDocs">
 			<h5>Other OECD documents on France</h5>
 			<a href="#" class="item">
@@ -51,14 +56,14 @@
 				Governance <br />at a Glance
 			</a>
 		</div>
-	</div>
-	<div id="cContact" class="span4 offset8">
-		<p><strong><i class="icon-envelope"></i> contact: </strong></p>
-		<p>
-			<a href="mailto:jean.dufflot@innovation.france.fr?subject=more information about france">M. jean Dufflot 
-			<br />
-			<em>DGFIP</em></a></em>
-		</p>
+		<div id="cContact">
+			<p><strong><i class="icon-envelope"></i> contact: </strong></p>
+			<p>
+				<a href="mailto:jean.dufflot@innovation.france.fr?subject=more information about france">M. jean Dufflot 
+				<br />
+				<em>DGFIP</em></a></em>
+			</p>
+		</div>
 	</div>
 </div>
 {% endblock %}
