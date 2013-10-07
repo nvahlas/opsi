@@ -22,7 +22,7 @@ box-sizing: border-box;
 */
 @charset "UTF-8";
 @font-face {
-  font-family: "";
+  font-family: "opsi-draft1";
   src: url("<t4 type='media' id='251406' formatter='path/*'/>");
   src: url("<t4 type='media' id='251406' formatter='path/*'/>") format("embedded-opentype"), url("<t4 type='media' id='251409' formatter='path/*'/>") format("truetype"), url("<t4 type='media' id='251408' formatter='path/*'/>") format("svg"), url("<t4 type='media' id='251410' formatter='path/*'/>") format("woff");
   font-weight: normal;
