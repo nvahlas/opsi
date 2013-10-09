@@ -119,7 +119,7 @@ header #brand {
 }
 
 header nav {
-  background: #72367d url(/assets/img/GUI/opsi_bg.png) no-repeat right center;
+  background: #72367d url(<t4 type="media" id="251420" />) no-repeat right center;
   float: left;
   overflow: hiddden;
   width: 100%;
