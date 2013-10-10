@@ -2335,10 +2335,15 @@
 
     /***
     *  C : bullet points plugin
-    *  add or remove
+    
+    *  options
+
+    *  placeolder: "Max. 20 words"
+    *  minLines: 3
+    *  maxLines: 10
     */
     
-    $(".bullet-list").bulletPoints();
+    $(".bullet-list").bulletPoints({placeholder: "Max. 20 words"});
 
     /***
     *  c -tagging solution
@@ -2563,8 +2568,6 @@
 	        org_size: { required: true, selectNone:true },
 
 	        // Section C
-	        //inno_name: { required: true, minlength: 3 },
-	        //inno_year: { required: true, minlength: 3 }
 	        'C6[]': { required: true },
 	        stageSelect: { required: true, selectNone:true },
 	        G1_check: { required: true, selectNone:true }
