@@ -22,7 +22,7 @@ box-sizing: border-box;
 */
 @charset "UTF-8";
 @font-face {
-  font-family: "";
+  font-family: "opsi-draft1";
   src: url("<t4 type='media' id='251406' formatter='path/*'/>");
   src: url("<t4 type='media' id='251406' formatter='path/*'/>") format("embedded-opentype"), url("<t4 type='media' id='251409' formatter='path/*'/>") format("truetype"), url("<t4 type='media' id='251408' formatter='path/*'/>") format("svg"), url("<t4 type='media' id='251410' formatter='path/*'/>") format("woff");
   font-weight: normal;
@@ -149,7 +149,7 @@ header #brand {
 }
 /* line 13, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
 header nav {
-  background: #72367d url('<t4 type="media" id="251420"/>') no-repeat right center;
+  background: #72367d url('@opsi_bg') no-repeat right center;
   float: left;
   overflow: hiddden;
   width: 100%;

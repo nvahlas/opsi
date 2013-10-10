@@ -22,7 +22,7 @@ box-sizing: border-box;
 */
 @charset "UTF-8";
 @font-face {
-  font-family: "";
+  font-family: "opsi-draft1";
   src: url('../fonts/opsi-draft1.eot');
   src: url('../fonts/opsi-draft1.eot?#iefix') format("embedded-opentype"), url('../fonts/opsi-draft1.ttf') format("truetype"), url('../fonts/opsi-draft1.svg#opsi-draft1') format("svg"), url('../fonts/opsi-draft1.woff') format("woff");
   font-weight: normal;
@@ -149,7 +149,7 @@ header #brand {
 }
 /* line 13, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
 header nav {
-  background: #72367d url('/assets/img/GUI/opsi_bg.png') no-repeat right center;
+  background: #72367d url('@opsi_bg') no-repeat right center;
   float: left;
   overflow: hiddden;
   width: 100%;

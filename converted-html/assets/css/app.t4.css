@@ -149,7 +149,7 @@ header #brand {
 }
 /* line 13, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
 header nav {
-  background: #72367d url('<t4 type="media" id="251420"/>') no-repeat right center;
+  background: #72367d url('@opsi_bg') no-repeat right center;
   float: left;
   overflow: hiddden;
   width: 100%;
@@ -405,13 +405,46 @@ footer .container #oecd-footer {
 #innovation-page .tab-pane h4 {
   border-top: 1px solid #c6c8ca;
 }
-/* line 129, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+/* line 128, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+.innoHeader {
+  margin-bottom: 10px;
+}
+/* line 132, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
 .innoVignette {
   max-height: 150px;
   padding: .5em;
   float: left;
 }
-/* line 134, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+/* line 137, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
+.backLink {
+  display: block;
+  *zoom: 1;
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+/* line 9, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
+.backLink:before,
+.backLink:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 17, /Users/ezka/Documents/WRK/opsi/less/app.t4.less */
+.backLink:after {
+  clear: both;
+}
+/* line 14, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+.backLink:before,
+.backLink:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, /Users/ezka/Documents/WRK/opsi/less/bootstrap/mixins.less */
+.backLink:after {
+  clear: both;
+}
+/* line 143, /Users/ezka/Documents/WRK/opsi/less/app/pageContent.less */
 #map-wrapper #map {
   position: relative;
   height: 350px;

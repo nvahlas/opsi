@@ -579,8 +579,9 @@
 
       <div class="control-group">
         <label class="control-label"><span class="badge pull-left">C.7</span> Please indicate the innovation's main beneficiaries<i class="icon-map-marker"></i></label>
-        <div class="controls">                     
-          <textarea rows="5" id="C7" name="C7" class="span5 tiny" placeholder="Max. 50 words" required></textarea>
+
+        <div class="controls bullet-list">
+          <input id="C7" class="hiddenfrom" name="C10" type="text" value="" required />
         </div>
       </div>
 
@@ -612,8 +613,9 @@
 
       <div class="control-group">
         <label class="control-label"><span class="badge pull-left">C.9</span> Why was the innovation developed?<i class="icon-map-marker"></i></label>
-        <div class="controls">                     
-          <textarea rows="7" id="C9" name="C9" class="span5" placeholder="Max. 100 words" required></textarea>
+
+        <div class="controls bullet-list">
+          <input id="C9" class="hiddenfrom" name="C10" type="text" value="<ul><li> 1</li><li>something 2</li><li>something 3</li><li>something else</li></ul>" required />
         </div>
       </div>
 
@@ -630,40 +632,8 @@
       <div class="control-group">
         <label class="control-label"><span class="badge pull-left">C.10</span> Please set out the objectives of the innovation<i class="icon-map-marker"></i></label>
 
-        <div class="controls">
-          <div class="bullet-block">
-            <!--
-            <div class="pagination pagination-small" style="background: #ededed; margin: 0;">
-              <ul style="width: 288px;">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li class="active"><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#">10</a></li>
-              </ul>
-            </div>
-          -->
-            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-          </div>
-          <input id="C10" class="hiddenfrom" name="C10" type="text" value="" required />
-          <div class="btn-group pull-left">
-            <a href="#" class="bullet-add btn btn-mini">Add Bullet point</a>
-            <a href="#" class="bullet-rem btn btn-mini disabled">Remove Bullet point</a>
-          </div>
+        <div class="controls bullet-list">
+          <input id="C10" class="hiddenfrom" name="C10" type="text" value="<ul><li> 1</li><li>something 2</li><li>something 3</li><li> 4</li><li>something 5</li><li>something 6</li><li> 7</li><li>something 8</li><li>something 9</li><li>something else 10</li></ul>" required />
         </div>
 
       </div>
@@ -2325,6 +2295,8 @@
         
 <script src="../assets/scripts/jquery.validate.min.js"></script>
 <script src="../assets/scripts/select2.min.js"></script>
+<script src="../assets/scripts/simple-bullets.js"></script>
+
 
 <script type="text/javascript">
   $(function() {
@@ -2362,72 +2334,28 @@
     });
 
     /***
-    *  C : example of bullet point
+    *  C : bullet points plugin
     *  add or remove
     */
-
-    var areaNum = $(".bullet-block .bLine").length,
-        bullIndex = 2;
-
-    $(".bullet-block a").on("click", function () {
-        var bullMax = $(this).text();
-
-        $(this).parent().addClass("active")
-        .siblings().removeClass("active");
-
-        $(".bullet-block .bLine").each(function( index ) {
-          if (index > (bullMax - 1)) {
-            $(this).val("").css("display", "none");
-          } else {
-            $(this).css("display", "block");
-          }
-        });
-        return false;
-    });
-
-    var bulletList = $(".bLine");
-
-    $(".bulletLine").blur(function() {
-
-    	var concat = "";
-    	bulletList
-	    .each(function(index) {
-	    	if ($(this).val() != '')
-	    	{
-	    		concat = concat+"<li>"+$(this).val()+"</li>";
-	    	}
-	    });
-	    concat = "<ul>"+concat+"</ul>"
-	    $('#C10').val(concat);
-	    console.log("bullet list: ",concat);
-    });
-
-    $('.bullet-add').on("click", function() {
-        if ( bullIndex < 10)
-        {
-          bullIndex ++;
-          $(bulletList[bullIndex]).slideDown();
-          console.log(bullIndex);
-        } 
-        if ( bullIndex === 9) $(this).addClass("disabled");
-        if ( bullIndex > 2) $(".bullet-rem").removeClass("disabled");
-        return false;
-    });
-
-    $('.bullet-rem').on("click", function() {
-        if ( bullIndex > 2)
-        {
-          $(bulletList[bullIndex]).slideUp();
-          bullIndex --;
-          console.log(bullIndex);
-        } 
-        if ( bullIndex === 2) $(this).addClass("disabled");
-        if ( bullIndex < 9) $(".bullet-add").removeClass("disabled");
-        return false;
-    });
-
-
     
+    $(".bullet-list").bulletPoints();
+
+    /***
+    *  c -tagging solution
+    */
+
+    $("#C8").select2({tags:["Users", "public sector", "innovation", "change", "efficiency", "e-government", "partnership", "co-production", "design", "implementation", "delivery", "performance", "budgeting", "rules", "decision-making", "human resources", "project management", "childcare", "equality", "access", "digital", "citizens", "open data", "transparency", "flexibility", "civil service", "private sector", "civil society", "consultation", "simplicity", "savings", "online", "procurement"], maximumSelectionSize: 5, tokenSeparators: [","]});
+
+    // change real input style in order to validate
+
+    $.each($(".select2-container"), function (i, n) {
+        $(n).next().show().fadeTo(0, 0).height("0px").css("left", "auto"); // make the original select visible for validation engine and hidden for us
+        $(n).prepend($(n).next());
+        $(n).delay(500).queue(function () {
+            $(this).removeClass("validate[required]"); //remove the class name from select2 container(div), so that validation engine dose not validate it
+            $(this).dequeue();
+        });
+    });
 
     /***
     *  D : select novelty presence 
@@ -2497,22 +2425,6 @@
     $( "#stageSelect" ).on("change", function (evt) {
       stageIndex = $(this).prop("selectedIndex");
       showPanes(stagePanes, stageIndex);
-    });
-
-    /***
-    *  E -tagging solution
-    */
-
-    $("#C8").select2({tags:["Users", "public sector", "innovation", "change", "efficiency", "e-government", "partnership", "co-production", "design", "implementation", "delivery", "performance", "budgeting", "rules", "decision-making", "human resources", "project management", "childcare", "equality", "access", "digital", "citizens", "open data", "transparency", "flexibility", "civil service", "private sector", "civil society", "consultation", "simplicity", "savings", "online", "procurement"], maximumSelectionSize: 5, tokenSeparators: [","]});
-
-
-	$.each($(".select2-container"), function (i, n) {
-        $(n).next().show().fadeTo(0, 0).height("0px").css("left", "auto"); // make the original select visible for validation engine and hidden for us
-        $(n).prepend($(n).next());
-        $(n).delay(500).queue(function () {
-            $(this).removeClass("validate[required]"); //remove the class name from select2 container(div), so that validation engine dose not validate it
-            $(this).dequeue();
-        });
     });
 
     /***
@@ -2676,7 +2588,7 @@
 
  /***
  *
- *
+ * main wizard behaviour
  *
  */
 
@@ -2693,11 +2605,6 @@
 
     $('#myWizard').wizard();
     $('#MyWizard').on('change', function(e, data) {
-      console.log('change');
-      //if(data.step===3 && data.direction==='next') {
-        // return e.preventDefault();
-      //console.log('step' + data.step + ' clicked');
-
       if(data.step===9 && data.direction==='next') {
         // return e.preventDefault();
         $("#fPreview").css("display", "inline-block");
