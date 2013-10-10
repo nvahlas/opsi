@@ -136,8 +136,9 @@
 
       <div class="control-group">
         <label class="control-label"><span class="badge pull-left">C.7</span> Please indicate the innovation's main beneficiaries<i class="icon-map-marker"></i></label>
-        <div class="controls">                     
-          <textarea rows="5" id="C7" name="C7" class="span5 tiny" placeholder="Max. 50 words" required></textarea>
+
+        <div class="controls bullet-list">
+          <input id="C7" class="hiddenfrom" name="C10" type="text" value="" required />
         </div>
       </div>
 
@@ -169,8 +170,9 @@
 
       <div class="control-group">
         <label class="control-label"><span class="badge pull-left">C.9</span> Why was the innovation developed?<i class="icon-map-marker"></i></label>
-        <div class="controls">                     
-          <textarea rows="7" id="C9" name="C9" class="span5" placeholder="Max. 100 words" required></textarea>
+
+        <div class="controls bullet-list">
+          <input id="C9" class="hiddenfrom" name="C10" type="text" value="<ul><li> 1</li><li>something 2</li><li>something 3</li><li>something else</li></ul>" required />
         </div>
       </div>
 
@@ -187,40 +189,8 @@
       <div class="control-group">
         <label class="control-label"><span class="badge pull-left">C.10</span> Please set out the objectives of the innovation<i class="icon-map-marker"></i></label>
 
-        <div class="controls">
-          <div class="bullet-block">
-            <!--
-            <div class="pagination pagination-small" style="background: #ededed; margin: 0;">
-              <ul style="width: 288px;">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li class="active"><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#">10</a></li>
-              </ul>
-            </div>
-          -->
-            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-            <div class="bLine" style="display: none;"><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>
-          </div>
-          <input id="C10" class="hiddenfrom" name="C10" type="text" value="" required />
-          <div class="btn-group pull-left">
-            <a href="#" class="bullet-add btn btn-mini">Add Bullet point</a>
-            <a href="#" class="bullet-rem btn btn-mini disabled">Remove Bullet point</a>
-          </div>
+        <div class="controls bullet-list">
+          <input id="C10" class="hiddenfrom" name="C10" type="text" value="<ul><li> 1</li><li>something 2</li><li>something 3</li><li> 4</li><li>something 5</li><li>something 6</li><li> 7</li><li>something 8</li><li>something 9</li><li>something else 10</li></ul>" required />
         </div>
 
       </div>

@@ -148,6 +148,8 @@
 {% block scripts %}
 {{ "jquery.validate.min.js" | asset_url | script_tag }}
 {{ "select2.min.js" | asset_url | script_tag }}
+{{ "simple-bullets.js" | asset_url | script_tag }}
+
 
 <script type="text/javascript">
   $(function() {
@@ -188,69 +190,8 @@
     *  C : example of bullet point
     *  add or remove
     */
-
-    var areaNum = $(".bullet-block .bLine").length,
-        bullIndex = 2;
-
-    $(".bullet-block a").on("click", function () {
-        var bullMax = $(this).text();
-
-        $(this).parent().addClass("active")
-        .siblings().removeClass("active");
-
-        $(".bullet-block .bLine").each(function( index ) {
-          if (index > (bullMax - 1)) {
-            $(this).val("").css("display", "none");
-          } else {
-            $(this).css("display", "block");
-          }
-        });
-        return false;
-    });
-
-    var bulletList = $(".bLine");
-
-    $(".bulletLine").blur(function() {
-
-    	var concat = "";
-    	bulletList
-	    .each(function(index) {
-	    	if ($(this).val() != '')
-	    	{
-	    		concat = concat+"<li>"+$(this).val()+"</li>";
-	    	}
-	    });
-	    concat = "<ul>"+concat+"</ul>"
-	    $('#C10').val(concat);
-	    console.log("bullet list: ",concat);
-    });
-
-    $('.bullet-add').on("click", function() {
-        if ( bullIndex < 10)
-        {
-          bullIndex ++;
-          $(bulletList[bullIndex]).slideDown();
-          console.log(bullIndex);
-        } 
-        if ( bullIndex === 9) $(this).addClass("disabled");
-        if ( bullIndex > 2) $(".bullet-rem").removeClass("disabled");
-        return false;
-    });
-
-    $('.bullet-rem').on("click", function() {
-        if ( bullIndex > 2)
-        {
-          $(bulletList[bullIndex]).slideUp();
-          bullIndex --;
-          console.log(bullIndex);
-        } 
-        if ( bullIndex === 2) $(this).addClass("disabled");
-        if ( bullIndex < 9) $(".bullet-add").removeClass("disabled");
-        return false;
-    });
-
-
     
+    $(".bullet-list").bulletPoints();
 
     /***
     *  D : select novelty presence 
