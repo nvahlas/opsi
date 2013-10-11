@@ -1,7 +1,13 @@
 (function($)
 {
-    $.fn.bulletPoints=function(parametres)
+    $.fn.bulletPoints=function( options )
     {
+		var settings = $.extend({
+			placeholder: "Max. 20 words",
+			minLines: 3,
+			maxLines: 10
+		}, options );
+
        return this.each(function()
        {
        		// define content
@@ -13,10 +19,9 @@
 									// build array by splitting on '</li><li>' 
 									.split("</li><li>"
 								),
-
-				minLines		= 2,
-				maxLines		= 9,
-				filledLines		= (textArray.length < 3) ? 3 : textArray.length;
+				filledLines		= (textArray.length < 3) ? 3 : textArray.length,
+				minLines		= settings.minLines-1,
+				maxLines		= settings.maxLines-1;
 
 			$(this)
 
@@ -32,7 +37,7 @@
 				var hidden = (i < 3 || i <= filledLines-1) ? '' : ' style="display: none;"'
 
 				$(this).find(".bullet-block")
-				.append('<div class="bLine"'+hidden+'><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="Max. 20 words"></textarea></div>');
+				.append('<div class="bLine"'+hidden+'><textarea rows="2" class="bulletLine" name="bulletLine" placeholder="'+settings.placeholder+'"></textarea></div>');
 			}
 
 			var	bulletblock		= $(this).find(".bullet-block"),
@@ -72,7 +77,6 @@
 
 				if ( currentIndex <= minLines) removeLine.addClass("disabled");
 				if ( currentIndex > minLines) removeLine.removeClass("disabled");
-				console.log(filledLines, minLines, maxLines);
 		    }
 
 			btnState ();
