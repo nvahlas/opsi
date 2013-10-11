@@ -128,6 +128,20 @@ var options = {
         "objectives": "Please set out the objectives of the innovation",
         "help": "Please provide an estimated number of beneficiaries where possible"
       },
+      "step5": {
+        "label": "D. Novelty",
+        "question": {
+          "label": "Are you aware of existing practices <br />which are similar to your innovation?",
+          "options": [
+            {"label": "yes"},
+            {"label": "no"}
+          ],
+          "help": "Answers may include up to 12 responses"
+        },
+        "practice": {
+          
+        }
+      },
       "footer": {
         "cancel": "Cancel",
         "save": "Save",
