@@ -140,191 +140,211 @@ var options = {
   }
 }
 
-$(function() {
+  $(function() {
 
-  $('ul.browse li:nth-child(6)').attr('class', 'current');
+    $('ul.browse li:nth-child(6)').attr('class', 'current');
 
-  $('.help').popover({trigger: 'hover'});
+    $('.help').popover({trigger: 'hover'});
 
-  /***
-  *  A : Add up to 3 contacts
-  *  
-  */
-  var authLength    = 1,
-      contactsPanes = $(".auth-pane");
+    /***
+    *  A : Add up to 3 contacts
+    *  
+    */
 
-  $("#auth-add").on("click", function() {
-    if (authLength < 3) {
-      $(contactsPanes[authLength]).slideDown()
-      authLength ++;
-    }
-    if (authLength == 3) $(this).addClass("disabled");
-    if (authLength > 1) $("#auth-rem").removeClass("disabled");
-    return false;
-  });
+    var authLength    = 1,
+        contactsPanes = $(".auth-pane");
 
-  $("#auth-rem").on("click", function() {
-    if (authLength > 1) {
-      authLength --;
-      $(contactsPanes[authLength]).slideUp();
-    }
-    if (authLength == 1) $(this).addClass("disabled");
-    if (authLength < 3) $("#auth-add").removeClass("disabled");
-    return false;
-  });
-
-  /***
-  *  C : bullet points plugin
-  *  add or remove
-  */
-  $(".bullet-list").bulletPoints();
-
-  /***
-  *  c -tagging solution
-  */
-  $("#C8").select2({tags:["Users", "public sector", "innovation", "change", "efficiency", "e-government", "partnership", "co-production", "design", "implementation", "delivery", "performance", "budgeting", "rules", "decision-making", "human resources", "project management", "childcare", "equality", "access", "digital", "citizens", "open data", "transparency", "flexibility", "civil service", "private sector", "civil society", "consultation", "simplicity", "savings", "online", "procurement"], maximumSelectionSize: 5, tokenSeparators: [","]});
-
-  // change real input style in order to validate
-  $.each($(".select2-container"), function (i, n) {
-      $(n).next().show().fadeTo(0, 0).height("0px").css("left", "auto"); // make the original select visible for validation engine and hidden for us
-      $(n).prepend($(n).next());
-      $(n).delay(500).queue(function () {
-      $(this).removeClass("validate[required]"); //remove the class name from select2 container(div), so that validation engine dose not validate it
-      $(this).dequeue();
+    $("#auth-add").on("click", function() {
+        if (authLength < 3)
+        {
+          $(contactsPanes[authLength]).slideDown()
+          authLength ++;
+        }
+        if (authLength == 3) $(this).addClass("disabled");
+        if (authLength > 1) $("#auth-rem").removeClass("disabled");
+        return false;
     });
-  });
 
-  /***
-  *  D : select novelty presence 
-  *  and add practices
-  */
-  var hasNovelty      = $("input[name=hasNovelty]"),
-      checkState      = false,
-      practiceIndex   = 0;
-      practices       = $(".novelty-pane"),
-      addPractice     = $("#practice-add"),
-      remPractice     = $("#practice-rem");
-
-  hasNovelty.change(function() {
-    checkState = $("input[name=hasNovelty]:checked").val();
-    if (checkState == "true") {
-      addPractice.removeClass("disabled");
-      remPractice.addClass("disabled");
-      $(practices[practiceIndex]).slideDown();
-      $("#newPractice").slideDown();
-    } else {
-      $(practices).slideUp();
-      $("#newPractice").slideUp();
-      practiceIndex = 0;
-    }
-  });
-
-  addPractice.on("click", function() {
-    if ( practiceIndex < practices.length) {
-      practiceIndex ++;
-      $(practices[practiceIndex]).slideDown();
-    } 
-    if ( practiceIndex === practices.length - 1) $(this).addClass("disabled");
-    if ( practiceIndex > 0) $("#practice-rem").removeClass("disabled");
-    return false;
-  });
-
-  remPractice.on("click", function() {
-    if ( practiceIndex > 0) {
-      $(practices[practiceIndex]).slideUp();
-      practiceIndex --;
-    } 
-    if ( practiceIndex === 0) $(this).addClass("disabled");
-    if ( practiceIndex < practices.length) $("#practice-add").removeClass("disabled");
-    return false;
-  });
-
-  /***
-  *  E : toggle stage fields display
-  *  with check state
-  */
-  function showPanes(stagePanes, stageIndex) {
-    stagePanes.each(function(index) {
-      var showPane = (index+1 > stageIndex) ? "none" : "block";
-      $(this).css("display", showPane );
+    $("#auth-rem").on("click", function() {
+        if (authLength > 1) 
+        {
+          authLength --;
+          $(contactsPanes[authLength]).slideUp();
+        }
+        if (authLength == 1) $(this).addClass("disabled");
+        if (authLength < 3) $("#auth-add").removeClass("disabled");
+        return false;
     });
-  }
 
-  var stagePanes = $(".stagePane"),
-  stageIndex = parseInt($("#stageIndex").attr("value"));
+    /***
+    *  C : bullet points plugin
+    
+    *  options
 
-  showPanes(stagePanes, stageIndex);
+    *  placeolder: "Max. 20 words"
+    *  minLines: 3
+    *  maxLines: 10
+    */
+    
+    $(".bullet-list").bulletPoints({placeholder: "Max. 20 words"});
 
-  $( "#stageSelect" ).on("change", function (evt) {
-    stageIndex = $(this).prop("selectedIndex");
+    /***
+    *  c -tagging solution
+    */
+
+    $("#C8").select2({tags:["Users", "public sector", "innovation", "change", "efficiency", "e-government", "partnership", "co-production", "design", "implementation", "delivery", "performance", "budgeting", "rules", "decision-making", "human resources", "project management", "childcare", "equality", "access", "digital", "citizens", "open data", "transparency", "flexibility", "civil service", "private sector", "civil society", "consultation", "simplicity", "savings", "online", "procurement"], maximumSelectionSize: 5, tokenSeparators: [","]});
+
+    // change real input style in order to validate
+
+    $.each($(".select2-container"), function (i, n) {
+        $(n).next().show().fadeTo(0, 0).height("0px").css("left", "auto"); // make the original select visible for validation engine and hidden for us
+        $(n).prepend($(n).next());
+        $(n).delay(500).queue(function () {
+            $(this).removeClass("validate[required]"); //remove the class name from select2 container(div), so that validation engine dose not validate it
+            $(this).dequeue();
+        });
+    });
+
+    /***
+    *  D : select novelty presence 
+    *  and add practices
+    */
+
+    var hasNovelty      = $("input[name=hasNovelty]"),
+        checkState      = false,
+        practiceIndex   = 0;
+        practices       = $(".novelty-pane"),
+        addPractice     = $("#practice-add"),
+        remPractice     = $("#practice-rem");
+
+    hasNovelty.change(function() {
+      checkState = $("input[name=hasNovelty]:checked").val();
+      if (checkState == "true") {
+        addPractice.removeClass("disabled");
+        remPractice.addClass("disabled");
+        $(practices[practiceIndex]).slideDown();
+        $("#newPractice").slideDown();
+      } else {
+        $(practices).slideUp();
+        $("#newPractice").slideUp();
+        practiceIndex = 0;
+      }
+    });
+
+    addPractice.on("click", function() {
+        if ( practiceIndex < practices.length)
+        {
+          practiceIndex ++;
+          $(practices[practiceIndex]).slideDown();
+        } 
+        if ( practiceIndex === practices.length - 1) $(this).addClass("disabled");
+        if ( practiceIndex > 0) $("#practice-rem").removeClass("disabled");
+        return false;
+    });
+
+    remPractice.on("click", function() {
+        if ( practiceIndex > 0)
+        {
+          $(practices[practiceIndex]).slideUp();
+          practiceIndex --;
+        } 
+        if ( practiceIndex === 0) $(this).addClass("disabled");
+        if ( practiceIndex < practices.length) $("#practice-add").removeClass("disabled");
+        return false;
+    });
+
+    /***
+    *  E : toggle stage fields display
+    *  with check state
+    */
+
+    function showPanes(stagePanes, stageIndex) {
+      stagePanes.each(function(index) {
+        var showPane = (index+1 > stageIndex) ? "none" : "block";
+        $(this).css("display", showPane );
+      });
+    }
+
+    var stagePanes = $(".stagePane"),
+        stageIndex = parseInt($("#stageIndex").attr("value"));
+
     showPanes(stagePanes, stageIndex);
-  });
 
-  /***
-  *  F : select partnership presence 
-  *  and add partners
-  */
-  var hasPartner     = $("input[name=hasPartner]"),
-      checkState     = false,
-      partnerIndex   = 0;
-      partners       = $(".partnership-pane"),
-      addPartner     = $("#Partner-add"),
-      remPartner     = $("#Partner-rem");
+    $( "#stageSelect" ).on("change", function (evt) {
+      stageIndex = $(this).prop("selectedIndex");
+      showPanes(stagePanes, stageIndex);
+    });
 
-  hasPartner.change(function() {
-    checkState = $("input[name=hasPartner]:checked").val();
-    if (checkState == "true") {
-      addPartner.removeClass("disabled");
-      remPartner.addClass("disabled");
-      $(partners[partnerIndex]).slideDown();
-      $("#newPartner").slideDown();
-    } else {
-      $(partners).slideUp();
-      $("#newPartner").slideUp();
-      partnerIndex = 0;
+    /***
+    *  F : select partnership presence 
+    *  and add partners
+    */
+
+    var hasPartner     = $("input[name=hasPartner]"),
+        checkState     = false,
+        partnerIndex   = 0;
+        partners       = $(".partnership-pane"),
+        addPartner     = $("#Partner-add"),
+        remPartner     = $("#Partner-rem");
+
+    hasPartner.change(function() {
+      checkState = $("input[name=hasPartner]:checked").val();
+      if (checkState == "true") {
+        addPartner.removeClass("disabled");
+        remPartner.addClass("disabled");
+        $(partners[partnerIndex]).slideDown();
+        $("#newPartner").slideDown();
+      } else {
+        $(partners).slideUp();
+        $("#newPartner").slideUp();
+        partnerIndex = 0;
+      }
+    });
+
+    addPartner.on("click", function() {
+        if ( partnerIndex < partners.length)
+        {
+          partnerIndex ++;
+          $(partners[partnerIndex]).slideDown();
+        } 
+        if ( partnerIndex === partners.length - 1) $(this).addClass("disabled");
+        if ( partnerIndex > 0) remPartner.removeClass("disabled");
+        return false;
+    });
+
+    remPartner.on("click", function() {
+        if ( partnerIndex > 0)
+        {
+          $(partners[partnerIndex]).slideUp();
+          partnerIndex --;
+        } 
+        if ( partnerIndex === 0) $(this).addClass("disabled");
+        if ( partnerIndex < partners.length) addPartner.removeClass("disabled");
+        return false;
+    });
+
+    /**
+    * G - toggle results fields display
+    * with check state
+    */
+
+    var checkState    = $("#resultChecks input[type='checkbox']")
+        resultFields  = $(".resultLine");
+
+    function changeCheck(index) {
+      if (index > 0)
+      {
+        $(resultFields[index+1]).slideDown();
+        $('#resultProgress').slideUp();
+        $("#resultChecks input:eq(0)").prop('checked',false);
+      } else {
+        $("#resultChecks input:gt(0)").prop('checked',false);
+        resultFields.slideUp();
+        $('#resultProgress').slideDown();
+      }
     }
-  });
 
-  addPartner.on("click", function() {
-    if ( partnerIndex < partners.length) {
-      partnerIndex ++;
-      $(partners[partnerIndex]).slideDown();
-    } 
-    if ( partnerIndex === partners.length - 1) $(this).addClass("disabled");
-    if ( partnerIndex > 0) remPartner.removeClass("disabled");
-    return false;
-  });
-
-  remPartner.on("click", function() {
-    if ( partnerIndex > 0) {
-      $(partners[partnerIndex]).slideUp();
-      partnerIndex --;
-    } 
-    if ( partnerIndex === 0) $(this).addClass("disabled");
-    if ( partnerIndex < partners.length) addPartner.removeClass("disabled");
-    return false;
-  });
-
-  /**
-  * G - toggle results fields display
-  * with check state
-  */
-  var checkState    = $("#resultChecks input[type='checkbox']")
-    resultFields  = $(".resultLine");
-
-  function changeCheck(index) {
-    if (index > 0) {
-      $(resultFields[index+1]).slideDown();
-      $('#resultProgress').slideUp();
-      $("#resultChecks input:eq(0)").prop('checked',false);
-    } else {
-      $("#resultChecks input:gt(0)").prop('checked',false);
-      resultFields.slideUp();
-      $('#resultProgress').slideDown();
-    }
-  }
-
-  checkState
+    checkState
     .each(function(index) {
       resultFields.hide();  // hiding all fields at first load
       changeCheck(index);
@@ -334,171 +354,182 @@ $(function() {
       changeCheck(index);
     });
 
-  var evalState = false
-  $('input[name=hasEval]').change(function() {
-    evalState = ( evalState == false ) ? true : false;
-    $('#evalution-block').slideToggle();
-  });
 
-  /***
-  *  I : hardness
-  *  collection
-  */
-  $("#hardness a").on("click", function () {
+    var evalState = false
+    $('input[name=hasEval]').change(function() {
+      evalState = ( evalState == false ) ? true : false;
+      $('#evalution-block').slideToggle();
+    });
 
-    $(this).parent().addClass("active")
-      .siblings().removeClass("active");
+    /***
+    *  I : hardness
+    *  collection
+    */
 
-    $('#I2').val($(this).text());
+    $("#hardness a").on("click", function () {
 
-    return false;
-  });
+        $(this).parent().addClass("active")
+        .siblings().removeClass("active");
 
-  /**
-  * form validation 
-  * 
-  */
-  $.validator.addMethod("selectNone",  function(value, element) {if (element.value == "") {return false;} else {return true};} );
-  var form = $( "#innovationSubmit" );
-  var currentStep = 0;
-  var overideStep = 0;
+        $('#I2').val($(this).text());
 
-  jQuery.extend(jQuery.validator.messages, {
-    required: "Please answer this question"
-  });
-
-  jQuery.validator.addMethod("checkboxes", function(value, element) {
-    return $('input[type=checkbox]:checked').length > 0;
-  }, "please select at least one checkbox");
-
-  var $validator = form.validate({
-    rules: {
-      // Section A
-      auth1_name: { required: true, minlength: 3 },
-      auth1_org: { required: true, minlength: 3 },
-      auth1_mail: { required: true, email: true, minlength: 3 },
-      auth1_mail: { required: true, email: true, minlength: 3 },
-      
-      // Section B
-      org_country: { required:true },
-      org_level: { required:true },
-      org_sector: { required:true, selectNone:true },
-      org_size: { required: true, selectNone:true },
-
-      // Section C
-      'C6[]': { required: true },
-      stageSelect: { required: true, selectNone:true },
-      G1_check: { required: true, selectNone:true }
-    },
-    highlight: function(element) {
-      $(element).closest('.control-group').removeClass('success').addClass('error');
-    },
-    success: function(element) {
-      element.addClass('valid').closest('.control-group').removeClass('error');
-    },
-    errorPlacement: function(error, element) {
-      if (element.is(":checkbox") || element.is(":radio")) {
-        element.parents('.controls').append(error);
-      } else {
-        $(element.parents('.controls')).append(error);
-      }
-    }
-  });
-
-  /***
-  *
-  * main wizard behaviour
-  *
-  */
-  $("select").on("change", function () {
-    $(this).blur();
-  });
-  var overideStep = 0;
-
-  $("#fPreview").css("display", "none");
-  $("#fSubmit").css("display", "none");
-  $("#fSave").css("display", "none");
-
-  $('#myWizard').wizard();
-  $('#MyWizard').on('change', function(e, data) {
-    if(data.step===9 && data.direction==='next') {
-      // return e.preventDefault();
-      $("#fPreview").css("display", "inline-block");
-      $("#fSubmit").css("display", "inline-block");
-    }
-
-    if(data.step=1) {
-      // return e.preventDefault();
-      $("#fSave").css("display", "none");
-    }
-    if(data.step===1 && data.direction==='next') {
-      // return e.preventDefault();
-      $("#fSave").css("display", "inline-block");
-    }
-
-    if(data.step===10 && data.direction==='previous') {
-      // return e.preventDefault();
-      $("#fPreview").css("display", "none");
-      $("#fSubmit").css("display", "none");
-    }
-
-    var $valid = $("#innovationSubmit").valid();
-    if(!$valid) {
-      $validator.focusInvalid();
-      if (data.step != overideStep) {
-        overideStep = data.step;
         return false;
+    });
+
+    /**
+    * form validation 
+    * 
+    */
+
+    $.validator.addMethod("selectNone",  function(value, element) {if (element.value == "") {return false;} else {return true};} );
+
+    var form = $( "#innovationSubmit" );
+    var currentStep = 0;
+    var overideStep = 0;
+
+    jQuery.extend(jQuery.validator.messages, {
+      required: "Please answer this question"
+    });
+
+
+    jQuery.validator.addMethod("checkboxes", function(value, element) {
+      return $('input[type=checkbox]:checked').length > 0;
+     }, "please select at least one checkbox");
+
+    var $validator = form.validate({
+      rules: {
+          // Section A
+          auth1_name: { required: true, minlength: 3 },
+          auth1_org: { required: true, minlength: 3 },
+          auth1_mail: { required: true, email: true, minlength: 3 },
+          auth1_mail: { required: true, email: true, minlength: 3 },
+
+          // Section B
+          org_country: { required:true },
+          org_level: { required:true },
+          org_sector: { required:true, selectNone:true },
+          org_size: { required: true, selectNone:true },
+
+          // Section C
+          'C6[]': { required: true },
+          stageSelect: { required: true, selectNone:true },
+          G1_check: { required: true, selectNone:true }
+      },
+      highlight: function(element) {
+        $(element).closest('.control-group').removeClass('success').addClass('error');
+      },
+      success: function(element) {
+        element.addClass('valid').closest('.control-group').removeClass('error');
+      },
+      errorPlacement: function(error, element) {
+        if (element.is(":checkbox") || element.is(":radio")) {
+          element.parents('.controls').append(error);
+        } else 
+        {
+          $(element.parents('.controls')).append(error);
+            }
       }
-    }
-  });
-  $('#MyWizard').on('changed', function(e, data) {
-    overideStep = 0;
-  });
-  $('#MyWizard').on('finished', function(e, data) {
-    console.log('finished');
-  });
-  $('#btnWizardPrev').on('click', function() {
-    $('#MyWizard').wizard('previous');
-  });
-  $('#btnWizardNext').on('click', function() {
-    $('#MyWizard').wizard('next','finished');
-  });
-  $('#btnWizardStep').on('click', function() {
-    var item = $('#MyWizard').wizard('selectedItem');
-    console.log(item.step);
-  });
-  $('#myWizard').on('stepclick', function(e, data) {
-    console.log('step' + data.step + ' clicked');
-  });
+    });
 
-  $('#startForm').on('click', function() {
-    $('#MyWizard').wizard('next','finished');
-  });
 
-  $('#cancelForm').click(function(){
-    window.location = '/pages/profile'
-  });
+ /***
+ *
+ * main wizard behaviour
+ *
+ */
 
-  $('#myWizard').on('change', function(e, data) {
-    console.log('step' + data.step + ' clicked');
 
-    tinyMCE.triggerSave();
+    $("select").on("change", function () {
+        $(this).blur();
+    });
+    var overideStep = 0;
 
-    var $valid = $("#innovationSubmit").valid();
-    if(!$valid) {
-      $validator.invalid();
-      if (data.step != overideStep) {
-        overideStep = data.step;
-        return false;
+    $("#fPreview").css("display", "none");
+    $("#fSubmit").css("display", "none");
+        $("#fSave").css("display", "none");
+
+
+    $('#myWizard').wizard();
+    $('#MyWizard').on('change', function(e, data) {
+      if(data.step===9 && data.direction==='next') {
+        // return e.preventDefault();
+        $("#fPreview").css("display", "inline-block");
+        $("#fSubmit").css("display", "inline-block");
       }
+
+      if(data.step=1) {
+        // return e.preventDefault();
+        $("#fSave").css("display", "none");
+      }
+      if(data.step===1 && data.direction==='next') {
+        // return e.preventDefault();
+        $("#fSave").css("display", "inline-block");
+      }
+
+      if(data.step===10 && data.direction==='previous') {
+        // return e.preventDefault();
+        $("#fPreview").css("display", "none");
+        $("#fSubmit").css("display", "none");
+      }
+
+      var $valid = $("#innovationSubmit").valid();
+      if(!$valid) {
+        $validator.focusInvalid();
+        if (data.step != overideStep)
+        {
+          overideStep = data.step;
+          return false;
+        }
+      }
+    });
+    $('#MyWizard').on('changed', function(e, data) {
+       overideStep = 0;
+    });
+    $('#MyWizard').on('finished', function(e, data) {
+      console.log('finished');
+    });
+    $('#btnWizardPrev').on('click', function() {
+      $('#MyWizard').wizard('previous');
+    });
+    $('#btnWizardNext').on('click', function() {
+      $('#MyWizard').wizard('next','finished');
+    });
+    $('#btnWizardStep').on('click', function() {
+      var item = $('#MyWizard').wizard('selectedItem');
+      console.log(item.step);
+    });
+    $('#myWizard').on('stepclick', function(e, data) {
+      console.log('step' + data.step + ' clicked');
+    });
+
+
+    $('#startForm').on('click', function() {
+      $('#MyWizard').wizard('next','finished');
+    });
+
+    $('#cancelForm').click(function(){
+      window.location = '/pages/profile'
+    });
+
+
+
+    $('#myWizard').on('change', function(e, data) {
+      console.log('step' + data.step + ' clicked');
+
+      tinyMCE.triggerSave();
+
+        var $valid = $("#innovationSubmit").valid();
+        if(!$valid) {
+          $validator.invalid();
+          if (data.step != overideStep)
+          {
+            overideStep = data.step;
+            return false;
+          }
       if(data.step > 8) {
         $("#fPreview").css("display", "inline-block");
         $("#fSubmit").css("display", "inline-block");
       }
-    }
-  });
-});
-
-i18n.init(options).done(function() {
-  $('#innovationSubmit').i18n();
+      }
+    });
 });
