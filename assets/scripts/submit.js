@@ -133,12 +133,16 @@ var options = {
         "save": "Save",
         "preview": "Preview",
         "submit": "Submit",
-        "previous": "Previous",
+        "previous": "Prev",
         "next": "Next"
       }
     }}
   }
 }
+
+i18n.init(options).done(function() {
+  $('#innovationSubmit').i18n();
+});
 
   $(function() {
 
