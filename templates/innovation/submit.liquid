@@ -338,34 +338,56 @@
     * with check state
     */
 
-    var checkState 		= $("#resultChecks input[type='checkbox']")
-        resultFields	= $(".resultLine");
+    // G1 result progress
+
+    var checkState 	  = $("#resultChecks input[type='checkbox']"),
+
+        resultDivs    = $("#resultProgress,.resultLine"),
+        noResultDiv   = resultDivs.slice(0,1);
 
     function changeCheck(index) {
+      var isChecked = $(checkState[index]).prop('checked');
+
     	if (index > 0)
     	{
-	   		$(resultFields[index+1]).slideDown();
-        $('#resultProgress').slideUp();
-	  		$("#resultChecks input:eq(0)").prop('checked',false);
-	  	} else {
-	  		$("#resultChecks input:gt(0)").prop('checked',false);
-	  		resultFields.slideUp();
-        $('#resultProgress').slideDown();
+        if (isChecked)
+        {
+          $(resultDivs[index]).slideDown();
+          $(checkState).slice(0,1).prop('checked',false);
+          noResultDiv.slideUp();
+        }
+        else
+        {
+          $(resultDivs[index]).slideUp();
+        }
+	  	}
+      else
+      {
+        if (isChecked)
+        {
+  	  		$(checkState).slice(1).prop('checked',false);
+  	  		resultDivs.slideUp();
+          noResultDiv.slideDown();
+        }
+        else 
+        {
+          noResultDiv.slideUp();
+        }
 	  	}
     }
 
     checkState
     .each(function(index) {
-	  	resultFields.hide();  // hiding all fields at first load
     	changeCheck(index);
     })
     .on("change",function (evt) {
-    	var index = checkState.index($(this));
-    	changeCheck(index);
+    	changeCheck(checkState.index($(this)));
     });
 
+    // G2 evaluation
 
     var evalState = false
+
     $('input[name=hasEval]').change(function() {
       evalState = ( evalState == false ) ? true : false;
       $('#evalution-block').slideToggle();
