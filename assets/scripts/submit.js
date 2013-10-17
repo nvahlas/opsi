@@ -712,7 +712,7 @@ i18n.init(options).done(function() {
 		Description : { required: true, minlength: 3, maxlength: 2000 }, 
 		InnoType : { required: true },
 		'Main-beneficiaries' :  { required: false, minlength: 3, maxlength: 1500 },
-		Keywords :  { required: false, minlength: 1, maxlength: 5 },
+		Keywords :  { required: false, minlength: 1, maxlength: 225 },
 		Why : { required: false, minlength: 3, maxlength: 2000 },
 		Objectives : { required: false, minlength: 3, maxlength: 2100 },
 
