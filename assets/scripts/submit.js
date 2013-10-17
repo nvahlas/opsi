@@ -867,11 +867,18 @@ i18n.init(options).done(function() {
 
 
     $('#startForm').on('click', function() {
+      if ( innovationForm && fakeData ) {
+      	innovationForm.loadData(fakeData);
+      }
       $('#MyWizard').wizard('next','finished');
     });
 
     $('#cancelForm').click(function(){
       window.location = '/pages/profile'
+    });
+
+    $('#fSave').click(function() {
+    	if ( innovationForm ) innovationForm.save();
     });
 
 
