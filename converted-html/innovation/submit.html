@@ -27,7 +27,7 @@
             <header>
 	<div class="container">
 		<div id="brand" class="pull-left span8">
-			<a href="../index.html"><img src="../assets/img/GUI/logo18.png"></a>
+			<a href="../index.html"><img src="../assets/img/GUI/logo19.png"></a>
 		</div>
 		<form id="custom-search-form" class="form-search form-horizontal pull-right" action="/pages/sitesearch">
 		    <div class="input-append">
@@ -1850,7 +1850,6 @@
 					<p class="sep">
 					</p>
 					<label class="checkbox">
-					<!-- <input style="display: hidden;" type="checkbox" id="G1_check" name="G1_check" value="SQ"> -->
 					Improved service quality <em class="span3 pull-right">(Please indicate the type of service quality improvement)</em></label>
 					<div class="qualiDetails" style="padding-left: 20px">
 						<label class="checkbox">
@@ -1858,7 +1857,7 @@
 						<label class="checkbox">
 						<input type="checkbox" id="G1_check5" name="G1_check" value="Responsiveness">Responsiveness <a data-placement="right" href="#" class="help" data-content="I.e. the ability to respond to different user needs or user views"><i class="icon-question-sign"></i></a></label>
 						<label class="checkbox">
-						<input type="checkbox" id="G1_check6" name="G1_check" value="Reliability">Reliability <a data-placement="right" href="#" class="help" data-content="i.e. the accuracy and consistency of a service (such as the number of errors that occur)"><i class="icon-question-sign"></i></a></label>
+						<input type="checkbox" id="G1_check6" name="G1_check" value="Reliability" checked="checked" >Reliability <a data-placement="right" href="#" class="help" data-content="i.e. the accuracy and consistency of a service (such as the number of errors that occur)"><i class="icon-question-sign"></i></a></label>
 						<label class="checkbox">
 						<input type="checkbox" id="G1_check7" name="G1_check" value="otherSQ">other </label>
 					</div>
@@ -1887,7 +1886,7 @@
 			<div class="control-group">
 				<label class="control-label">Results progress</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_0" name="G1_0" class="span5">Max. 100 words</textarea>
+					<textarea rows="5" id="G1_0" name="G1_0" class="span5" placeholder="Max. 100 words" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -1905,7 +1904,7 @@
 			<div class="control-group">
 				<label class="control-label">Efficiency</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_1" name="G1_1" class="span5">Max. 100 words</textarea>
+					<textarea rows="5" id="G1_1" name="G1_1" class="span5" placeholder="Max. 100 words" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -1923,7 +1922,7 @@
 			<div class="control-group">
 				<label class="control-label">Effectiveness</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_2" name="G1_2" class="span5">Max. 50 words</textarea>
+					<textarea rows="5" id="G1_2" name="G1_2" class="span5" placeholder="Max. 50 words" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -1941,7 +1940,7 @@
 			<div class="control-group">
 				<label class="control-label"><em>Service quality:</em> Accessibility</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_3" name="G1_3" class="span5">Max. 50 words</textarea>
+					<textarea rows="5" id="G1_3" name="G1_3" class="span5" placeholder="Max. 50 words" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -1959,7 +1958,7 @@
 			<div class="control-group">
 				<label class="control-label"><em>Service quality:</em> Responsiveness</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_4" name="G1_4" class="span5">Max. 50 words</textarea>
+					<textarea rows="5" id="G1_4" name="G1_4" class="span5" placeholder="Max. 50 words" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -1977,7 +1976,7 @@
 			<div class="control-group">
 				<label class="control-label"><em>Service quality:</em> Reliability</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_5" name="G1_5" class="span5">Max. 50 words</textarea>
+					<textarea rows="5" id="G1_5" name="G1_5" class="span5" placeholder="Max. 50 words" required>some text</textarea>
 				</div>
 			</div>
 		</div>
@@ -1995,7 +1994,7 @@
 			<div class="control-group">
 				<label class="control-label"><em>Service quality:</em> Other</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_6" name="G1_6" class="span5">Max. 50 words</textarea>
+					<textarea rows="5" id="G1_6" name="G1_6" class="span5" placeholder="Max. 50 words" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -2012,7 +2011,7 @@
 			<div class="control-group">
 				<label class="control-label">Improved user satisfaction</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_7" name="G1_7" class="span5">Max. 100 words</textarea>
+					<textarea rows="5" id="G1_7" name="G1_7" class="span5" placeholder="Max. 100 words" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -2030,7 +2029,7 @@
 			<div class="control-group">
 				<label class="control-label">Other</label>
 				<div class="controls">
-					<textarea rows="5" id="G1_8" name="G1_8" class="span5">Max. 100 words</textarea>
+					<textarea rows="5" id="G1_8" name="G1_8" class="span5" placeholder="Max. 100 words" required></textarea>
 				</div>
 			</div>
 		</div>
@@ -2485,34 +2484,56 @@
     * with check state
     */
 
-    var checkState 		= $("#resultChecks input[type='checkbox']")
-        resultFields	= $(".resultLine");
+    // G1 result progress
+
+    var checkState 	  = $("#resultChecks input[type='checkbox']"),
+
+        resultDivs    = $("#resultProgress,.resultLine"),
+        noResultDiv   = resultDivs.slice(0,1);
 
     function changeCheck(index) {
+      var isChecked = $(checkState[index]).prop('checked');
+
     	if (index > 0)
     	{
-	   		$(resultFields[index+1]).slideDown();
-        $('#resultProgress').slideUp();
-	  		$("#resultChecks input:eq(0)").prop('checked',false);
-	  	} else {
-	  		$("#resultChecks input:gt(0)").prop('checked',false);
-	  		resultFields.slideUp();
-        $('#resultProgress').slideDown();
+        if (isChecked)
+        {
+          $(resultDivs[index]).slideDown();
+          $(checkState).slice(0,1).prop('checked',false);
+          noResultDiv.slideUp();
+        }
+        else
+        {
+          $(resultDivs[index]).slideUp();
+        }
+	  	}
+      else
+      {
+        if (isChecked)
+        {
+  	  		$(checkState).slice(1).prop('checked',false);
+  	  		resultDivs.slideUp();
+          noResultDiv.slideDown();
+        }
+        else 
+        {
+          noResultDiv.slideUp();
+        }
 	  	}
     }
 
     checkState
     .each(function(index) {
-	  	resultFields.hide();  // hiding all fields at first load
     	changeCheck(index);
     })
     .on("change",function (evt) {
-    	var index = checkState.index($(this));
-    	changeCheck(index);
+    	changeCheck(checkState.index($(this)));
     });
 
+    // G2 evaluation
 
     var evalState = false
+
     $('input[name=hasEval]').change(function() {
       evalState = ( evalState == false ) ? true : false;
       $('#evalution-block').slideToggle();

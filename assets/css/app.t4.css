@@ -149,7 +149,7 @@ header #brand {
 }
 /* line 13, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
 header nav {
-  background: #72367d url('@opsi_bg') no-repeat right center;
+  background: #72367d url('<t4 type='media' id='251420' formatter='path/*'/>') no-repeat right center;
   float: left;
   overflow: hiddden;
   width: 100%;
@@ -169,7 +169,7 @@ header nav ul li {
 }
 /* line 28, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
 header nav ul li.current a,
-header nav ul li.current span.currentbranch0 {
+header nav ul li span.currentbranch0 a {
   background: #4d1554!important;
 }
 /* line 34, /Users/ezka/Documents/WRK/opsi/less/app/common/main.less */
