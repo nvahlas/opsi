@@ -1,0 +1,11 @@
+.loginFrame {
+	position: absolute;
+	top: 140px;
+	margin: 0 auto;
+	width: 640px;
+	height: 550px;
+	margin-left: -320px;
+	left: 50%;
+	border: 3px solid #c6c8ca;
+	z-index:999;
+}
