@@ -25,19 +25,23 @@ var options = {
       "step2": {
         "title": "A. Personal Details",
         "contact": {
-          "title": "Contact informations",
-          "name": "Your Name",
-          "organisation": "Your Organisation",
-          "email": "Your Email Adress",
-          "phone": "Your Telephone Number",
-          "add": "Add Contact",
-          "remove": "Remove Contact",
-          "visible": {
-            "message": "Would you like your name and contact details to be visible to all registered members of the platform?",
-            "help": "Ticking no will mean that your name and contact details remain private and will only be shared with the OECD Secretariat.",
-            "yes": "yes",
-            "no": "no"
-          }
+			"title": "Contact informations",
+			"name": "Your Name",
+			"placeholder1": "max 10 words",
+			"organisation": "Your Organisation",
+			"placeholder2": "max 20 words",
+			"email": "Your Email Adress",
+			"placeholder3": "user@site.sfx",
+			"phone": "Your Telephone Number",
+			"placeholder4": "max 20 words",
+			"add": "Add Contact",
+			"remove": "Remove Contact",
+			"visible": {
+				"message": "Would you like your name and contact details to be visible to all registered members of the platform?",
+				"help": "Ticking no will mean that your name and contact details remain private and will only be shared with the OECD Secretariat.",
+				"yes": "yes",
+				"no": "no"
+			}
         }
       },
       "step3": {
@@ -86,6 +90,7 @@ var options = {
         "label": "C. Description of the innovation",
         "name": {
           "label": "Name of the innovation",
+		  "placeholder": "max 40 words",
           "help": "The OPSI’s working definition of public sector innovation is the implementation of a new way in which an organisation operates or the services that it provides. It should  result in improvements in at least one of the following areas:<br />1) efficiency;<br />2) effectiveness;<br />3) service quality; or<br />4) user satisfaction<br />(Please note that you may still provide examples of innovations where the results are not yet available, with the opportunity to update these results at a later date)"
         },
         "image": {
@@ -93,13 +98,16 @@ var options = {
           "help": "image dimensions: width= 290px, height= 140px"
         },
         "link": {
-          "label": "If available, please provide a link that provides further information about the innovation"
-        },
+          "label": "If available, please provide a link that provides further information about the innovation",
+		  "placeholder": "http://..."
+		},
         "when": {
-          "label": "What year was the innovation launched?"
+          "label": "What year was the innovation launched?",
+		  "placeholder": "Please provide as YYYY"
         },
         "description": {
           "label": "Please briefly describe the innovative practice",
+		  "placeholder": "Max. 150 words",
           "help": "In your description please also set out what the innovation has changed compared to the situation before"
         },
         "type": {
@@ -119,37 +127,295 @@ var options = {
         },
         "keywords": {
           "label": "Please provide up to 5 key words that capture the key elements of the innovation",
-          "help": "Enter a tag or select from the list <br />Separate each tagwith a semi-colon"
+          "placeholder": "Tags",
+		  "help": "Enter a tag or select from the list <br />Separate each tagwith a semi-colon"
         },
         "why": {
           "label": "Why was the innovation developed?",
           "help": "For example, this can include but is not limited to, the following factors: <br />1) response to a problem (e.g. service gap or failure);  <br />2) response to a change within the organisation (e.g. change of internal rules and procedures);  <br />3) response to an external change (policy change, changes in laws and regulation)."
         },
-        "objectives": "Please set out the objectives of the innovation",
-        "help": "Please provide an estimated number of beneficiaries where possible"
+        "objectives": {
+			"label": "Please set out the objectives of the innovation",
+			"help": "Please provide an estimated number of beneficiaries where possible"
+		}
       },
       "step5": {
         "label": "D. Novelty",
         "question": {
           "label": "Are you aware of existing practices <br />which are similar to your innovation?",
-          "options": [
+		  "options": [
             {"label": "yes"},
             {"label": "no"}
           ],
-          "help": "Answers may include up to 12 responses"
+          "help": "Answers may include up to 5 responses"
         },
+		"add": "Add Practice",
+        "remove": "Remove Practice",
         "practice": {
-          
+			"label": "Practice information",
+			"where": {
+				"label": "Where did the practice occured",
+				"default": "Select from drop down menu",
+				"options": [
+				{"label":"In my own organisation"},
+				{"label":"In public administration of my country"},
+				{"label":"in other countries' public administrations"},
+				{"label":"in the private sector, civil society or elsewhere"}
+				]
+			},			
+			"name": { 
+				"label": "Practice Name",
+				"placeholder": "Max. 40 words"
+			},
+			"organisation": {
+				"label": "Organisation where the practice have occurred",
+				"placeholder": "Max. 20 words"
+			},
+			"description": {
+				"label": "Please provide a short description of the practice",
+				"placeholder": "Max. 100 words"
+			},
+			"link": {
+				"label": "Where they exist, please provide a link to any websites describing existing similar practices",
+				"placeholder": "http://..."
+			}
         }
       },
-      "footer": {
-        "cancel": "Cancel",
-        "save": "Save",
-        "preview": "Preview",
-        "submit": "Submit",
-        "previous": "Prev",
-        "next": "Next"
-      }
+		"step6": {
+			"label": "E. Developing the Innovation",
+			"which": {
+				"label": "Which stage is your innovation currently in?",
+				"default": "Select from drop down menu",
+				"options": [
+					{"label":"Design"},
+					{"label":"Testing"},
+					{"label":"Implementation"},
+					{"label":"Diffusion"}
+				],
+				"please": "Please answer this question"
+			},
+			"designtitle": "<strong>Design:</strong> Generating the idea for an innovation and turning into a project including his key attributes (budget, staff, tools)",
+			"testingtitle": "<strong>Testing:</strong> The development and testing of an innovation e.g. by trialling, prototyping or piloting the innovation on a small scale.",
+			"implementationtitle": "<strong>Implementation:</strong> The rolling out of the innovation to reach its target beneficiaries.",
+			"diffusiontitle": "<strong>Diffusion:</strong> Extending the innovation to other services or organisations; this may include the growing or scaling up of an innovation.",
+			"design" : {
+				"label": "Design",
+				"how": "How and by whom was the idea for the innovation generated?",
+				"placeholder": "Max. 200 words",
+				"help": "E.g. frontline staff, policy planning staff; prize or awards, consulting with users, adapted from an external source."
+			},
+			"testing" : {
+				"label": "Testing",
+				"methods": "Please outline any methods used to test the innovation",
+				"placeholder": "Max. 200 words",
+				"help": "E.g. frontline staff, policy planning staff; prize or awards, consulting with users, adapted from an external source."
+			},
+			"implementation" : {
+				"label": "Implementation",
+				"tools": {
+					"label": "What tools were used to develop and implement the innovation?",
+					"placeholder": "Max. 200 words",
+					"help": "E.g. ICTs, management approaches."
+				},
+				"resources": {
+					"label": "Where the information is available please indicate the resources that were used?",
+					"placeholder": "Max. 200 words",
+					"help": "E.g. staff, budget."
+				}
+			},
+			"diffusion": {
+				"label": "Diffusion",
+				"placeholder": "Max. 200 words",
+				"extend": " Please outline the methods used to extend your innovation to other services or organisations"
+			},
+			"overall": {	
+				"label": "Overall", 
+				"placeholder": "Max. 200 words",
+				"challenges": "What challenges were encountered and what solutions were developed?"
+			},
+			"totaltime": {
+				"question": "Please indicate approximately how much time the innovation took",
+				"label": "Total time:",
+				"please": "Please answer this question",
+				"help": "in week or month",
+				"placeholderyear": "Year(s)",
+				"placeholdermonth": "Month(s)",
+				"placeholderweeks": "Week(s)"
+			},
+			"timephase": {
+				"question": "Where you have the information please also indicate how much time each phase took:",
+				"design": "Design:",
+				"testing": "Testing:",
+				"implementation": "Implementation:",
+				"diffusion": "Diffusion:",
+				"help": "in week or month",
+				"placeholderyear": "Year(s)",
+				"placeholdermonth": "Month(s)",
+				"placeholderweeks": "Week(s)"
+			}
+		}, 
+		 "step7": {
+			"label": "F-Partnership",
+			"which": "Which (if any) actor(s) were partnered with?",
+			"options": [
+				{"label": "Yes"},
+				{"label": "No"}
+			],
+			"partner": {
+				"label": "Partners' information",
+				"sector": {
+					"label": "Partners' Sector",
+					"default": "Select from drop down menu",
+					"options": [
+						{"label": "Private sector"},
+						{"label": "Civil Society"},
+						{"label": "Academics and Research Bodies"},
+						{"label": "Other Public Sector"},
+						{"label": "Other"},
+						{"label": "None"}
+					],
+				},
+				"name": {
+					"label": "Partners' Name",
+					"placeholder": "Max. 10 words"
+				},
+				"nature": {
+					"label": "Please describe the nature of the partnership(s) and how it affected the innovation",
+					"placeholder": "Max. 100 words"
+				},
+				"help": "Answers may include multiple responses"
+			},
+			"add": "Add Partner",
+			"remove": "Remove Partner"
+        },
+		 "step8": {
+			"label": "G. Results",
+			"what": {
+				"label": "What results has the innovation had?",
+				"options": [
+					{"label": "Results not available yet"},
+					{"label": "Improved efficiency"},
+					{"label": "Improved effectiveness"},
+					{"label": "Improved service quality"},
+					{"label": "Accessibility "},
+					{"label": "Responsiveness"},
+					{"label": "Reliability"},
+					{"label": "other"},
+					{"label": "Improved user satisfaction"},
+					{"label": "Other"}
+				],
+				"datacontent1": "An improvement in outputs in relation to inputs. E.g. reducing the cost of providing waste recycling services by €0.5m over 4 years.",
+				"datacontent2": "An improvement in achieving given objectives. E.g. a 10% increase in the exam pass rate among 16-18year olds, where an innovation's objective is to improve educational attainment",
+				"datacontent3": "I.e. An improvement in the ease of access to access to a service. These may be related to cost; geographic distance; number of service providers; complexity and availability of a service (e.g. opening hours).",
+				"datacontent4": "I.e. the ability to respond to different user needs or user views",
+				"datacontent5": "i.e. the accuracy and consistency of a service (such as the number of errors that occur)",
+				"datacontent6": "An improvement in outputs in relation to inputs. E.g. reducing the cost of providing waste recycling services by €0.5m over 4 years.",
+				"datacontent7": "An improvement in outputs in relation to inputs. E.g. reducing the cost of providing waste recycling services by €0.5m over 4 years.",
+				"help1": "(Please indicate the type of service quality improvement)",
+				"help2": "Please check the box indicating the type of results. Please provide evidence of the improvements, including an indication of how they have been measured"
+			},
+			"efficiency": {
+					"label": "Efficiency",
+					"placeholder": "Max. 150 words",
+					"help": "An improvement in outputs in relation to inputs. E.g. reducing the cost of providing waste recycling services by €0.5m over 4 years."
+			},
+			"effectiveness": {
+					"label": "Effectiveness",
+					"placeholder": "Max. 150 words",
+					"help": "An improvement in achieving given objectives. E.g. a 10% increase in the exam pass rate among 16-18 year olds, where an innovation's objective is to improve educational attainment."
+			},
+			"accessibility": {
+					"label": "<em>Service quality:</em> Accessibility",
+					"placeholder": "Max. 150 words",
+					"help": "An improvement in the ease of access to access to a service. These may be related to cost; geographic distance; number of service providers; complexity and availability of a service (e.g. opening hours)."
+			},
+			"responsiveness": {
+					"label": "<em>Service quality:</em> Responsiveness",
+					"placeholder": "Max. 150 words",
+					"help": "I.e. the ability to respond to different user needs or user views."
+			},
+			"reliability": {
+					"label": "<em>Service quality:</em> Reliability",
+					"placeholder": "Max. 150 words",
+					"help": "I.e. the accuracy and consistency of a service (such as the number of errors that occur)."
+			},
+			"qualityother": {
+					"label": "<em>Service quality:</em> Other",
+					"placeholder": "Max. 150 words"
+			},
+			"satisfaction": {
+					"label": "Improved user satisfaction",
+					"placeholder": "Max. 150 words",
+					"help": "A recorded improvement in users' reported satisfaction. Users may refer to either external users (e.g. citizens) or internal users (e.g. staff)."	
+			},
+			"other": {
+					"label": "Other",
+					"placeholder": "Max. 150 words"
+			},
+			"evaluated" : {
+				"label": "Has the innovation been evaluated?",
+				"options": [
+				{"label": "Yes"},
+				{"label": "No"}
+				],
+				"help": "If yes, please provide details below",
+				"process": {
+					"label": "Please describe the evaluation process used and the resultLines",
+					"placeholder": "Max. 200 words",
+					"help": "Performance measurements or indicators may be included here"
+				},
+				"link": {
+					"label": "If you wish, you may provide a link to further information on the evaluation",
+					"placeholder": "http://...",
+					"help": "or email documents to the OECD by clicking here [link to an OECD email address]."
+				}
+			}
+		},
+		"step9": {
+			"label": "H. Lessons Learned",
+			"lessons": {
+				"label": "What lessons from your experience would you like to share with other countries?",
+				"placeholder": "Max. 200 words",
+				"help": "Please include what worked well and less well"
+			},
+			"conditions": {
+				"label": "What conditions do you think are necessary for the success of the innovation?",
+				"placeholder": "Max. 200 words",
+				"help": "Conditions may refer to, but are not limited to, supporting infrastructure and services; policy and rules; leadership and guidance; human and financial resources; and personal values and motivation"
+			},
+			"other": {
+				"label": "Is there any other information that you would like to share about your innovation?",
+				"placeholder": "Max. 200 words"
+			}	
+		},
+		"step10": {
+			"download": "download <br>the filled form",
+			"visible": {
+				"label": "would you like to make <br>your innovation <br>visible to the public",
+				"options": [
+				{"label": "Yes"},
+				{"label": "No"}
+				],
+				"help": "If you choose no, your innovation will only be visible <br>to a restricted community of registered users in government."
+			},
+			"feedback" :{
+				"label": "Feedback",
+				"scale": {
+					"label": "On a scale of 1 - 10, how simple did you find it was to complete the form",
+					"help": "where 1=impossible; 10=very straightforward."
+				},
+				"question": "Were there any questions that you found particularly difficult to answer? If so, please highlight the question and briefly explain why",
+				"placeholder": "Max. 200 words"
+			}
+		},	
+		"footer": {
+			"cancel": "Cancel",
+			"save": "Save",
+			"preview": "Preview",
+			"submit": "Submit",
+			"previous": "Prev",
+			"next": "Next"
+		}
     }}
   }
 }
@@ -158,7 +424,7 @@ i18n.init(options).done(function() {
   $('#innovationSubmit').i18n();
 });
 
-  $(function() {
+ $(function() {
 
     $('ul.browse li:nth-child(6)').attr('class', 'current');
 
@@ -210,7 +476,7 @@ i18n.init(options).done(function() {
     *  c -tagging solution
     */
 
-    $("#C8").select2({tags:["Users", "public sector", "innovation", "change", "efficiency", "e-government", "partnership", "co-production", "design", "implementation", "delivery", "performance", "budgeting", "rules", "decision-making", "human resources", "project management", "childcare", "equality", "access", "digital", "citizens", "open data", "transparency", "flexibility", "civil service", "private sector", "civil society", "consultation", "simplicity", "savings", "online", "procurement"], maximumSelectionSize: 5, tokenSeparators: [","]});
+    $("#Keywords").select2({tags:["Users", "public sector", "innovation", "change", "efficiency", "e-government", "partnership", "co-production", "design", "implementation", "delivery", "performance", "budgeting", "rules", "decision-making", "human resources", "project management", "childcare", "equality", "access", "digital", "citizens", "open data", "transparency", "flexibility", "civil service", "private sector", "civil society", "consultation", "simplicity", "savings", "online", "procurement"], maximumSelectionSize: 5, tokenSeparators: [","]});
 
     // change real input style in order to validate
 
@@ -228,16 +494,16 @@ i18n.init(options).done(function() {
     *  and add practices
     */
 
-    var hasNovelty      = $("input[name=hasNovelty]"),
+    var ExistingPractice      = $("input[name=ExistingPractice]"),
         checkState      = false,
         practiceIndex   = 0;
         practices       = $(".novelty-pane"),
         addPractice     = $("#practice-add"),
         remPractice     = $("#practice-rem");
 
-    hasNovelty.change(function() {
-      checkState = $("input[name=hasNovelty]:checked").val();
-      if (checkState == "true") {
+    ExistingPractice.change(function() {
+      checkState = $("input[name=ExistingPractice]:checked").val();
+      if (checkState == "284:5199") {
         addPractice.removeClass("disabled");
         remPractice.addClass("disabled");
         $(practices[practiceIndex]).slideDown();
@@ -288,7 +554,7 @@ i18n.init(options).done(function() {
 
     showPanes(stagePanes, stageIndex);
 
-    $( "#stageSelect" ).on("change", function (evt) {
+    $( "#Stage" ).on("change", function (evt) {
       stageIndex = $(this).prop("selectedIndex");
       showPanes(stagePanes, stageIndex);
     });
@@ -298,16 +564,16 @@ i18n.init(options).done(function() {
     *  and add partners
     */
 
-    var hasPartner     = $("input[name=hasPartner]"),
+    var CheckPartners     = $("input[name=CheckPartners]"),
         checkState     = false,
         partnerIndex   = 0;
         partners       = $(".partnership-pane"),
         addPartner     = $("#Partner-add"),
         remPartner     = $("#Partner-rem");
 
-    hasPartner.change(function() {
-      checkState = $("input[name=hasPartner]:checked").val();
-      if (checkState == "true") {
+    CheckPartners.change(function() {
+      checkState = $("input[name=CheckPartners]:checked").val();
+      if (checkState == "284:5199") {
         addPartner.removeClass("disabled");
         remPartner.addClass("disabled");
         $(partners[partnerIndex]).slideDown();
@@ -352,7 +618,7 @@ i18n.init(options).done(function() {
     function changeCheck(index) {
       if (index > 0)
       {
-        $(resultFields[index+1]).slideDown();
+        $(resultFields[index]).slideDown();
         $('#resultProgress').slideUp();
         $("#resultChecks input:eq(0)").prop('checked',false);
       } else {
@@ -374,7 +640,7 @@ i18n.init(options).done(function() {
 
 
     var evalState = false
-    $('input[name=hasEval]').change(function() {
+    $('input[name=Evaluated]').change(function() {
       evalState = ( evalState == false ) ? true : false;
       $('#evalution-block').slideToggle();
     });
@@ -415,39 +681,118 @@ i18n.init(options).done(function() {
      }, "please select at least one checkbox");
 
     var $validator = form.validate({
-      rules: {
-          // Section A
-          auth1_name: { required: true, minlength: 3 },
-          auth1_org: { required: true, minlength: 3 },
-          auth1_mail: { required: true, email: true, minlength: 3 },
-          auth1_mail: { required: true, email: true, minlength: 3 },
+	rules: {
+		// Section A
+		'Your-Name' : { required: true, minlength: 3, maxlength: 100 },
+		'Your-Organisation': { required: true, minlength: 3, maxlength: 200 },
+		Email: { required: true, email: true, minlength: 3, maxlength: 200 },
+		Telephone: { required: false, minlength: 3, maxlength: 100 },
 
-          // Section B
-          org_country: { required:true },
-          org_level: { required:true },
-          org_sector: { required:true, selectNone:true },
-          org_size: { required: true, selectNone:true },
+		'1st Contact – Name' : { required: false, minlength: 3, maxlength: 100 },
+		'1st Contact – Organisation': { required: false, minlength: 3, maxlength: 200 },
+		'1st Contact – Email': { required: false, email: true, minlength: 3, maxlength: 200 },
+		'1st Contact – Telephone': { required: false, minlength: 3, maxlength: 100 },
 
-          // Section C
-          'C6[]': { required: true },
-          stageSelect: { required: true, selectNone:true },
-          G1_check: { required: true, selectNone:true }
-      },
-      highlight: function(element) {
-        $(element).closest('.control-group').removeClass('success').addClass('error');
-      },
-      success: function(element) {
-        element.addClass('valid').closest('.control-group').removeClass('error');
-      },
-      errorPlacement: function(error, element) {
-        if (element.is(":checkbox") || element.is(":radio")) {
-          element.parents('.controls').append(error);
-        } else 
-        {
-          $(element.parents('.controls')).append(error);
-            }
-      }
-    });
+		'2nd Contact – Name': { required: false, minlength: 3, maxlength: 100 },
+		'2nd Contact – Organisation': { required: false, minlength: 3, maxlength: 200 },
+		'2nd Contact – Email': { required: false, email: true, minlength: 3, maxlength: 200 },
+		'2nd Contact – Telephone' : { required: false, minlength: 3, maxlength: 100 },
+		isNameVisible : { required: true},
+
+
+		// Section B
+		Country : { required:true },
+		LevelOfGovernment : { required:true },
+		Sector : { required:true, selectNone:true },
+		OrgSize : { required: true, selectNone:true },
+
+		// Section C
+		'Name-of-Innovation' : { required: true, minlength: 3, maxlength: 400 },
+		'Year-of-launch' : { required: true, number : true, minlength: 4, maxlength: 4 },
+		Description : { required: true, minlength: 3, maxlength: 2000 }, 
+		InnoType : { required: true },
+		'Main-beneficiaries' :  { required: false, minlength: 3, maxlength: 1500 },
+		Keywords :  { required: false, minlength: 1, maxlength: 5 },
+		Why : { required: false, minlength: 3, maxlength: 2000 },
+		Objectives : { required: false, minlength: 3, maxlength: 2100 },
+
+		// Section D
+		'Existing-Practice-Names' : { required: false, minlength: 3, maxlength: 400 },
+		'Existing-Practice-Names2' : { required: false, minlength: 3, maxlength: 400 },
+		'Existing-Practice-Names3' : { required: false, minlength: 3, maxlength: 400 },
+		'Existing-Practice-Names4' : { required: false, minlength: 3, maxlength: 400 },
+		'Existing-Practice-Names5' : { required: false, minlength: 3, maxlength: 400 },
+		'Existing-Organisation' : { required: false, minlength: 3, maxlength: 200 },
+		'Existing-Organisation2' : { required: false, minlength: 3, maxlength: 200 },
+		'Existing-Organisation3' : { required: false, minlength: 3, maxlength: 200 },
+		'Existing-Organisation4' : { required: false, minlength: 3, maxlength: 200 },
+		'Existing-Organisation5' : { required: false, minlength: 3, maxlength: 200 },	
+		'Existing-Description' :  { required: false, minlength: 3, maxlength: 1000 },
+		'Existing-Description2' :  { required: false, minlength: 3, maxlength: 1000 },
+		'Existing-Description3' :  { required: false, minlength: 3, maxlength: 1000 },
+		'Existing-Description4' :  { required: false, minlength: 3, maxlength: 1000 },
+		'Existing-Description5' :  { required: false, minlength: 3, maxlength: 1000 },
+
+		// Section E
+		Stage : { required: true, selectNone:true },
+		'Design - How' : { required: false, minlength: 3, maxlength: 2000 },
+		'Testing - Methods' : { required: false, minlength: 3, maxlength: 2000 },
+		'Implementation - Tools' : { required: false, minlength: 3, maxlength: 2100 },
+		'Implementation - Resources' : { required: false, minlength: 3, maxlength: 2100 },
+		'Diffusion - Methods' : { required: false, minlength: 3, maxlength: 2000 },
+		'Overall - Challenges-and-solutions' : { required: false, minlength: 3, maxlength: 2000 },
+		
+		'total_year' : { required: false, number : true, minlength: 1, maxlength: 3},
+		'total_month' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'total_weeks' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'design_year' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'design_month' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'design_weeks' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'testing_year' : { required: false, number : true, minlength: 1, maxlength: 3},
+		'testing_month' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'testing_weeks' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'implem_year' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'implem_month' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'implem_weeks' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'diffusion_year' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'diffusion_month' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		'diffusion_weeks' : { required: false, number : true, minlength: 1, maxlength: 3 },
+		
+		// Section G
+		Results: { required: true, selectNone:true },
+		'Desc-Imp-efficiency' : { required: false, minlength: 3, maxlength: 1500 },
+		'Desc-Imp-effectiveness' : { required: false, minlength: 3, maxlength: 1500 },
+		'Quality-Accessibility' : { required: false, minlength: 3, maxlength: 1500 },
+		'Quality-Responsiveness' : { required: false, minlength: 3, maxlength: 1500 },
+		'Quality-Reliability' : { required: false, minlength: 3, maxlength: 1500 },
+		'Quality-Other' : { required: false, minlength: 3, maxlength: 1500 },
+		'Desc-Imp-Usatisfaction' : { required: false, minlength: 3, maxlength: 1500 },
+		'Results-Other' : { required: false, minlength: 3, maxlength: 1500 },
+		'Evaluation-Process' : { required: false, minlength: 3, maxlength: 2000 },
+		
+		//Section H
+		'Lessons-Learned' : { required: false, minlength: 3, maxlength: 2100 },
+		Conditions : { required: false, minlength: 3, maxlength: 2100 },
+		'Other-information' : { required: false, minlength: 3, maxlength: 2000 },
+		
+		//End 
+		'Feedback' : { required: false, minlength: 3, maxlength: 2000 }
+	},
+	highlight: function(element) {
+	$(element).closest('.control-group').removeClass('success').addClass('error');
+	},
+	success: function(element) {
+	element.addClass('valid').closest('.control-group').removeClass('error');
+	},
+	errorPlacement: function(error, element) {
+	if (element.is(":checkbox") || element.is(":radio")) {
+	  element.parents('.controls').append(error);
+	} else 
+	{
+	  $(element.parents('.controls')).append(error);
+		}
+	}
+	});
 
 
  /***
@@ -550,4 +895,166 @@ i18n.init(options).done(function() {
       }
       }
     });
+	
+	// E.8 Check Total Time
+	var libY = " year(s)",
+		libM = " month(s)",
+		libw = " week(s)";
+		
+	$( "#total_year" ).blur(function() {
+		var checkval = $("#total_year").val();
+		if  (checkval > 0) {
+			$('#total_month').val("");
+			$('#total_weeks').val("");
+			$('#Time-Overall').val($( "#total_year" ).val() + libY);	
+		} else {
+			if ($("#total_month").val() == "" && $("#total_weeks").val() == "") $('#Time-Overall').val("");
+		}
+	});
+	$( "#total_month" ).blur(function() {
+		var checkval = $("#total_month").val();
+		if  (checkval > 0) {
+			$('#total_year').val("");
+			$('#total_weeks').val("");
+			$('#Time-Overall').val($( "#total_month" ).val() + libM);
+		}else {
+			if ($("#total_year").val() == "" && $("#total_weeks").val() == "") $('#Time-Overall').val("");
+		}
+	});
+	$( "#total_weeks" ).blur(function() {
+		var checkval = $("#total_weeks").val();
+		if  (checkval > 0) {
+			$('#total_month').val("");
+			$('#total_year').val("");
+			$('#Time-Overall').val($( "#total_weeks" ).val() + libw);	
+		} else {
+			if ($("#total_month").val() == "" && $("#total_year").val() == "") $('#Time-Overall').val("");
+		}
+	});
+	
+	// E.9 phase time  
+	$( "#design_year" ).blur(function() {
+		var checkval = $("#design_year").val();
+		if  (checkval > 0) {
+			$('#design_month').val("");
+			$('#design_weeks').val("");
+			$('#Design-Time').val($( "#design_year" ).val() + libY);	
+		} else {
+			if ($("#design_month").val() == "" && $("#design_weeks").val() == "") $('#Design-Time').val("");
+		}
+	});
+	$( "#design_month" ).blur(function() {
+		var checkval = $("#design_month").val();
+		if  (checkval > 0) {
+			$('#design_year').val("");
+			$('#design_weeks').val("");
+			$('#Design-Time').val($( "#design_month" ).val() + libM);	
+		} else {
+			if ($("#design_year").val() == "" && $("#design_weeks").val() == "") $('#Design-Time').val("");
+		}
+	});
+	$( "#design_weeks" ).blur(function() {
+		var checkval = $("#design_weeks").val();
+		if  (checkval > 0) {
+			$('#design_month').val("");
+			$('#design_year').val("");
+			$('#Design-Time').val($( "#design_weeks" ).val() + libw);	
+		} else {
+			if ($("#design_year").val() == "" && $("#design_month").val() == "") $('#Design-Time').val("");
+		}
+	});
+	
+	$( "#testing_year" ).blur(function() {
+		var checkval = $("#testing_year").val();
+		if  (checkval > 0) {
+			$('#testing_month').val("");
+			$('#testing_weeks').val("");
+			$('#Testing-Time').val($( "#testing_year" ).val() + libY);	
+		} else {
+			if ($("#testing_month").val() == "" && $("#testing_weeks").val() == "") $('#Testing-Time').val("");
+		}
+	});
+	$( "#testing_month" ).blur(function() {
+		var checkval = $("#testing_month").val();
+		if  (checkval > 0) {
+			$('#testing_year').val("");
+			$('#testing_weeks').val("");
+			$('#Testing-Time').val($( "#testing_month" ).val() + libM);		
+		} else {
+			if ($("#testing_year").val() == "" && $("#testing_weeks").val() == "") $('#Testing-Time').val("");
+		}
+	});
+	$( "#testing_weeks" ).blur(function() {
+		var checkval = $("#testing_weeks").val();
+		if  (checkval > 0) {
+			$('#testing_month').val("");
+			$('#testing_year').val("");
+			$('#Testing-Time').val($( "#testing_weeks" ).val() + libw);	
+		} else {
+			if ($("#testing_month").val() == "" && $("#testing_year").val() == "") $('#Testing-Time').val("");
+		}
+	});
+	
+	$( "#implem_year" ).blur(function() {
+		var checkval = $("#implem_year").val();
+		if  (checkval > 0) {
+			$('#implem_month').val("");
+			$('#implem_weeks').val("");
+			$('#Implementation-Time').val($( "#implem_year" ).val() + libY);		
+		} else {
+			if ($("#implem_month").val() == "" && $("#implem_weeks").val() == "") $('#Implementation-Time').val("");
+		}
+	});
+	$( "#implem_month" ).blur(function() {
+		var checkval = $("#implem_month").val();
+		if  (checkval > 0) {
+			$('#implem_year').val("");
+			$('#implem_weeks').val("");
+			$('#Implementation-Time').val($( "#implem_month" ).val() + libM);		
+		} else {
+			if ($("#implem_year").val() == "" && $("#implem_weeks").val() == "") $('#Implementation-Time').val("");
+		}	
+	});
+	$( "#implem_weeks" ).blur(function() {
+		var checkval = $("#implem_weeks").val();
+		if  (checkval > 0) {
+			$('#implem_month').val("");
+			$('#implem_year').val("");
+			$('#Implementation-Time').val($( "#implem_weeks" ).val() + libw);
+		} else {
+			if ($("#implem_month").val() == "" && $("#implem_year").val() == "") $('#Implementation-Time').val("");
+		}
+	});
+	
+	$( "#diffusion_year" ).blur(function() {
+		var checkval = $("#diffusion_year").val();
+		if  (checkval > 0) {
+			$('#diffusion_month').val("");
+			$('#diffusion_weeks').val("");
+			$('#Diffusion-Time').val($( "#diffusion_year" ).val() + libY);	
+		} else {
+			if ($("#diffusion_month").val() == "" && $("#diffusion_weeks").val() == "") $('#Diffusion-Time').val("");
+		}
+	});
+	$( "#diffusion_month" ).blur(function() {
+		var checkval = $("#diffusion_month").val();
+		if  (checkval > 0) {
+			$('#diffusion_year').val("");
+			$('#diffusion_weeks').val("");
+			$('#Diffusion-Time').val($( "#diffusion_month" ).val() + libM);	
+		} else {
+			if ($("#diffusion_year").val() == "" && $("#diffusion_weeks").val() == "") $('#Diffusion-Time').val("");
+		}
+	});
+	$( "#diffusion_weeks" ).blur(function() {
+		var checkval = $("#diffusion_weeks").val();
+		if  (checkval > 0) {
+			$('#diffusion_month').val("");
+			$('#diffusion_year').val("");
+			$('#Diffusion-Time').val($( "#diffusion_weeks" ).val() + libw);		
+		} else {
+			if ($("#diffusion_month").val() == "" && $("#diffusion_year").val() == "") $('#Diffusion-Time').val("");
+		}
+	});
+	
 });
