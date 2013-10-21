@@ -172,7 +172,43 @@ innovationForm.loadData = $.proxy(function(data) {
 			}
 		}
 	})
-
+	
+	// E.1 STAGE OF INNOVATION
+	switch($('#Stage').val())
+		{
+			case '274:5160': $('div.stagePane').first().show();break;
+			case '274:5161': $('div.stagePane').first().show(); $($('div.stagePane')[1]).show();break;
+			case '274:5162': $('div.stagePane').first().show(); $($('div.stagePane')[1]).show(); $($('div.stagePane')[2]).show();break;
+			case '274:5163': $('div.stagePane').show();break;
+        }
+	
+	if ( $('input[type="checkbox"][name="Stage"][value="274:5160"]').is(':checked') ) {
+				var showstage = $('div.stagePane').first().show();
+	}
+	
+	// E.8 & E.9  TIME TOOK 
+	$('.hidden_time').each(function(idx, el) {
+		var $el = $(el),
+			items = $el.val().split(" ");		
+		var parent = $el.closest('div.form-inline').first();
+		var itemtime = "";
+		if (items[1] == "year(s)" ) {
+				itemtime = parent.find('.input-mini').first().val(items[0]);
+		} else if (items[1] == "month(s)" ) {
+				itemtime = parent.find('.input-mini').first().next().val(items[0]);
+		} else {
+				itemtime = parent.find('.input-mini').first().next().next().val(items[0]);
+		}
+	})
+	
+	// RESULTS
+	for ( var i=1; i<8; i++ ) {
+		if ( $('#G1_check' + i).is(':checked') ) {
+		document.getElementById($('#G1_check' + i).val()).style.display="block";
+	}}
+	
+	
 }, innovationForm);
 
-var fakeData = {"Your-Name":"Nicolas Vahlas","Your-Organisation":"OECD","Email":"nico@vahlas.eu","Telephone":"0658745929","1st Contact – Name":"Chris Daniel","1st Contact – Organisation":"OECD","1st Contact – Email":"chris.danie@oecd.org","1st Contact – Telephone":"","2nd Contact – Name":"","2nd Contact – Organisation":"","2nd Contact – Email":"","2nd Contact – Telephone":"","IsNameVisible":"284:5199","Country":"285:5214","LevelOfGovernment":"270:5139","Sector":"271:5141,271:5146,271:5148","OrgSize":"279:5177","Name-of-Innovation":"INNO TEST","InnoLink":"http://www.oecd.org","Year-of-launch":"2012","Description":"C.5 Innovation Practice Descrption","InnoType":"272:5151,272:5153","Main-beneficiaries":"<ul><li>C7.1 </li><li>C7.2</li><li>C7.3</li><li>C7.4</li></ul>","Keywords":"e-government,implementation","Why":"<ul><li>C9.1</li><li>C9.2</li><li>C9.3</li><li>C9.4</li></ul>","Objectives":"<ul><li>C10.1</li><li>C10.2</li></ul>","ExistingPractice":"284:5199","WhereExisting":"273:5157","Existing-Practice-Names":"Practice 1","Existing-Organisation":"European Commission","Existing-Description":"Short description for the practice 1\nagain","Existing-Websites":"http://europa.eu.int","WhereExisting2":"273:5159","Existing-Practice-Names2":"Practice number 2","Existing-Organisation2":"UNESCO","Existing-Description2":"Short description for practice 2\nwith a carriage return \nand some special #$% characters","Existing-Websites2":"http://www.unesco.org","WhereExisting3":"","Existing-Practice-Names3":"","Existing-Organisation3":"","Existing-Description3":"","Existing-Websites3":"","WhereExisting4":"","Existing-Practice-Names4":"","Existing-Organisation4":"","Existing-Description4":"","Existing-Websites4":"","WhereExisting5":"","Existing-Practice-Names5":"","Existing-Organisation5":"","Existing-Description5":"","Existing-Websites5":"","Stage":"274:5161","Design - How":"Description for the Design phase","Testing - Methods":"Description for the Testing phase","Implementation - Tools":"","Implementation - Resources":"","Diffusion - Methods":"","Overall - Challenges-and-solutions":"Overall description for the challenges encountered and solutions developped","Time-Overall":"","Design-Time":"","Testing-Time":"","Implementation-Time":"","Diffusion-Time":"","CheckPartners":"284:5199","Partners1":"275:5167","PartnerName1":"European Commission","Nature1":"Description for Partner 1","Partners2":"275:5164","PartnerName2":"Vahlas.eu","Nature2":"Best IT consultants ever :)","Partners3":"","PartnerName3":"","Nature3":"","Partners4":"","PartnerName4":"","Nature4":"","Partners5":"","PartnerName5":"","Nature5":"","Results":"282:5188,282:5189,282:5241,282:5242,282:5243,282:5244,282:5191,282:5192","Desc-Imp-efficiency":"Efficiency description","Desc-Imp-effectiveness":"Effectiveness description","Quality-Accessibility":"Accessibility description","Quality-Responsiveness":"Responsiveness description","Quality-Reliability":"Reliability description","Quality-Other":"Other description","Desc-Imp-Usatisfaction":"Improved user satisfaction description","Results-Other":"Other description ... ","Evaluated":"284:5199","Evaluation-Process":"Descrption for the evaluation process","Link-to-information":"http://nico.vahlas.eu","Lessons-Learned":"Lessons","Conditions":"Conditions","Other-information":"other information","VisibleToPublic":"284:5200","Scale":"8","Feedback":"It was very long ... "};
+var fakeData = {"Your-Name":"Nicolas Vahlas","Your-Organisation":"OECD","Email":"nico@vahlas.eu","Telephone":"0658745929",
+"1st Contact – Name":"Chris Daniel","1st Contact – Organisation":"OECD","1st Contact – Email":"chris.danie@oecd.org","1st Contact – Telephone":"","2nd Contact – Name":"","2nd Contact – Organisation":"","2nd Contact – Email":"","2nd Contact – Telephone":"","IsNameVisible":"284:5199","Country":"285:5214","LevelOfGovernment":"270:5139","Sector":"271:5141,271:5146,271:5148","OrgSize":"279:5177","Name-of-Innovation":"INNO TEST","InnoLink":"http://www.oecd.org","Year-of-launch":"2012","Description":"C.5 Innovation Practice Descrption","InnoType":"272:5151,272:5153","Main-beneficiaries":"<ul><li>C7.1 </li><li>C7.2</li><li>C7.3</li><li>C7.4</li></ul>","Keywords":"e-government,implementation","Why":"<ul><li>C9.1</li><li>C9.2</li><li>C9.3</li><li>C9.4</li></ul>","Objectives":"<ul><li>C10.1</li><li>C10.2</li></ul>","ExistingPractice":"284:5199","WhereExisting":"273:5157","Existing-Practice-Names":"Practice 1","Existing-Organisation":"European Commission","Existing-Description":"Short description for the practice 1\nagain","Existing-Websites":"http://europa.eu.int","WhereExisting2":"273:5159","Existing-Practice-Names2":"Practice number 2","Existing-Organisation2":"UNESCO","Existing-Description2":"Short description for practice 2\nwith a carriage return \nand some special #$% characters","Existing-Websites2":"http://www.unesco.org","WhereExisting3":"","Existing-Practice-Names3":"","Existing-Organisation3":"","Existing-Description3":"","Existing-Websites3":"","WhereExisting4":"","Existing-Practice-Names4":"","Existing-Organisation4":"","Existing-Description4":"","Existing-Websites4":"","WhereExisting5":"","Existing-Practice-Names5":"","Existing-Organisation5":"","Existing-Description5":"","Existing-Websites5":"","Stage":"274:5161","Design - How":"Description for the Design phase","Testing - Methods":"Description for the Testing phase","Implementation - Tools":"","Implementation - Resources":"","Diffusion - Methods":"","Overall - Challenges-and-solutions":"Overall description for the challenges encountered and solutions developped","Time-Overall":"4 month(s)","Design-Time":"2.6 year(s)","Testing-Time":"15 month(s)","Implementation-Time":"36 week(s)","Diffusion-Time":"15 year(s)","CheckPartners":"284:5199","Partners1":"275:5167","PartnerName1":"European Commission","Nature1":"Description for Partner 1","Partners2":"275:5164","PartnerName2":"Vahlas.eu","Nature2":"Best IT consultants ever :)","Partners3":"","PartnerName3":"","Nature3":"","Partners4":"","PartnerName4":"","Nature4":"","Partners5":"","PartnerName5":"","Nature5":"","Results":"282:5189,282:5241,282:5242,282:5244,282:5191","Desc-Imp-efficiency":"Efficiency description","Desc-Imp-effectiveness":"Effectiveness description","Quality-Accessibility":"Accessibility description","Quality-Responsiveness":"Responsiveness description","Quality-Reliability":"Reliability description","Quality-Other":"Other description","Desc-Imp-Usatisfaction":"Improved user satisfaction description","Results-Other":"Other description ... ","Evaluated":"284:5199","Evaluation-Process":"Descrption for the evaluation process","Link-to-information":"http://nico.vahlas.eu","Lessons-Learned":"Lessons","Conditions":"Conditions","Other-information":"other information","VisibleToPublic":"284:5200","Scale":"8","Feedback":"It was very long ... "};
